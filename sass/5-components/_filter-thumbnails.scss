@@ -1,0 +1,111 @@
+.filter-thumbnails {
+    &__thumbnail {
+        $thumbnail: &;
+        position: relative;
+        height: 50px;
+        background-image: linear-gradient(#f5f5f5, #c9c9c9);
+        &.is-selected {
+            background-image: none;
+            background-color: #718e7f;
+            &:before {
+                display: none;
+            }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background-image: linear-gradient(#cbcbcb, transparent);
+            opacity: 0;
+            transition: opacity map_get($transitions-times, normal);
+        }
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+        }
+        & + #{&} {
+            border-left: solid white 2px;
+        }
+        &-text-container {
+            flex: 1;
+        }
+        &-text {
+            text-align: center;
+            text-transform: uppercase;
+            color: black;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            #{$thumbnail}.is-selected & {
+                color: white;
+            }
+        }
+        &-wrapper {
+            height: 100%;
+            #{$thumbnail}.is-selected & {
+                cursor: default;
+            }
+        }
+        &-icon-container {
+            height: 100%;
+            padding-right: 10px;
+        }
+        &-icon {
+            max-height: 32px;
+            &.dog {
+                position: relative;
+                top: 3px
+            }
+        }
+    }
+    &--has-no-classes {
+        input {
+            display: none;
+        }
+        & > ul {
+            display: flex;
+        }
+        li {
+            @extend .filter-thumbnails__thumbnail;
+            width: 50%;
+            label {
+                position: relative;
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                padding-right: 43px;
+                align-items: center;
+                font-weight: 500;
+                cursor: pointer;
+                text-transform: uppercase;
+                &:after {
+                    position: absolute;
+                    right: 10px;
+                    bottom: 0;
+                    content: '';
+                    width: 43px;
+                    height: 30px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+            &.is-selected {
+                color: white;
+            }
+            &:first-child {
+                label:after {
+                    background-image: url('../img/icon-dog-header.png')
+                }
+            }
+            &:nth-child(2) {
+                label:after {
+                    background-image: url('../img/icon-cat-header.png')
+                }
+            }
+        }
+    }
+}

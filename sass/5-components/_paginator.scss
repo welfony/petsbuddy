@@ -1,0 +1,30 @@
+.paginator {
+    &__cell-container {
+        border: solid 1px map_get($colors, gray-lighter-2);
+        border-right: none;
+        transition: background-color map_get($transitions-times, normal);
+        &.is-active {
+            background-color: #ecedee;
+        }
+        &:hover {
+            background-color: #f8f8f8
+        }
+        &:last-child {
+            border-right: solid 1px map_get($colors, gray-lighter-2);
+        }
+    }
+    &__cell {
+        display: inline-block;
+        padding: 20px 25px;
+        font-weight: 500;
+    }
+    &__arrow {
+        width: 15px;
+    }
+    &__left-arrow-container {
+        border-radius: 5px 0 0 5px;
+    }
+    &__right-arrow-container {
+        border-radius: 0 5px 5px 0;
+    }
+}

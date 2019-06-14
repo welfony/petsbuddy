@@ -1,0 +1,156 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        Pet Food is Focusing on Alternative Ingredients—Dried Yeast is One Possible Answer
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+          <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog6.jpg" alt="">
+                  <a href="img/blogs/blog6-o.jpg" class="popup-img overlay-link">
+                    <i class="icon-plus-1"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p>
+            Two presentations at Petfood Forum 2018 highlighted the need for alternative pet food ingredient
+            research.
+          </p>
+          <p>
+            As pet owner demands continue to evolve, pet food industry is getting emphasize that dogs and cats
+            can get the nutrients they need no matter what formulation is.
+          </p>
+          <p>
+            “Dogs and cats require nutrients, not ingredients,” said Gary Davenport, PhD, companion animal
+            technical manager at <span style="text-decoration: underline;">ADM Animal Nutrition</span>. Davenport
+            presented on “Dried yeast: alternative protein for dogs and cats” on Tuesday, April 24 at Petfood
+            Forum.
+          </p>
+          <p>
+            According to Aurélie de Ratuld, PhD, R&D cat platform manager for <span style="text-decoration: underline;">Diana
+              Pet Food</span>, it is time to pay more attention onto pet food ingredient availability and
+            sustainability, which means more pet food production is needed, and more meat, marine and vegetable
+            raw materials must be available to meet production needs. Davenport presented further challenges
+            during his session: <strong>how can we continue to feed animal-based proteins when pets are
+              increasingly fighting for the same food resources as humans?</strong>
+          </p>
+          <p>
+            What makes for an ideal alternative protein ingredient? According to Davenport, such an ingredient
+            must be high quality, cost effective, label friendly, appealing to the consumer and in consistent
+            supply — quite the tall order. But that, he said, is exactly where yeast comes in.
+          </p>
+          <p>
+            According to Davenport’s research, dried yeast expressed on a lysine basis has the same protein
+            quality as egg. In his study presented at Petfood Forum, cats showed a higher preference for the
+            presented yeast diet versus the control diet; there was twice as much of the yeast diet consumed as
+            the control. Dogs also had a higher preference for the yeast diet, selecting it 26 times versus 14
+            times for the control diet and producing an 11:5 ratio of dogs choosing the yeast diet on both days
+            of the study versus the control.
+          </p>
+          <p>
+            Yeast, said Davenport, has demonstrated nutrition suitability: it’s a high-quality protein with
+            balanced essential amino acids, low fat and ash contents, high palatability and digestibility, and no
+            known anti-nutritional factors. Formulation-wise, it’s label friendly and a complementary protein
+            with an economical advantage. According to Davenport, it’s the ideal protein source for both pet food
+            and treats, weight control and senior formulas, large breed puppy formulas, and cat formulas of all
+            life stages.
+          </p>
+          <p>
+            “A product such as dried yeast does fit that niche for something new, something different, as a
+            protein source,” he said. It is incumbent upon manufacturers to continue the search for alternative
+            answers — even if it means looking to history or less obvious avenues for insight.
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">Dried Yeast</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}

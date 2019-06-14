@@ -1,0 +1,174 @@
+.subnavbar {
+    position: absolute;
+    z-index: map_get($z-indexes, high);
+    top: calc(map_get($others, navbar-height) + 10px);
+    left: 0;
+    display: none;
+    width: 100%;
+    background: map_get($colors, gray-lightest);
+    background-image: linear-gradient(#ebebeb 0%, white 6%, white 80%, #fbfbfb 95%);
+    &.is-sticky {
+        position: fixed;
+        width: 100%;
+    }
+    &__section {
+        position: relative;
+        padding: 60px;
+        text-align: center;
+        overflow: hidden;
+        @media screen and (max-width: 1700px) {
+            padding: 50px;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            justify-content: flex-start;
+            padding: 80px 20px;
+            padding-bottom: 20px;
+        }
+        &--first {
+            flex: 1.6;
+        }
+        &--second, &--third {
+            flex: 1;
+        }
+        & + #{&} {
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -120px;
+                border-radius: 80%;
+                box-shadow: 30px 30px 30px #e8e8e8;
+                width: 100px;
+                height: 65%;
+                transform: translateY(-50%);
+            }
+        }
+        &--has-background {
+            //@include responsive-background-image('background-dog-cat-food-gradient-to-white-header', 'png', ('xs'));
+            background-image: url('../img/responsive/background-dog-cat-food-gradient-to-white-header_lg@2x.png');
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            &.has-smaller-background-size-xxl {
+                @media screen and(min-width: 2000px) {
+                    background-size: 50%;
+                }
+            }
+            @media screen and(max-width: map_get($breakpoints-max, xs)) {
+                background-image: none;
+            }
+
+        }
+        &-content-container {
+            margin-top: 60px;
+        }
+        &-content-header-small {
+            font-size: 19px;
+            color: #485159;
+            text-align: center;
+            &--is-light {
+                font-size: 16px;
+                font-weight: 300;
+                color: #485159;
+            }
+            & + #{&} {
+                margin-top: 10px;
+            }
+        }
+        &-content-btn {
+            margin-top: 35px;
+        }
+        &-content-link {
+            color: #485159;
+            &:hover {
+                color: #718e7f;
+            }
+        }
+        &-content-links-container {
+            margin-top: -25px;
+        }
+        &-content-link-container {
+            text-align: left;
+            margin-top: 25px;
+            &--has-margin-top-below-1200 {
+                @media screen and (max-width: map_get($breakpoints-max, md)) {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    &__thumbnail {
+        $thumbnail: &;
+        position: relative;
+        padding: 0 20px;
+        align-items: center;
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            padding: 0 10px;
+        }
+        &:hover {
+            img {
+                transform: translateY(-7px);
+            }
+            #{$thumbnail}-header {
+                color: #718e7f;
+            }
+        }
+        &-header {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #485159;
+            transition: color 500ms;
+            @media screen and (max-width: map_get($breakpoints-max, sm)) {
+                margin-bottom: 0;
+                font-size: 20px;
+            }
+        }
+        &-preheader {
+            padding-top: 8px;
+            margin-bottom: 7px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: #485159;
+            @media screen and (max-width: map_get($breakpoints-max, sm)) {
+                margin-bottom: 0;
+                font-size: 14px;
+                padding-top: 10px;
+            }
+        }
+        &-icon {
+            position: absolute;
+            left: 50%;
+            bottom: -3px;
+            max-width: 60px;
+            z-index: map_get($z-indexes, high);
+            transform: translateX(-50%);
+            transition: transform map_get($transitions-times, normal), opacity map_get($transitions-times, normal);
+            @media screen and (max-width: map_get($breakpoints-max, sm)) {
+                max-width: 50px;
+            }
+            &--is-visible-on-hover {
+                opacity: 0;
+            }
+        }
+        &-icon-glow {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            z-index: map_get($z-indexes, medium);
+            opacity: 0;
+            transition: opacity map_get($transitions-times, normal);
+        }
+        & + #{&} {
+            border-left: solid white 1px;
+        }
+        &-img {
+            max-width: 94px;
+            margin: auto;
+            margin-top: 25px;
+            transition: transform 500ms;
+        }
+    }
+}

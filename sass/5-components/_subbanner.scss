@@ -1,0 +1,64 @@
+.subbanner {
+    position: relative;
+    background-color: #f5f8fa;
+    transform: translateY(-#{map_get($others, banner-nudged-height)});
+    margin-bottom: -#{map_get($others, banner-nudged-height)};
+    @media screen and (max-width: map_get($breakpoints-max, sm)) {
+        margin-top: 40px;
+        flex-direction: column;
+        transform: none;
+        margin-bottom: 0;
+    }
+    @media screen and (max-width: map_get($breakpoints-max, xs)) {
+        margin-top: 0;
+        background-color: transparent;
+    }
+    &__left-section {
+        position: relative;
+        flex: 1;
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            order: 2;
+            align-items: flex-start;
+            flex: auto;
+        }
+    }
+    &__right-section {
+        flex: 1;
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            order: 1;
+        }
+        &-content {
+            max-width: 100%;
+            padding: 0 40px;
+            @media screen and (max-width: map_get($breakpoints-max, md)) {
+                padding: 20px 40px;
+            }
+            @media screen and (max-width: map_get($breakpoints-max, sm)) {
+                padding: 40px;
+            }
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                padding: 40px 0;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+        }
+    }
+    &__paragraph {
+        margin-top: 20px;
+    }
+    &__paragraph, &__paragraph p {
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 26px;
+        color: #485159;
+
+    }
+    &__btn {
+        position: relative;
+        margin-top: 20px;
+        z-index: map_get($z-indexes, low);
+    }
+    img {
+        flex: 1;
+    }
+}

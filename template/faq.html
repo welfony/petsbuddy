@@ -1,0 +1,67 @@
+{% extends "layouts/default.html" %}
+{% set title = "FAQ - PetsBuddy" %}
+
+{% block content %}
+
+<div class="section section--has-medium-padding-top">
+  <div class="container container--has-padding-mobile">
+    <h2 class="section__header section__header--has-bigger-mg-b header">Check our frequently asked questions!</h2>
+    <div class="accordion accordion--is-rounded accordion--has-color-green js-accordion" data-scroll-speed="500"
+      data-scroll-offset="0" data-can-have-multiple-items-opened="false" data-open-item-animation="slide"
+      data-slide-duration="300" data-scroll-to-item-when-opened="false">
+      <ul class="accordion__list">
+        <li class="accordion__item js-accordion-item">
+          <div class="accordion__item-button grid grid--justify-space-between js-accordion-item-button">
+            <span>How should I read the "Best Before Date" on your bags?</span>
+            <span class="accordion__item-button-right-icon"></span>
+          </div>
+          <div class="accordion__item-content js-accordion-item-content">
+            <p>
+              There are currently 2 formats of &quot;Best Before Date&quot; on our Pronature bags.&nbsp; Here&#39;s a
+              quick view on how to understand the dates.
+            </p>
+          </div>
+        </li>
+        <li class="accordion__item js-accordion-item">
+          <div class="accordion__item-button grid grid--justify-space-between js-accordion-item-button">
+            <span>Is it normal to find food crumbs at the bottom of the bag?</span>
+            <span class="accordion__item-button-right-icon"></span>
+          </div>
+          <div class="accordion__item-content js-accordion-item-content">
+            <p>Yes, it is perfectly normal. As for all dry food products sold in bags, the friction between food pieces
+              during transport or handling can sometimes cause small breakages. Just think of your breakfast cereal or
+              chips. Inevitably, there are smaller broken pieces at the bottom of the bag.
+            </p>
+            <p>&nbsp;
+
+            </p>
+            <p>
+              We pay particular attention to finding solutions that minimize the crumbling effect in our pet foods.
+              Quality checks are done on each produced lot to make sure we always stay within the accepted food industry
+              standard, in terms of the amount of crumbs obtained.
+            </p>
+          </div>
+        </li>
+        <li class="accordion__item js-accordion-item">
+          <div class="accordion__item-button grid grid--justify-space-between js-accordion-item-button">
+            <span>Can I still feed my pet with your food after the expiry date?</span>
+            <span class="accordion__item-button-right-icon"></span>
+          </div>
+          <div class="accordion__item-content js-accordion-item-content">
+            <p>We can guarantee the freshness of a product until the expiry date written on the bag only. After this
+              date, we are unable to determine if this product can be consumed without risk tp pet&#39;s health.&nbsp;
+            </p>
+            <p><br />
+              One thing is certain, as time goes, it increases the likelihood that some products will be rancid. The
+              level of vitamins may have gone down and the taste may be altered over time, drastically reducing
+              palatability and overall performance of the food.</p>
+            <p><br />
+              We do not recommend to offer our foods beyond this expiry date.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

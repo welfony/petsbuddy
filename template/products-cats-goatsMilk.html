@@ -1,0 +1,151 @@
+{% extends "layouts/default.html" %} 
+{% set title = "Goatsmilk - PetsBuddy" %}
+
+{% block content %}
+
+<div class="banner banner--no-fixed-height">
+  <div class="banner__container grid grid--justify-center grid--align-end">
+    <div class="banner__logo-wrapper">
+      <img
+        class="banner__logo"
+        src="img/Goatsmilk-logo.png"
+        alt="Pronature Holistic logo"
+      />
+    </div>
+    <div class="banner__title-wrapper">
+      <h2
+        class="banner__header header header--is-color-white header--is-normal-size-2 font-weight-extra-light"
+      >
+        A world of wisdom in every bite
+      </h2>
+    </div>
+  </div>
+</div>
+
+<div class="container container--has-padding-mobile">
+  <div
+    class="section section--has-medium-padding-top section--has-big-padding-bottom section--has-smaller-padding-bottom-mobile"
+  >
+    <div class="title-content">
+      <a name="list"></a>
+      <h3
+        class="header font-weight-extra-light header--is-smaller-mobile text-left-md-up title-content__title"
+      >
+        Our products
+      </h3>
+
+      <div class="cards-list js-products grid js-products-row">
+        <!-- Product begin -->
+        <div class="cards-list__card-wrapper grid__col-12 grid__col-sm-6">
+          <a
+            class="cards-list__card card card--has-padding-bottom grid grid--direction-column grid--align-center js-card js-product animated"
+            href="product-3.html"
+          >
+            <div
+              class="card__img-container card__img-container--is-higher-on-hover"
+            >
+              <picture>
+                <source
+                  media="(min-width: 100%)"
+                  srcset="
+                  ../img/nav/GoatsMilk-for-Cat.png,
+                  ../img/nav/GoatsMilk-for-Cat.png 2x
+                  "
+                  type="image/png"
+                />
+
+                <img
+                  class="card__img js-product-img"
+                  src="../img/nav/GoatsMilk-for-Cat.png"
+                  alt="Product Image"
+                />
+              </picture>
+            </div>
+
+            <div class="card__title">
+              <h2
+                class="card__header card__header--is-gray-on-hover header header--is-small-size font-weight-bold text-uppercase"
+              >
+                GoatsMilk for Cat
+              </h2>
+
+              <div class="card__separator"></div>
+
+              <h3
+                class="card__subheader header header--is-smaller-size-2 font-weight-light text-uppercase"
+              >
+                All Breeds
+              </h3>
+              <h4
+                class="card__sub-sub-header font-weight-bold header--is-default-size"
+              >
+                All Life Stages
+              </h4>
+              <h5
+                class="card__title-footer header header--is-smallest-size-2 font-weight-bold font-italic"
+              >
+                Large Bites
+              </h5>
+            </div>
+          </a>
+        </div>
+        <div class="cards-list__card-wrapper grid__col-12 grid__col-sm-6">
+          <a
+            class="cards-list__card card card--has-padding-bottom grid grid--direction-column grid--align-center js-card js-product animated"
+            href="product-4.html"
+          >
+            <div
+              class="card__img-container card__img-container--is-higher-on-hover"
+            >
+              <picture>
+                <source
+                  media="(min-width: 100%)"
+                  srcset="
+                  ../img/nav/Kitten-Replacement.png,
+                  ../img/nav/Kitten-Replacement.png 2x
+                  "
+                  type="image/png"
+                />
+
+                <img
+                  class="card__img js-product-img"
+                  src="../img/nav/Kitten-Replacement.png"
+                  alt="Product Image"
+                />
+              </picture>
+            </div>
+
+            <div class="card__title">
+              <h2
+                class="card__header card__header--is-gray-on-hover header header--is-small-size font-weight-bold text-uppercase"
+              >
+                Kitten Replacement
+              </h2>
+
+              <div class="card__separator"></div>
+
+              <h3
+                class="card__subheader header header--is-smaller-size-2 font-weight-light text-uppercase"
+              >
+                All Breeds
+              </h3>
+              <h4
+                class="card__sub-sub-header font-weight-bold header--is-default-size"
+              >
+                All Life Stages
+              </h4>
+              <h5
+                class="card__title-footer header header--is-smallest-size-2 font-weight-bold font-italic"
+              >
+                Large Bites
+              </h5>
+            </div>
+          </a>
+        </div>
+        <!-- Product end -->
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

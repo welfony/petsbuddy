@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+  <title>Goatsmilk - PetsBuddy</title>
+  <meta name="description" content="" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <!-- build:css -->
+  <link rel="stylesheet" href="css/app.css" />
+  <!-- endbuild -->
+  <link rel="stylesheet" href="css/slick.min.css" />
+
+  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css" />
+
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
+  <script src="./plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+</head>
+
+<body class="preload page_home">
+
+  <nav
+    class="navbar is-homepage js-navbar"
+    data-mobile-menu-slide-speed="500"
+    data-subnavbar-slide-speed="500"
+    data-has-sticky-navbar="true"
+    data-sticky-navbar-scroll-trigger-height="500"
+  >
+  <div class="navbar__mobile-container grid grid--justify-space-between grid--align-center hidden-sm-up">
+    <a href="/">
+    <picture>
+      <source media="(max-width: 768px)"
+      srcset="img/responsive/logo-header.png, img/responsive/logo-header@2x.png 2x"></source>
+      <img
+        class="navbar__item-link-logo navbar__item-link-logo--is-big js-navbar-logo-big"
+        src="img/responsive/logo-header.png"
+        alt="Logo" />
+    </picture>
+    </a>
+    <div class="grid grid--align-center">
+    <div class="navbar__hamburger hamburger js-hamburger">
+      <div class="navbar__hamburger-line hamburger__line"></div>
+      <div class="navbar__hamburger-line hamburger__line"></div>
+      <div class="navbar__hamburger-line hamburger__line"></div>
+      <div class="navbar__hamburger-line hamburger__line"></div>
+    </div>
+    </div>
+    <div class="mobile-menu js-mobile-menu js-modal-full-screen">
+      <div class="mobile-menu__content">
+        <div class="mobile-menu__top-section grid grid--justify-space-between grid--align-center">
+        <a
+          class="mobile-menu__top-section-back-btn back-btn js-mobile-menu-back-btn"
+          href="javascript:void(0)">
+          <img class="back-btn__img" src="img/icon-back-mobile-menu.png" alt="Close submenu button" />
+          <span class="back-btn__text back-btn__text--is-dark">retour</span>
+        </a>
+        <div class="mobile-menu__hamburger hamburger js-hamburger is-opened">
+          <div class="mobile-menu__hamburger-line hamburger__line"></div>
+          <div class="mobile-menu__hamburger-line hamburger__line"></div>
+          <div class="mobile-menu__hamburger-line hamburger__line"></div>
+          <div class="mobile-menu__hamburger-line hamburger__line"></div>
+        </div>
+        </div>
+        <ul class="mobile-menu__main-sections-thumbnails main-sections-thumbnails grid">
+          <li class="main-sections-thumbnails__thumbnail main-sections-thumbnails__thumbnail--has-no-border-radius main-sections-thumbnails__thumbnail--has-bg-black main-sections-thumbnails__thumbnail--is-taller">
+            <a
+              class="grid grid--align-center grid--justify-center grid--direction-column js-mobile-submenu-trigger"
+              href="javascript:void(0)"
+              data-submenu-id="submenu-dog">
+              <img
+                class="main-sections-thumbnails__thumbnail-icon dog"
+                src="img/Goatsmilk.png"
+                alt="Dogs icon" />
+              <span class="mobile-menu__main-sections-thumbnails-text main-sections-thumbnails__thumbnail-text">Goatsmilk</span>
+            </a>
+          </li>
+          <li class="main-sections-thumbnails__thumbnail main-sections-thumbnails__thumbnail--has-no-border-radius main-sections-thumbnails__thumbnail--has-bg-black main-sections-thumbnails__thumbnail--is-taller">
+            <a
+              class="grid grid--align-center grid--justify-center grid--direction-column js-mobile-submenu-trigger"
+              href="javascript:void(0)"
+              data-submenu-id="submenu-cat">
+              <img
+                class="main-sections-thumbnails__thumbnail-icon cat"
+                src="img/Treats.png"
+                alt="Cats icon" />
+              <span class="mobile-menu__main-sections-thumbnails-text main-sections-thumbnails__thumbnail-text">Treats</span>
+            </a>
+          </li>
+        </ul>
+        <div class="mobile-menu__main-content-container js-mobile-main-menu">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__list-item grid grid--align-center">
+              <a class="mobile-menu__link" href="about-us.html">
+                About Us
+              </a>
+            </li>
+            <li class="mobile-menu__list-item grid grid--align-center">
+              <a class="mobile-menu__link" href="contact-us.html">
+                Contact
+              </a>
+            </li>
+            <li class="mobile-menu__list-item grid grid--align-center">
+              <a class="mobile-menu__link" href="faq.html">
+                FAQ
+              </a>
+            </li>
+          </ul>
+          <a class="mobile-menu__btn text-uppercase btn" href="distributors.html">
+            Where to buy
+          </a>
+        </div>
+
+        <div class="mobile-menu__sub-content-container js-mobile-submenu" id="submenu-cat">
+          <div class="mobile-menu__sub-content-section mobile-menu__sub-content-section--has-smaller-margin-top">
+            <h2 class="header header--has-underline header--is-smaller-below-desktop header--is-primary-color">
+              Choose
+            </h2>
+            <ul class="mobile-menu__sub-content-section-container mobile-menu__sub-content-section-container--has-padding">
+              
+              <a
+                class="mobile-menu__thumbnail grid grid--align-center"
+                href="products-1.html">
+                <div class="mobile-menu__thumbnail-left-section grid grid--align-center grid--justify-center">
+                <img
+                  class="mobile-menu__thumbnail-icon"
+                  src="img/nav/Roo-Jerky.png"
+                  alt="Holistic logo" />
+                </div>
+                <div class="mobile-menu__thumbnail-text">
+                  <h4 class="mobile-menu__thumbnail-preheader">PETSBUDDY</h4>
+                  <h3 class="mobile-menu__thumbnail-header">Air Dried</h3>
+                </div>
+              </a>
+
+              <a
+                class="mobile-menu__thumbnail grid grid--align-center"
+                href="prouducts-treats.html">
+                <div class="mobile-menu__thumbnail-left-section grid grid--align-center grid--justify-center">
+                <img
+                  class="mobile-menu__thumbnail-icon"
+                  src="img/nav/Freeze-Dried-Meat.png"
+                  alt="Original logo" />
+                </div>
+                <div class="mobile-menu__thumbnail-text">
+                  <h4 class="mobile-menu__thumbnail-preheader">PETSBUDDY</h4>
+                  <h3 class="mobile-menu__thumbnail-header">Freeze Dried</h3>
+                </div>
+              </a>
+              
+            </ul>
+          </div>
+        </div>
+
+        <div class="mobile-menu__sub-content-container js-mobile-submenu" id="submenu-dog">
+          <div class="mobile-menu__sub-content-section mobile-menu__sub-content-section--has-smaller-margin-top">
+            <h2 class="header header--has-underline header--is-smaller-below-desktop header--is-primary-color">
+              Choose
+            </h2>
+            <ul class="mobile-menu__sub-content-section-container mobile-menu__sub-content-section-container--has-padding">
+
+              <a
+                class="mobile-menu__thumbnail grid grid--align-center"
+                href="product-1.html">
+                <div class="mobile-menu__thumbnail-left-section grid grid--align-center grid--justify-center">
+                  <img
+                    class="mobile-menu__thumbnail-icon"
+                    src="img/nav/GoatsMilk-for-Dog.png"
+                    alt="Life logo" />
+                </div>
+                <div class="mobile-menu__thumbnail-text">
+                  <h4 class="mobile-menu__thumbnail-preheader">PETSBUDDY</h4>
+                  <h3 class="mobile-menu__thumbnail-header">GoatsMilk for Dog</h3>
+                </div>
+              </a>
+
+              <a
+                class="mobile-menu__thumbnail grid grid--align-center"
+                href="product-2.html">
+                <div class="mobile-menu__thumbnail-left-section grid grid--align-center grid--justify-center">
+                  <img
+                    class="mobile-menu__thumbnail-icon"
+                    src="img/nav/Puppy-Replacement.png"
+                    alt="Holistic logo" />
+                </div>
+                <div class="mobile-menu__thumbnail-text">
+                  <h4 class="mobile-menu__thumbnail-preheader">PETSBUDDY</h4>
+                  <h3 class="mobile-menu__thumbnail-header">Puppy Replacement</h3>
+                </div>
+              </a>
+
+              <a
+                class="mobile-menu__thumbnail grid grid--align-center"
+                href="product-3.html">
+                <div class="mobile-menu__thumbnail-left-section grid grid--align-center grid--justify-center">
+                  <img
+                    class="mobile-menu__thumbnail-icon"
+                    src="img/nav/GoatsMilk-for-Cat.png"
+                    alt="Original logo" />
+                </div>
+                <div class="mobile-menu__thumbnail-text">
+                <h4 class="mobile-menu__thumbnail-preheader">PETSBUDDY</h4>
+                <h3 class="mobile-menu__thumbnail-header">GoatsMilk for Cat</h3>
+                </div>
+              </a>
+
+              <a
+                class="mobile-menu__thumbnail grid grid--align-center"
+                href="product-4.html">
+                <div class="mobile-menu__thumbnail-left-section grid grid--align-center grid--justify-center">
+                  <img
+                    class="mobile-menu__thumbnail-icon"
+                    src="img/nav/Kitten-Replacement.png"
+                    alt="Original logo" />
+                </div>
+                <div class="mobile-menu__thumbnail-text">
+                <h4 class="mobile-menu__thumbnail-preheader">PETSBUDDY</h4>
+                <h3 class="mobile-menu__thumbnail-header">Kitten Replacement</h3>
+                </div>
+              </a>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar__container grid grid--justify-space-between grid--align-center hidden-xs-down">
+    <div class="navbar__section">
+      <ul class="navbar__list grid">
+
+        <li class="navbar__item navbar__hamburger grid grid--align-center grid--justify-center">
+          <div class="hamburger js-sidebar-toggle">
+            <div class="navbar__hamburger-line hamburger__line"></div>
+            <div class="navbar__hamburger-line hamburger__line"></div>
+            <div class="navbar__hamburger-line hamburger__line"></div>
+            <div class="navbar__hamburger-line hamburger__line"></div>
+          </div>
+        </li>
+
+        <li class="navbar__item">
+          <ul class="navbar__main-sections-thumbnails main-sections-thumbnails grid">
+            <li
+              class="navbar__item main-sections-thumbnails__thumbnail dog">
+              <a
+                class="navbar__item-link grid grid--align-center grid--justify-center grid--direction-column js-subnavbar-trigger"
+                href="javascript:void(0)"
+                data-subnavbar-id="subnavbar-dog">
+                <img
+                  class="main-sections-thumbnails__thumbnail-icon dog"
+                  src="img/Goatsmilk.png"
+                  alt="Dogs icon" />
+                <span class="main-sections-thumbnails__thumbnail-text">Goatsmilk</span>
+              </a>
+            </li>
+
+            <li class="navbar__item main-sections-thumbnails__thumbnail roo">
+              <a
+                class="navbar__item-link grid grid--align-center grid--justify-center grid--direction-column js-subnavbar-trigger"
+                href="javascript:void(0)"
+                data-subnavbar-id="subnavbar-roo">
+                <img
+                  class="main-sections-thumbnails__thumbnail-icon roo"
+                  src="img/Treats.png" alt="Roos icon" />
+                <span class="main-sections-thumbnails__thumbnail-text">Treats</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar__middle-section">
+      <a href="/">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="img/responsive/logo-header-sticky.png, img/responsive/logo-header-sticky@2x.png 2x"></source>
+          <img
+            class="navbar__item-link-logo"
+            src="img/responsive/logo-header.png"
+            alt="PetsBuddy small logo" />
+        </picture>
+      </a>
+    </div>
+
+    <div class="navbar__section navbar__section--small height-auto grid grid--justify-end">
+      <ul class="navbar__list grid grid--justify-end">
+        <li class="navbar__item navbar__item--has-padding height-auto navbar__item--has-separator-after grid grid--align-center">
+          <a class="navbar__item-link darker-on-hover font-weight-semi-bold" href="blogs-1.html">
+            Blogs
+          </a>
+        </li>
+        <li class="navbar__item navbar__item--has-padding height-auto navbar__item--has-separator-hider grid grid--align-center">
+          <a class="navbar__item-link navbar__item-link--has-padding darker-on-hover font-weight-semi-bold" href="distributors.html">
+            Where to buy
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>  <div class="subnavbar js-subnavbar" id="subnavbar-dog">
+  <div class="grid">
+    <div class="subnavbar__section subnavbar__section--first">
+      <h2
+        class="header header--has-underline header--is-primary-color header--is-smaller-below-desktop font-weight-bold">
+        Choose</h2>
+
+      <ul class="subnavbar__section-content-container grid">
+        <a class="subnavbar__thumbnail grid__col-sm-3" href="product-1.html">
+          <h4 class="subnavbar__thumbnail-preheader">Dog</h4>
+          <h3 class="subnavbar__thumbnail-header">GoatsMilk</h3>
+          <img class="subnavbar__thumbnail-img" src="img/nav/GoatsMilk-for-Dog.png" />
+        </a>
+
+        <a class="subnavbar__thumbnail grid__col-sm-3" href="product-2.html">
+          <h4 class="subnavbar__thumbnail-preheader">Puppy</h4>
+          <h3 class="subnavbar__thumbnail-header">Replacement</h3>
+          <img class="subnavbar__thumbnail-img" src="img/nav/Puppy-Replacement.png" />
+        </a>
+
+        <a class="subnavbar__thumbnail grid__col-sm-3" href="product-3.html">
+          <h4 class="subnavbar__thumbnail-preheader">Cat</h4>
+          <h3 class="subnavbar__thumbnail-header">GoatsMilk</h3>
+          <img class="subnavbar__thumbnail-img" src="img/nav/GoatsMilk-for-Cat.png" />
+        </a>
+
+        <a class="subnavbar__thumbnail grid__col-sm-3" href="product-4.html">
+          <h4 class="subnavbar__thumbnail-preheader">Kitten</h4>
+          <h3 class="subnavbar__thumbnail-header">Replacement</h3>
+          <img class="subnavbar__thumbnail-img" src="img/nav/Kitten-Replacement.png" />
+        </a>
+      </ul>
+    </div>
+
+    <div
+  class="subnavbar__section subnavbar__section--third subnavbar__section--has-background has-smaller-background-size-xxl">
+  <h2 class="header header--has-underline header--is-primary-color header--is-smaller-below-desktop font-weight-bold">
+    Explore Us
+  </h2>
+  <div class="subnavbar__section-content-container">
+    <a class="darker-on-hover" href="explore-us.html">
+      <h6 class="subnavbar__section-content-header-small font-weight-bold">
+        The inspiration behind
+      </h6>
+      <h6 class="subnavbar__section-content-header-small subnavbar__section-content-header-small--is-light">
+        of our PetsBuddy pet food
+      </h6>
+    </a>
+  </div>
+</div>  </div>
+</div>
+
+<div class="subnavbar js-subnavbar" id="subnavbar-roo">
+  <div class="grid">
+    <div class="subnavbar__section subnavbar__section--first">
+      <h2
+        class="header header--has-underline header--is-primary-color header--is-smaller-below-desktop font-weight-bold">
+        Choose</h2>
+
+      <ul class="subnavbar__section-content-container grid">
+
+        <a class="subnavbar__thumbnail grid__col-sm-6" href="products-1.html">
+          <h4 class="subnavbar__thumbnail-preheader">Air Dried</h4>
+          <h3 class="subnavbar__thumbnail-header">Roo Jerky</h3>
+          <img class="subnavbar__thumbnail-img" src="img/nav/Roo-Jerky.png" />
+        </a>
+
+        <a class="subnavbar__thumbnail grid__col-sm-6" href="products-2.html">
+          <h4 class="subnavbar__thumbnail-preheader">Freeze Dried</h4>
+          <h3 class="subnavbar__thumbnail-header">Roo Meat Cube</h3>
+          <img class="subnavbar__thumbnail-img" src="img/nav/Freeze-Dried-Meat.png" />
+        </a>
+
+      </ul>
+    </div>
+
+    <div
+  class="subnavbar__section subnavbar__section--third subnavbar__section--has-background has-smaller-background-size-xxl">
+  <h2 class="header header--has-underline header--is-primary-color header--is-smaller-below-desktop font-weight-bold">
+    Explore Us
+  </h2>
+  <div class="subnavbar__section-content-container">
+    <a class="darker-on-hover" href="explore-us.html">
+      <h6 class="subnavbar__section-content-header-small font-weight-bold">
+        The inspiration behind
+      </h6>
+      <h6 class="subnavbar__section-content-header-small subnavbar__section-content-header-small--is-light">
+        of our PetsBuddy pet food
+      </h6>
+    </a>
+  </div>
+</div>  </div>
+</div>
+  
+<div class="banner banner--has-fixed-height banner--has-dynamic-background-image banner--has-darker-bg"
+  style="background-image: url(../img/banner/banner_five.jpg);">
+  <div class="banner__back-btn-wrapper">
+    <a onclick="javascript:history.go(-1);">
+      <div class="banner__back-btn back-btn">
+        <img class="back-btn__img" src="img/icon-back-white.png" alt="Back Button">
+        <span class="back-btn__text">back</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="banner__container container container--is-smaller grid">
+    <div class="banner__left-section grid__col-12 grid__col-sm-6 grid--justify-center grid--align-start">
+      <h1
+        class="banner__left-section-header header header--is-color-white header--is-biggest text-left text-center-xs-down text-uppercase">
+        INFINITI &gt;&gt; BERRIES+
+      </h1>
+
+      <div class="banner__sub-main-title grid grid--align-center">
+        <h3
+          class="header header--is-color-white header--is-sub-section-header header--is-small-xs-down text-uppercase font-weight-extra-light">
+          All Life Stages
+        </h3>
+        <div class="banner__sub-main-title-separator"></div>
+        <h3 class="header header--is-color-white header--is-small-size header--is-small-xs-down font-weight-normal">
+          All Breeds
+        </h3>
+      </div>
+      <div class="banner__small-text">with deboned salmon</div>
+    </div>
+
+    <div class="grid__col-12 grid__col-sm-6 grid--justify-center grid--direction-row">
+      <div class="banner__img-wrapper">
+        <picture>
+          <source media="(min-width: 992px)"
+            srcset="../img/detailsbanner/445/dental-bone.png 2x"
+            type="image/png">
+
+          <source media="(min-width: 767px)"
+            srcset="../img/detailsbanner/350/dental-bone.png 2x"
+            type="image/png">
+
+          <source media="(min-width: 0px)"
+            srcset="../img/detailsbanner/250/dental-bone.png 2x"
+            type="image/png">
+
+          <img class="banner__img"
+            src="../img/detailsbanner/445/dental-bone.png"
+            alt="Product Image"
+            width="445"
+            >
+        </picture>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="section section--has-smaller-padding-bottom section--has-smaller-padding-top-below-desktop">
+    <div class="container container--has-padding-mobile">
+      <div class="grid">
+        <div class="grid_row">
+          <div class="main col-md-12">
+              <h1 class="page-title">Roo Dental Bone 1pc</h1>
+              <div class="separator-2"></div>
+              <div class="grid_row col-md-12">
+                  <h2>Description</h2>
+                  <p>It is beneficial for pets to keep dental health. Our 100% natural kangaroo meats are all from local regional farmers and hunters in South Australia, New South Wales and Victoria, and retain all of the natural goodness of authentically fresh kangaroo meat, such as CLAs and PUFA, enriching with unsaturated fatty acids, vitamins and minerals. Every kangaroo treats are high in protein and low in fat to keep your pets healthy.</p>
+                  <p>We do not use preservatives, colour or artificial flavours. All the treats are prepared without cooking and gently air-dried in our kitchen, to lock in natural, delicious goodness for a pure and tasty treat. Great for dogs, and for those who have food allergies or need single protein.</p>
+                  <hr class="mb-10">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="pv-30 light-gray-bg">
+    <div class="container">
+      <div class="grid_row">
+        <div class="col-md-8">
+          <h4 class="space-top">Specifications</h4>
+          <hr>
+          <dl class="dl-horizontal">
+              <dt>Ingredients</dt>
+              <dd>Kangaroo Clod Bone</dd>
+              <dt>Typical Analysis</dt>
+              <dd>Protein > 50%      Fat < 8%      Moisture < 5%</dd>
+              <dt>Storage</dt>
+              <dd>Keep treats stay fresh when they are stored in a cool and dry environment. Keep bag sealed after opening.</dd>
+              <dt>Minerals</dt>
+              <dd>Calcium, sodium, magnesium, zinc, iron, manganese, iodine, selenium, potassium. </dd>
+              <dt>Feeding Guide</dt>
+              <dd>It is intended for supplemental feeding only, feed as a snack. This means that your pets would love our treats, they still need complete and balanced diet. Always ensure your pet has access to fresh drinking water and shade.</dd>
+            </dl>
+            <hr>
+        </div>
+        <div class="col-md-4 col-lg-3 col-lg-offset-1">
+          <div class="sidebars">
+            <div class="block clearfix">
+                <h3 class="title">Categories</h3>
+                <div class="separator-2"></div>
+                <nav>
+                    <ul class="nav nav-pills nav-stacked list-style-icons">
+                      <li>
+                        <a href="products-goatsMilk.html">
+                          <i class="fa fa-caret-right pr-10"></i>GoatsMilk</a>
+                      </li>
+                      <li>
+                        <a href="products-treats.html">
+                          <i class="fa fa-caret-right pr-10"></i>Roo Treats</a>
+                      </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="block clearfix">
+                <h3 class="title">Related Products</h3>
+                <div class="separator-2"></div>
+                <div class="media margin-clear">
+                  <div class="media-left">
+                    <div class="overlay-container">
+                      <img class="media-object" src="../img/product_list/roo-jerky.png" alt="blog-thumb">
+                      <a href="product-jerky.html" class="overlay-link small">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <a href="product-jerky.html">Roo Jerky</a>
+                    </h6>
+                    <p class="margin-clear">
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                    </p>
+                    <p class="price">Air Dried</p>
+                  </div>
+                  <hr>
+                </div>
+                <div class="media margin-clear">
+                  <div class="media-left">
+                    <div class="overlay-container">
+                      <img class="media-object" src="../img/product_list/Freeze-Dried-Lung&Liver.png" alt="blog-thumb">
+                      <a href="product-liverCube.html" class="overlay-link small">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <a href="product-liverCube.html">Roo Lung&Liver Cube</a>
+                    </h6>
+                    <p class="margin-clear">
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                    </p>
+                    <p class="price">Freeze Dried</p>
+                  </div>
+                  <hr>
+                </div>
+                <div class="media margin-clear">
+                  <div class="media-left">
+                    <div class="overlay-container">
+                      <img class="media-object" src="../img/detailsbanner/250/dental-bone.png" alt="blog-thumb">
+                      <a href="product-bone.html" class="overlay-link small">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <a href="product-bone.html">Dental Bone</a>
+                    </h6>
+                    <p class="margin-clear">
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                    </p>
+                    <p class="price">Air Dried</p>
+                  </div>
+                  <hr>
+                </div>
+                <div class="media margin-clear">
+                  <div class="media-left">
+                    <div class="overlay-container">
+                      <img class="media-object" src="../img/detailsbanner/250/roo-tail.png" alt="blog-thumb">
+                      <a href="product-tail.html" class="overlay-link small">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <a href="product-tail.html">Roo Tail</a>
+                    </h6>
+                    <p class="margin-clear">
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                    </p>
+                    <p class="price">Air Dried</p>
+                  </div>
+                  <hr>
+                </div>
+                <div class="media margin-clear">
+                  <div class="media-left">
+                    <div class="overlay-container">
+                      <img class="media-object" src="../img/detailsbanner/250/roo-tendon.png" alt="blog-thumb">
+                      <a href="product-tendon.html" class="overlay-link small">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <a href="product-tendon.html">Roo Tendon</a>
+                    </h6>
+                    <p class="margin-clear">
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                    </p>
+                    <p class="price">Air Dried</p>
+                  </div>
+                  <hr>
+                </div>
+                <div class="media margin-clear">
+                  <div class="media-left">
+                    <div class="overlay-container">
+                      <img class="media-object" src="../img/detailsbanner/250/Freeze-Dried-Meat.png" alt="blog-thumb">
+                      <a href="product-meatCube.html" class="overlay-link small">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <a href="product-meatCube.html">Roo Meat Cube</a>
+                    </h6>
+                    <p class="margin-clear">
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                      <i class="fa fa-star text-default"></i>
+                    </p>
+                    <p class="price">Freeze Dried</p>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="grid grid--direction-column">
+      <div class="footer__horizontal-section footer__horizontal-section--has-padding-bottom grid grid--justify-center">
+
+        <div class="grid__col-12 grid__col-sm-6">
+          <div class="footer__item grid grid--justify-space-between grid--direction-column grid--align-center">
+            <h2 class="header header--is-color-white header--is-smaller-size-4 font-weight-light">Where to buy PetsBuddy
+            </h2>
+            <picture>
+              <img class="footer__img" src="img/food-bags-footer.png" alt="Bags of animal food" />
+            </picture>
+            <a href="distributors.html" class="btn btn--has-small-padding btn--has-sides-padding text-uppercase">
+              Distributors</a>
+          </div>
+        </div>
+
+        <div class="grid__col-12 grid__col-sm-6">
+          <div
+            class="footer__item footer__item--is-bottom-on-mobile grid grid--justify-space-between grid--direction-column">
+            <h2 class="header header--is-color-white header--is-smaller-size-4 font-weight-light">Let’s stay in touch!
+            </h2>
+            <p class="footer__paragraph">
+              Thanks for your support. We would love to hear from you. If you have any question, please leave your email box and we will be in touch!
+            </p>
+            <div class="form">
+              <div class="form__input-container form__input-container--has-icon-right">
+                <input class="form__input form__input--has-white-placeholder"
+                  placeholder="ENTER YOUR EMAIL" style="cursor:pointer" />
+                <a class="form__input-icon form__input-icon--is-same-width-sm-down"
+                  href="javascript:;" data-modal-id="modal-newsletter">
+                  <img class="form__input-icon-img" src="img/icon-search.png" alt="Search icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__horizontal-section grid grid--direction-column">
+        <div class="footer__content-row grid grid--align-center">
+
+          <div class="footer__bottom-section grid__col-sm-6 grid--direction-row">
+            <a class="footer__word" href="contact-us.html">Contact</a>
+            <a class="footer__word" href="about-us.html">About Us</a>
+            <a class="footer__word" href="faq.html">FAQ</a>
+          </div>
+
+          <div class="footer__bottom-section grid__col-sm-6 grid--direction-row grid--justify-end">
+
+            <a class="footer__word darker-on-hover" href="https://www.facebook.com/AustraliaPetIndustryGroup"
+              target="_blank">
+              <i class="footer__icon fa fa-facebook" aria-hidden="true"></i>
+            </a>
+
+            <a class="footer__word darker-on-hover" href="https://twitter.com/AUpetindustry" target="_blank">
+              <i class="footer__icon fa fa-twitter" aria-hidden="true"></i>
+            </a>
+
+            <a class="footer__word darker-on-hover" href="https://www.youtube.com/channel/UCLAvZ_Q-ZPDbz4XW0Y6cd-Q"
+              target="_blank">
+              <i class="footer__icon fa fa-youtube" aria-hidden="true"></i>
+            </a>
+
+          </div>
+        </div>
+        <div class="footer__content-row grid grid--align-center">
+          <div class="footer__bottom-section grid__col-sm-4 grid__col-md-6 grid--direction-row">
+          </div>
+          <div
+            class="footer__bottom-section footer__bottom-section--is-col-on-mobile grid__col-sm-8 grid__col-md-6 grid--direction-row grid--justify-end">
+            <span class="footer__word footer__word--small">
+              Copyright &copy; 2019 The Website by Australia Pet Industry Group. All Rights Reserved
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<script>
+  $(".form").click(function(){
+    window.location.href="contact-us.html";
+  })
+</script>
+  <aside
+  class="sidebar sidebar--is-left-of-screen js-sidebar is-homepage"
+  data-dimmer="false"
+  data-slide-content="false">
+
+  <div class="sidebar__btn-close-container grid grid--align-center grid--justify-center">
+    <a class="sidebar__btn-close js-sidebar-close">
+      <img
+        class="sidebar__btn-close-img"
+        src="img/icon-quit-x.png" alt="Quit button" />
+    </a>
+  </div>
+
+  <div class="sidebar__container grid grid--direction-column grid--justify-space-between">
+    <div>
+      <ul class="sidebar__list">
+        <li class="sidebar__list-item">
+          <a class="sidebar__list-item-link" href="about-us.html">
+            About Us
+          </a>
+        </li>
+        <li class="sidebar__list-item">
+          <a class="sidebar__list-item-link" href="distributors.html">
+            Distributors
+          </a>
+        </li>
+        <li class="sidebar__list-item">
+          <a class="sidebar__list-item-link" href="contact-us.html">Contact us</a>
+        </li>
+        <li class="sidebar__list-item">
+          <a class="sidebar__list-item-link" href="faq.html">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</aside>  <div class="modal js-modal" data-dimmer="true" id="modal-language">
+  <div class="modal__close-btn js-close-modal-btn">
+   <img src="img/icon-quit-x-black.png" alt="Quit button" />
+  </div>
+  <div class="modal__content">
+   <h3 class="modal__title header header--is-small-size">PetsBuddy around the World</h3>
+   <div class="modal__dropdown-container">
+    <select class="select-to-dropdown__select js-select-to-dropdown" id="site_changer_select" data-keep-select-behavior-mobile="true">
+      <option value="pronature.ca/fr-ca/" selected="">Canada</option>
+      <option value="china.pronaturepetfood.com/en-cn/">China</option>
+      <option value="greece.pronaturepetfood.com/el-gr/">Greece</option>
+      <option value="hongkong.pronaturepetfood.com/zh-hk/">HongKong</option>
+      <option value="malaysia.pronaturepetfood.com/en-my/">Malaysia</option>
+      <option value="poland.pronaturepetfood.com/pl-pl/">Poland</option>
+      <option value="taiwan.pronaturepetfood.com/en-tw/">Taiwan</option>
+      <option value="usa.pronaturepetfood.com/en-us/">Usa</option>
+     </select>
+   </div>
+   <a class="modal__btn btn" id="site_changer_submit">Visit the website</a>
+  </div>
+</div>  <div class="modal modal--has-iframe modal--is-large js-modal" data-dimmer="true" id="modal-newsletter">
+  <div class="modal__close-btn js-close-modal-btn">
+   <img src="img/icon-quit-x-black.png" alt="Quit button" />
+  </div>
+  <div class="modal__content modal__content--has-no-padding">
+   <iframe id="iframe-newsletter" data-src="/en-ca/newsletter/?email=" width="100%"></iframe>
+  </div>
+ </div>
+  <div class="dimmer js-dimmer"></div>
+
+  <script src="./js/common.min.js"></script>
+  <script src="./js/home.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+.nudged-img-section {
+    $percentageOfShadowInImage: 31;
+    @media screen and (max-width: map_get($breakpoints-max, xs)) {
+        padding: 0 20px;
+    }
+    &__img-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        text-align: center;
+        transform: translate(-312px, 0);
+        transition: transform map_get($transitions-times, normal), opacity map_get($transitions-times, slow);
+        &.animated {
+            transform: translate(-312px, -308px);
+        }
+        @media screen and (max-width: map_get($breakpoints-max, md)) {
+            transform: translate(-290px, 0%);
+
+            &.animated {
+                transform: translate(-290px, -308px);
+            }
+        }
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            transform: translate(-228px, 0%);
+            &.animated {
+                transform: translate(-228px, -242px);
+            }
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            position: relative;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            transform: translate(-30px, 0);
+            left: 0;
+            &.animated {
+                transform: translate(-30px, 0);
+            }
+        }
+    }
+    &__img {
+        display: block;
+        max-width: 445px;
+        margin: auto;
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            max-width: 350px;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            max-width: 250px;
+        }
+    }
+    &__img-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+    &__table-infos {
+        overflow: hidden;
+        position: relative;
+        z-index: map_get($z-indexes, lowest);
+        opacity: 0;
+        transform: translate(-80%, -20%);
+        transition: transform 1s, opacity 2s;
+        &.animated {
+            opacity: 1;
+            transform: translate(-30px, -20%);
+        }
+        @media screen and (max-width: map_get($breakpoints-max, md)) {
+            transform: translate(-80%, -10%);
+            &.animated {
+                transform: translate(-40px, -10%);
+            }
+        }
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            transform: translate(-20px, 0);
+            &.animated {
+                transform: translate(-20px, 0);
+            }
+        }
+    }
+    &__right-section-bottom {
+        margin-top: 35px;
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            justify-content: center;
+        }
+    }
+}

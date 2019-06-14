@@ -1,0 +1,197 @@
+// A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list
+//
+// If you want the dropdown__list to push the content below instead of being over it, add the 'dropdown__list--pos-static' class to the .dropdown.
+//
+/*
+
+    <div class="dropdown js-dropdown">
+     <a class="dropdown__btn js-dropdown-btn" href="javascript:void(0)">Dropdown name<i class="dropdown__caret fa fa-caret-down" aria-hidden="true"></i></a>
+         <ul class="dropdown__list js-dropdown-list">
+             <li class="dropdown__list-item">
+                <a href="#">Option name</a>
+             </li>
+             <li class="dropdown__list-item">
+                <a href="#">Option name</a>
+             </li>
+         </ul>
+     </div>
+
+*/
+.dropdown {
+    $block: &;
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    width: 300px;
+    &.extra-margin-bottom {
+        margin-bottom: 10px;
+    }
+    &--has-auto-width {
+        width: auto;
+        min-width: 150px;
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            min-width: 100px;
+        }
+    }
+    &--is-not-bordered {
+        .dropdown__btn {
+            border: none;
+            font-weight: 500;
+            &:before, &:after {
+                display: none;
+            }
+        }
+    }
+    @media screen and (max-width: map_get($breakpoints-max, xs)) {
+        width: 100%;
+    }
+    &__btn {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border: solid 1px #aaadb0;
+        padding: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: map_get($colors, gray-normal);
+        .dropdown--is-small & {
+            padding: 16px;
+        }
+        .dropdown--is-gray & {
+            color: #aaadb0;
+        }
+        .dropdown.white-btn-bg & {
+            background-color: white;
+        }
+        &.is-dirty {
+            color: black;
+        }
+        &--has-no-border {
+            border: none;
+            text-align: right;
+        }
+        &--has-border-bottom {
+            border-bottom: solid 1px #dedede;
+        }
+        &:before, &:after {
+            position: absolute;
+            right: 15px;
+            content: '\f0d7';
+            color: map_get($colors, gray-light-2);
+            font-family: FontAwesome, sans-serif;
+        }
+        &:before {
+            content: "\f0d8";
+            top: calc(50% - 5px);
+            transform: translateY(-50%);
+        }
+        &:after {
+            top: calc(50% + 5px);
+            transform: translateY(-50%);
+        }
+        &--no-double-caret {
+            justify-content: flex-end;
+            &:before, &:after {
+                display: none;
+            }
+        }
+        &--is-centered {
+            justify-content: center;
+        }
+        &--has-no-padding {
+            padding: 0;
+        }
+        &--has-no-padding-right {
+            padding-right: 0;
+        }
+        &--has-xs-h-padding {
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+        &--is-black {
+            color: black;
+            font-weight: 500;
+        }
+        &--is-not-uppercase, .dropdown--is-not-uppercase & {
+            text-transform: none;
+        }
+        &--has-bigger-font-size {
+            font-size: 16px;
+        }
+        &--has-caret {
+            &:after {
+                content: '\f107';
+                font-family: FontAwesome;
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                color: #c9c9c9;
+            }
+        }
+        .dropdown--has-small-padding-xs-down & {
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                padding: 5px 0;
+            }
+        }
+    }
+    &__caret {
+        padding-left: 10px;
+        &--is-right {
+            @extend .absolute-centered-element;
+            @extend .absolute-centered-element--is-centered-vertically;
+            right: 0;
+        }
+    }
+    &__list {
+        position: absolute;
+        display: none;
+        width: 100%;
+        max-height: 170px;
+        overflow-y: auto;
+        border-top: none;
+        &--is-bordered {
+            border-top: solid 1px #dedede;
+        }
+        &--has-no-max-height {
+            max-height: none;
+        }
+        z-index: map_get($z-indexes, higher);
+        #{$block}--has-pos-static-list & {
+            position: static;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            &--is-larger-sm-down {
+                width: 150%;
+            }
+            &--has-normal-width-sm-down {
+                width: 100%;
+            }
+        }
+    }
+    &__list-item {
+        background-color: white;
+        border: solid 1px #dedede;
+        border-top: none;
+        & > * {
+            display: block;
+            padding: 20px;
+            background-color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color map_get($transitions-times, normal), color map_get($transitions-times, normal);
+            &:hover {
+                color: #566d6a;
+            }
+        }
+    }
+    &__list-item-link {
+        display: block;
+        background-color: white;
+        text-decoration: none;
+        color: black;
+    }
+}

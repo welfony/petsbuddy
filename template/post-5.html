@@ -1,0 +1,134 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        PetsBuddy™ Pet Products Now Available in China in April 2018
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+          <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog5.jpg" alt="">
+                  <a href="img/blogs/blog5-o.jpg" class="popup-img overlay-link">
+                    <i class="icon-plus-1"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p>
+            Working with our best business partner—Beijing Margo Commercial & Trade Co., Australia Pet Industry
+            Group launched PetsBuddy™ formulated pet dairy products and roo pet treats onto Chinese market
+            through the 5th China Beijing International Pet Supplies Exhibition that has just passed in April.
+            This means that Chinese customers will have access to the highest quality nutrition supplements for
+            hand raising their dogs and cats.
+          </p>
+          <p>
+            PetsBuddy™ formulated goat milk products for dog and cat are based on the scientific and tested milk
+            formulas that have been successfully used in Australia for decades. Also we carefully choose the best
+            goat milk from Australian and New Zealand farms. They are a nutritionally balanced milk substitute
+            for your dogs and cats of all breeds and highly recommended by many breeders, veterinarians and pet
+            owners.
+          </p>
+          <p>
+            PetsBuddy™100% natural kangaroo treats are all from local regional farmers and hunters in South
+            Australia, New South Wales and Victoria. All the treats are prepared without cooking and gently
+            air-dried to lock in natural, delicious goodness for a pure and tasty treat. And also all products
+            are preservatives, artificial flavours and colour free.
+          </p>
+          <p>
+            Beijing Margo Commercial & Trade Co., Ltd, as our exclusive distributor and the most important
+            co-operator in Chinese market, is fully backed by the technical support and manufacturing expertise
+            of Australia Pet Industry Group. In the future, we are planning to provide Chinese customers with
+            more premium pet products.
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">Now in China</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}

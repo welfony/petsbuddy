@@ -1,0 +1,15 @@
+.link {
+    display: inline-block;
+    color: map_get($colors, gray-light-2);
+    text-decoration: underline;
+    font-weight: bold;
+    &--is-darker {
+        color: #718e7f;
+    }
+    &--has-no-text-decoration {
+        text-decoration: none;
+        span {
+            text-decoration: underline;
+        }
+    }
+}

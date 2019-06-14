@@ -1,0 +1,86 @@
+.form-thumbnails {
+    ul {
+        display: flex;
+        width: 100%;
+    }
+    li {
+        position: relative;
+        flex: 1;
+        height: 85px;
+        background-image: linear-gradient(to right, white, #f2f5f8);
+        cursor: pointer;
+        border-right: solid 1px white;
+        z-index: 1;
+        &:active,
+        &:focus {
+            background-image: linear-gradient(to right, white, #f2f5f8);
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(140deg, white 0%, white 50%, #c7cecd 100%);
+            transition: opacity map_get($transitions-times, normal);
+            z-index: map_get($z-indexes, lowest);
+            opacity: 0;
+        }
+        &.is-selected {
+            &:after {
+                opacity: 1;
+            }
+        }
+        @media screen and (min-width: 480px) {
+            &:hover{
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+        &:first-child {
+            label:after {
+                background-image: url('../img/icon-dog-header.png')
+            }
+        }
+        &:nth-child(2) {
+            label:after {
+                background-image: url('../img/icon-cat-header.png')
+            }
+        }
+        &:nth-child(3) {
+            label:after {
+                background-position: bottom;
+                width: 74px;
+                background-image: url('../img/icon-dog-and-cat-header.png')
+            }
+        }
+    }
+    input {
+        display: none;
+    }
+    label {
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        padding: 0 10px;
+        text-align: center;
+        font-weight: 500;
+        z-index: map_get($z-indexes, lower);
+        cursor: pointer;
+        &:after {
+            content: '';
+            display: block;
+            width: 43px;
+            height: 30px;
+            margin-top: 15px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}

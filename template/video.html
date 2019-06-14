@@ -1,0 +1,62 @@
+{% extends "layouts/default.html" %}
+{% set title = "Explore Us - PetsBuddy" %}
+
+{% block content %}
+
+<!-- video section start -->
+<section class="pv-30">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h2 class="text-center">Our
+          <strong>Videoes</strong>
+        </h2>
+        <div class="separator"></div>
+        <p class="lead text-center">
+          Experience PetsBuddy via vivid clips.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <br>
+        <div role="tabpanel">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="home">
+              <div class="embed-responsive embed-responsive-16by9">
+                <video id="player_1" style="max-width:100%;" poster="img/videos/poster-1.png" preload="none" controls
+                  playsinline webkit-playsinline>
+                  <source src="videos/PetsBuddy-Pet-Treats-540.mp4?raw=true" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <br>
+        <div role="tabpanel">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="home">
+              <div class="embed-responsive embed-responsive-16by9">
+                <video id="player_1" style="max-width:100%;" poster="img/videos/poster-2.png" preload="none" controls
+                  playsinline webkit-playsinline>
+                  <source src="videos/PetsBuddy-GoatsMilk-540.mp4?raw=true" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</section>
+<!-- video section end -->
+
+{% endblock %}

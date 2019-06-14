@@ -1,0 +1,10 @@
+.title-content {
+    &__title {
+        @media screen and (min-width: map_get($breakpoints-min, md)) {
+            margin-bottom: 80px;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, md)) {
+            margin-bottom: 40px;
+        }
+    }
+}

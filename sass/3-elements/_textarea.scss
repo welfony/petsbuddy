@@ -1,0 +1,8 @@
+// By default, a textarea can be resized. However, it can break the layout and make things ugly, so we disable it
+
+textarea {
+    min-height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    resize: none;
+}

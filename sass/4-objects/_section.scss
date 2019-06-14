@@ -1,0 +1,174 @@
+// Default CSS properties for a section of a page. Basically, it just sets the vertical padding, but you can add other properties like borders
+
+.section {
+    padding: 150px 0 180px 0;
+    background-color: white;
+    &--has-bg-transparent {
+        background-color: transparent;
+    }
+    &--has-bg-gray {
+        background-image: linear-gradient(to bottom, #fefefe, #f0f5fa);
+        //background-color: #f0f5fa;
+    }
+    &--has-medium-padding {
+        padding: 90px 0;
+    }
+    &--has-equal-padding {
+        padding: 135px 0;
+    }
+    &--has-small-padding {
+        padding: 65px 0;
+    }
+    &--has-no-padding {
+        padding: 0;
+    }
+    &--has-no-padding-top {
+        padding-top: 0;
+    }
+    &--has-no-padding-bottom {
+        padding-bottom: 0;
+    }
+    &--has-smaller-padding-top {
+        padding-top: 40px;
+    }
+    &--has-medium-padding-top {
+        padding-top: 90px;
+    }
+    &--has-medium-padding-bottom {
+        padding-bottom: 90px;
+    }
+    &--has-small-padding-bottom {
+        padding-bottom: 75px;
+    }
+    &--has-smaller-padding-bottom {
+        padding-bottom: 40px;
+    }
+    &--has-big-padding-bottom {
+        @media screen and (min-width: map_get($breakpoints-min, sm)) {
+            padding-bottom: 140px;
+        }
+    }
+    &--has-bigger-padding-bottom {
+        @media screen and (min-width: map_get($breakpoints-min, sm)) {
+            padding-bottom: 160px;
+        }
+    }
+    &--has-no-padding-top-desktop {
+        @media screen and (min-width: map_get($breakpoints-min, md)) {
+            padding-top: 0;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            padding-top: 65px;
+            padding-bottom: 65px;
+        }
+    }
+    &--has-no-padding-top-desktop-and-tablet {
+        @media screen and (min-width: map_get($breakpoints-min, sm)) {
+            padding-top: 0;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            padding-top: 50px;
+        }
+    }
+    &--has-subbanner-before {
+        @media screen and (min-width: map_get($breakpoints-min, sm)) {
+            margin-top: #{map_get($others, banner-nudged-height)};
+        }
+    }
+    @media screen and (max-width: map_get($breakpoints-max, sm)) {
+        &--has-smaller-padding-bottom-below-desktop {
+            padding-bottom: 65px;
+        }
+        &--has-smaller-padding-top-below-desktop {
+            padding-top: 65px;
+        }
+    }
+    @media screen and (max-width: map_get($breakpoints-max, xs)) {
+        &--has-no-padding-bottom-mobile {
+            padding-bottom: 0;
+        }
+        &--has-smaller-padding-bottom-mobile {
+            padding-bottom: 40px;
+        }
+        &--has-smaller-padding-top-mobile {
+            padding-top: 30px;
+        }
+    }
+    &--has-background-gradient {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(5deg, map_get($colors, gray-lightest-2) 0%, white 35%, white 100%);
+            transform: translateY(100%);
+            opacity: 0;
+            transition: transform map_get($transitions-times, normal), opacity map_get($transitions-times, really-slow);
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                background: linear-gradient(180deg, white 0%, map_get($colors, gray-lightest-2) 100%);
+            }
+        }
+        &.animated {
+            &:before {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+    }
+    &--has-parallax {
+        position: relative;
+        background-color: black;
+        overflow-y: hidden;
+        @media screen and (max-width: map-get($breakpoints-max, md)) {
+            padding: 90px 0;
+        }
+        @media screen and (max-width: map-get($breakpoints-max, xs)) {
+            padding-top: 80px;
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-image: linear-gradient(to left, #242425 0%, #242425 50%, transparent 70%);
+            @media screen and (max-width: map-get($breakpoints-max, xs)) {
+                left: 0;
+                right: auto;
+                z-index: 1;
+                background-image: linear-gradient(to bottom, #242425 0%, #242425 50%, transparent 70%);
+            }
+        }
+    }
+    &--is-nudged-higher {
+        position: relative;
+        z-index: map_get($z-indexes, low);
+    }
+    &--is-moved-higher {
+        margin-top: -100px;
+    }
+    &__header {
+        margin-bottom: 35px;
+        &--has-bigger-mg-b {
+            margin-bottom: 65px;
+        }
+        &--has-small-mg-b-xs-down {
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__subheader {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        &-icon {
+            margin-right: 5px;
+        }
+    }
+}

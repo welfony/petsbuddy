@@ -1,0 +1,154 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        3 Superfoods Growing Fast as Cat Food Trends
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+          <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog20.jpg" alt="">
+                  <a href="img/blogs/blog20-o.jpg" class="popup-img overlay-link">
+                    <i class="icon-plus-1"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p style="font-size: 18px">
+            Superfood ingredients in cat food
+          </p>
+          <p>
+            Restivo from Nielsen noted that cranberries are a fast growing trend in cat food. Currently, two
+            percent of cat foods sales are of products containing cranberries, according to Nielsen’s Product
+            Insider report. In the 52 weeks leading up to March 3, 2018, cat foods containing cranberries saw 54
+            percent sales dollar growth.
+          </p>
+          <p>
+            Another fast growing trend in cat food is sweet potato, Restivo said. Cat foods made with sweet
+            potatoes also make up two percent of total cat food sales. In the 52 weeks leading up to March 3,
+            2018, cat foods containing sweet potatoes had 19 percent dollar growth.
+          </p>
+          <p>
+            A third superfood Restivo pointed out was kale. Only .2 percent of cat food sales are currently of
+            products formulated with kale. However, kale-containing cat foods enjoyed sales dollar growth of 36
+            percent.
+          </p>
+          <h4>Finding new rising pet food trends</h4>
+          <p>
+            Today’s rising trends may soon be established trends. Pet food companies can benefit from staying
+            ahead of the competition in identifying the next hot pet food ingredient or style. To find innovative
+            pet food trends, Restivo recommended looking to human food. The next foodie darling may be today’s
+            decoration.
+          </p>
+          <p>
+            “Twenty years ago, I worked in a hotel banquet hall, and we used to set up a salad bar,” said
+            Restivo. “And around the salad bar, pieces that people would actually eat, we would line kale as a
+            garnish. Nobody would actually eat it, it's interesting that you walk down the marketplace today,
+            just about everywhere has a kale salad.
+          </p>
+          <p>
+            “I would implore each and every one of you as you look for inspiration on pet food or pet food
+            manufacturing or ingredients, look to the human side because those same humans feel if it's good
+            enough for me, let me think about moving it to the pet side.”
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">Pet Food Trends</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+<style>
+.icon-plus-1:before {
+  content: '\e943';
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+</style>
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}

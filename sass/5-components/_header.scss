@@ -1,0 +1,172 @@
+// An header provides a short summary of content
+// Can be any h(n) html tag
+// A lot of modifiers will probably be used here
+
+.header {
+    position: relative;
+    font-size: 33px;
+    font-weight: 900;
+    text-align: center;
+    &--is-smaller-below-desktop {
+        @media screen and(max-width: map_get($breakpoints-max, sm)) {
+            font-size: 28px;
+        }
+    }
+    &--is-smaller-mobile {
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            font-size: 22px;
+        }
+    }
+    &--has-underline {
+        &:after {
+            content: '';
+            position: absolute;
+            top: calc(100% + 25px);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 35px;
+            height: 1px;
+            background-color: #8d8d8d;
+
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            &:after {
+                top: calc(100% + 15px);
+            }
+        }
+    }
+    &--is-primary-color {
+        color: #566d6a;
+    }
+    &--is-color-black-light {
+        color: #122b1f;
+    }
+    &--is-color-white {
+        color: white;
+    }
+    &--is-color-gray {
+        color: #566d6a;
+    }
+    &--is-color-gray-light {
+        color: map_get($colors, gray-light-2);
+    }
+    &--is-biggest {
+        font-size: 72px;
+        font-weight: 900;
+        @media screen and(max-width: map_get($breakpoints-max, sm)) {
+            font-size: 60px;
+        }
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            font-size: 40px;
+        }
+    }
+    &--is-sub-biggest {
+        font-size: 42px;
+        font-weight: 300;
+        color: map_get($colors, gray-normal);
+        @media screen and(max-width: map_get($breakpoints-max, sm)) {
+            font-size: 35px;
+        }
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            font-size: 22px;
+        }
+    }
+    &--is-big {
+        font-size: 42px;
+        font-weight: 900;
+        @media screen and(max-width: map_get($breakpoints-max, md)) {
+            font-size: 32px;
+        }
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            &-smaller-mobile {
+                font-size: 22px;
+            }
+        }
+    }
+    &--is-sub-big {
+        font-size: 25px;
+        font-weight: 300;
+        color: map_get($colors, gray-light);
+        @media screen and(max-width: map_get($breakpoints-max, md)) {
+            font-size: 20px;
+            &.header--is-not-resizing {
+                font-size: 25px;
+            }
+        }
+    }
+    &--is-medium-size {
+        font-size: 50px;
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            font-size: 30px;
+        }
+        &-smaller-mobile {
+            @media screen and(max-width: map_get($breakpoints-max, xs)) {
+                font-size: 28px;
+            }
+        }
+        &-smallest-mobile {
+            @media screen and(max-width: map_get($breakpoints-max, xs)) {
+                font-size: 26px;
+            }
+        }
+    }
+    &--is-sub-medium-size {
+        font-size: 34px;
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            font-size: 24px;
+        }
+    }
+    &--is-sub-section-header {
+        font-size: 31px;
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            font-size: 27px;
+        }
+    }
+    &--is-big-2 {
+        font-size: 32px;
+    }
+    &--is-big-3 {
+        font-size: 41px;
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            font-size: 28px;
+        }
+    }
+    &--is-normal-size {
+        font-size: 26px;
+    }
+    &--is-normal-size-2 {
+        font-size: 25px;
+    }
+    &--is-small-size {
+        font-size: 24px;
+    }
+    &--is-small-size-2 {
+        font-size: 22px;
+    }
+    &--is-smaller-size {
+        font-size: 21px;
+    }
+    &--is-smaller-size-2 {
+        font-size: 17px;
+    }
+    &--is-smaller-size-3 {
+        font-size: 18px;
+    }
+    &--is-smaller-size-4 {
+        font-size: 19px;
+    }
+    &--is-smallest-size {
+        font-size: 16px;
+    }
+    &--is-smallest-size-2 {
+        font-size: 13px;
+    }
+    &--is-default-size {
+        font-size: 14px;
+    }
+    @media screen and(max-width: map_get($breakpoints-max, xs)) {
+        &--is-small-xs-down {
+            font-size: 20px!important;
+        }
+    }
+}

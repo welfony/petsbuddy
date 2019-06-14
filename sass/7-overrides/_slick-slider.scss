@@ -1,0 +1,32 @@
+.slick-slider {
+    position: relative;
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        font-size: 41px;
+        color: map_get($colors, gray-light-2);
+        cursor: pointer;
+    }
+    .slick-arrow-prev {
+        left: 10px;
+        transform: translate(-100%, -50%);
+    }
+    .slick-arrow-next {
+        right: 10px;
+        transform: translate(100%, -50%);
+    }
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+    .slick-slide {
+        text-align: center;
+        img {
+            margin: auto;
+            max-width: 100%;
+        }
+        a {
+            display: block;
+        }
+    }
+}

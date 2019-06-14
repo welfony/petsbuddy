@@ -1,0 +1,293 @@
+<nav
+    class="navbar is-homepage js-navbar"
+    data-mobile-menu-slide-speed="500"
+    data-subnavbar-slide-speed="500"
+    data-has-sticky-navbar="true"
+    data-sticky-navbar-scroll-trigger-height="500"
+  >
+  <div class="navbar__mobile-container grid grid--justify-space-between grid--align-center hidden-sm-up">
+    <a href="/">
+    <picture>
+      <source media="(max-width: 768px)"
+      srcset="img/responsive/logo-header.png, img/responsive/logo-header@2x.png 2x"></source>
+      <img
+        class="navbar__item-link-logo navbar__item-link-logo--is-big js-navbar-logo-big"
+        src="img/responsive/logo-header.png"
+        alt="Logo" />
+    </picture>
+    </a>
+    <div class="grid grid--align-center">
+    <div class="navbar__hamburger hamburger js-hamburger">
+      <div class="navbar__hamburger-line hamburger__line"></div>
+      <div class="navbar__hamburger-line hamburger__line"></div>
+      <div class="navbar__hamburger-line hamburger__line"></div>
+      <div class="navbar__hamburger-line hamburger__line"></div>
+    </div>
+    </div>
+    <div class="mobile-menu js-mobile-menu js-modal-full-screen">
+      <div class="mobile-menu__content">
+        <div class="mobile-menu__top-section grid grid--justify-space-between grid--align-center">
+        <a
+          class="mobile-menu__top-section-back-btn back-btn js-mobile-menu-back-btn"
+          href="javascript:void(0)">
+          <img class="back-btn__img" src="img/icon-back-mobile-menu.png" alt="Close submenu button" />
+          <span class="back-btn__text back-btn__text--is-dark">retour</span>
+        </a>
+        <div class="mobile-menu__hamburger hamburger js-hamburger is-opened">
+          <div class="mobile-menu__hamburger-line hamburger__line"></div>
+          <div class="mobile-menu__hamburger-line hamburger__line"></div>
+          <div class="mobile-menu__hamburger-line hamburger__line"></div>
+          <div class="mobile-menu__hamburger-line hamburger__line"></div>
+        </div>
+        </div>
+        <ul class="mobile-menu__main-sections-thumbnails main-sections-thumbnails grid">
+          <li class="main-sections-thumbnails__thumbnail main-sections-thumbnails__thumbnail--has-no-border-radius main-sections-thumbnails__thumbnail--has-bg-black main-sections-thumbnails__thumbnail--is-taller">
+            <a
+              id="milk-tab"
+              class="grid grid--align-center grid--justify-center grid--direction-column js-mobile-submenu-trigger"
+              href="javascript:void(0)"
+              data-submenu-id="submenu-dog">
+              <img
+                class="main-sections-thumbnails__thumbnail-icon dog"
+                src="img/Goatsmilk-white.png"
+                alt="Dogs icon" />
+              <span class="mobile-menu__main-sections-thumbnails-text main-sections-thumbnails__thumbnail-text">Goatsmilk</span>
+            </a>
+          </li>
+          <li class="main-sections-thumbnails__thumbnail main-sections-thumbnails__thumbnail--has-no-border-radius main-sections-thumbnails__thumbnail--has-bg-black main-sections-thumbnails__thumbnail--is-taller">
+            <a
+              id="treats-tab"
+              class="grid grid--align-center grid--justify-center grid--direction-column js-mobile-submenu-trigger"
+              href="javascript:void(0)"
+              data-submenu-id="submenu-cat">
+              <img
+                class="main-sections-thumbnails__thumbnail-icon cat"
+                src="img/Treats-white.png"
+                alt="Cats icon" />
+              <span class="mobile-menu__main-sections-thumbnails-text main-sections-thumbnails__thumbnail-text">Treats</span>
+            </a>
+          </li>
+        </ul>
+        <div class="mobile-menu__main-content-container js-mobile-main-menu">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__list-item grid grid--align-center">
+              <a class="mobile-menu__link" href="about-us.html">
+                About Us
+              </a>
+            </li>
+            <li class="mobile-menu__list-item grid grid--align-center">
+              <a class="mobile-menu__link" href="contact-us.html">
+                Contact
+              </a>
+            </li>
+            <li class="mobile-menu__list-item grid grid--align-center">
+              <a class="mobile-menu__link" href="faq.html">
+                FAQ
+              </a>
+            </li>
+          </ul>
+          <a class="mobile-menu__btn text-uppercase btn" href="distributors.html">
+            Where to buy
+          </a>
+        </div>
+
+        <div class="mobile-menu__sub-content-container js-mobile-submenu treats_list" id="submenu-cat">
+          <div class="mobile-menu__sub-content-section mobile-menu__sub-content-section--has-smaller-margin-top">
+            <h2 class="header header--has-underline header--is-smaller-below-desktop header--is-primary-color">
+              Choose
+            </h2>
+            <ul class="mobile-menu__sub-content-section-container mobile-menu__sub-content-section-container--has-padding">
+              
+              <a
+                class="mobile-menu__thumbnail grid grid--align-center"
+                href="products-1.html">
+                <div class="mobile-menu__thumbnail-left-section grid grid--align-center grid--justify-center">
+                <img
+                  class="mobile-menu__thumbnail-icon"
+                  src="img/nav/Roo-Jerky.png"
+                  alt="Holistic logo" />
+                </div>
+                <div class="mobile-menu__thumbnail-text">
+                  <h4 class="mobile-menu__thumbnail-preheader">PETSBUDDY</h4>
+                  <h3 class="mobile-menu__thumbnail-header">Air Dried</h3>
+                </div>
+              </a>
+
+              <a
+                class="mobile-menu__thumbnail grid grid--align-center"
+                href="products-2.html">
+                <div class="mobile-menu__thumbnail-left-section grid grid--align-center grid--justify-center">
+                <img
+                  class="mobile-menu__thumbnail-icon"
+                  src="img/nav/Freeze-Dried-Meat.png"
+                  alt="Original logo" />
+                </div>
+                <div class="mobile-menu__thumbnail-text">
+                  <h4 class="mobile-menu__thumbnail-preheader">PETSBUDDY</h4>
+                  <h3 class="mobile-menu__thumbnail-header">Freeze Dried</h3>
+                </div>
+              </a>
+              
+            </ul>
+          </div>
+        </div>
+
+        <div class="mobile-menu__sub-content-container js-mobile-submenu milk_list" id="submenu-dog">
+          <div class="mobile-menu__sub-content-section mobile-menu__sub-content-section--has-smaller-margin-top">
+            <h2 class="header header--has-underline header--is-smaller-below-desktop header--is-primary-color">
+              Choose
+            </h2>
+            <ul class="mobile-menu__sub-content-section-container mobile-menu__sub-content-section-container--has-padding">
+
+              <a
+                class="mobile-menu__thumbnail grid grid--align-center"
+                href="product-1.html">
+                <div class="mobile-menu__thumbnail-left-section grid grid--align-center grid--justify-center">
+                  <img
+                    class="mobile-menu__thumbnail-icon"
+                    src="img/nav/GoatsMilk-for-Dog.png"
+                    alt="Life logo" />
+                </div>
+                <div class="mobile-menu__thumbnail-text">
+                  <h4 class="mobile-menu__thumbnail-preheader">PETSBUDDY</h4>
+                  <h3 class="mobile-menu__thumbnail-header">GoatsMilk for Dog</h3>
+                </div>
+              </a>
+
+              <a
+                class="mobile-menu__thumbnail grid grid--align-center"
+                href="product-2.html">
+                <div class="mobile-menu__thumbnail-left-section grid grid--align-center grid--justify-center">
+                  <img
+                    class="mobile-menu__thumbnail-icon"
+                    src="img/nav/Puppy-Replacement.png"
+                    alt="Holistic logo" />
+                </div>
+                <div class="mobile-menu__thumbnail-text">
+                  <h4 class="mobile-menu__thumbnail-preheader">PETSBUDDY</h4>
+                  <h3 class="mobile-menu__thumbnail-header">Puppy Replacement</h3>
+                </div>
+              </a>
+
+              <a
+                class="mobile-menu__thumbnail grid grid--align-center"
+                href="product-3.html">
+                <div class="mobile-menu__thumbnail-left-section grid grid--align-center grid--justify-center">
+                  <img
+                    class="mobile-menu__thumbnail-icon"
+                    src="img/nav/GoatsMilk-for-Cat.png"
+                    alt="Original logo" />
+                </div>
+                <div class="mobile-menu__thumbnail-text">
+                <h4 class="mobile-menu__thumbnail-preheader">PETSBUDDY</h4>
+                <h3 class="mobile-menu__thumbnail-header">GoatsMilk for Cat</h3>
+                </div>
+              </a>
+
+              <a
+                class="mobile-menu__thumbnail grid grid--align-center"
+                href="product-4.html">
+                <div class="mobile-menu__thumbnail-left-section grid grid--align-center grid--justify-center">
+                  <img
+                    class="mobile-menu__thumbnail-icon"
+                    src="img/nav/Kitten-Replacement.png"
+                    alt="Original logo" />
+                </div>
+                <div class="mobile-menu__thumbnail-text">
+                <h4 class="mobile-menu__thumbnail-preheader">PETSBUDDY</h4>
+                <h3 class="mobile-menu__thumbnail-header">Kitten Replacement</h3>
+                </div>
+              </a>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar__container grid grid--justify-space-between grid--align-center hidden-xs-down">
+    <div class="navbar__section">
+      <ul class="navbar__list grid">
+
+        <li class="navbar__item navbar__hamburger grid grid--align-center grid--justify-center">
+          <div class="hamburger js-sidebar-toggle">
+            <div class="navbar__hamburger-line hamburger__line"></div>
+            <div class="navbar__hamburger-line hamburger__line"></div>
+            <div class="navbar__hamburger-line hamburger__line"></div>
+            <div class="navbar__hamburger-line hamburger__line"></div>
+          </div>
+        </li>
+
+        <li class="navbar__item">
+          <ul class="navbar__main-sections-thumbnails main-sections-thumbnails grid">
+            <li
+              class="navbar__item main-sections-thumbnails__thumbnail dog">
+              <a
+                class="navbar__item-link grid grid--align-center grid--justify-center grid--direction-column js-subnavbar-trigger"
+                href="javascript:void(0)"
+                data-subnavbar-id="subnavbar-dog">
+                <img
+                  class="main-sections-thumbnails__thumbnail-icon dog"
+                  src="img/Goatsmilk.png"
+                  alt="Dogs icon" />
+                <span class="main-sections-thumbnails__thumbnail-text">Goatsmilk</span>
+              </a>
+            </li>
+
+            <li class="navbar__item main-sections-thumbnails__thumbnail roo">
+              <a
+                class="navbar__item-link grid grid--align-center grid--justify-center grid--direction-column js-subnavbar-trigger"
+                href="javascript:void(0)"
+                data-subnavbar-id="subnavbar-roo">
+                <img
+                  class="main-sections-thumbnails__thumbnail-icon roo"
+                  src="img/Treats.png" alt="Roos icon" />
+                <span class="main-sections-thumbnails__thumbnail-text">Treats</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar__middle-section">
+      <a href="/">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="img/responsive/logo-header-sticky.png, img/responsive/logo-header-sticky@2x.png 2x"></source>
+          <img
+            class="navbar__item-link-logo"
+            src="img/responsive/logo-header.png"
+            alt="PetsBuddy small logo" />
+        </picture>
+      </a>
+    </div>
+
+    <div class="navbar__section navbar__section--small height-auto grid grid--justify-end">
+      <ul class="navbar__list grid grid--justify-end">
+        <li class="navbar__item navbar__item--has-padding height-auto navbar__item--has-separator-after grid grid--align-center">
+          <a class="navbar__item-link darker-on-hover font-weight-semi-bold" href="blogs-1.html">
+            Blogs
+          </a>
+        </li>
+        <li class="navbar__item navbar__item--has-padding height-auto navbar__item--has-separator-hider grid grid--align-center">
+          <a class="navbar__item-link navbar__item-link--has-padding darker-on-hover font-weight-semi-bold" href="distributors.html">
+            Where to buy
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<script>
+  $("#treats-tab").click(function(){
+    $(".treats_list").show()
+    $(".milk_list").hide()
+  })
+  $("#milk-tab").click(function(){
+    $(".milk_list").show()
+    $(".treats_list").hide()
+  })
+</script>

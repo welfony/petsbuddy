@@ -1,0 +1,16 @@
+.nudged-content {
+    position: relative;
+    @media screen and (min-width: map-get($breakpoints-min, sm)) {
+        &--is-nudged-higher {
+            top: -17px;
+        }
+        &--is-nudged-higher-half {
+            top: -8px;
+        }
+    }
+    &--is-md-up {
+        @media screen and (max-width: map-get($breakpoints-max, sm)) {
+            top: 0!important;
+        }
+    }
+}

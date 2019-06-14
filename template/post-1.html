@@ -1,0 +1,141 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        The Role of High Protein in the Management of Obesity in Pets
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+          <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog4.jpg" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p>
+            An important goal in the management of obesity is to reduce excess body fat while minimizing the loss
+            of lean tissue. The
+            high protein diet resulted in a greater loss of body fat and greater retention of lean body mass
+            compared
+            with the control diet.
+          </p>
+          <p>
+            Obesity in pets is linked to numerous health problems, including an increased risk for diabetes
+            mellitus, lameness, and non-allergic
+            skin conditions. It is projected that weight loss until optimal body condition could eliminate from
+            12%-22%
+            of feline lameness and diabetes mellitus. Dietary protein has several effects that may be beneficial
+            during
+            weight loss. Protein stimulates increased postprandial thermogenesis and increased protein turnover.
+            Thus,
+            replacing dietary fat or carbohydrate with protein results in less net energy available from the
+            diet.
+            Perhaps due to its thermogenic effect, protein also provides a superior satiety effect compared with
+            fats
+            or carbohydrates. Several investigators have noted that higher satiety during clinical weight loss
+            programs
+            compared with higher carbohydrate diets.
+          </p>
+          <p>
+            Increased dietary protein also appears to aid in achieving an important goal of weight management,
+            which is to lose body
+            fat while conserving lean body mass. Maintaining metabolically active LBM is important for
+            maintaining
+            resting and total energy expenditure to prevent rapidly regaining weight.
+          </p>
+          <p>
+            Several studies have shown that pets fed the higher-protein diet lost more body fat while reducing
+            their loss of lean body
+            mass by around 50%.
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">Cats Food, Taurine</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}

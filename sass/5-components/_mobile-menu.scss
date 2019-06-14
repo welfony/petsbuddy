@@ -1,0 +1,150 @@
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(map_get($colors, gray-darker), black);
+    z-index: map_get($z-indexes, highest);
+    text-transform: none;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    &__content {
+        height: 100%;
+        .has-submenu-opened &{
+            display: block;
+        }
+    }
+    &.has-submenu-opened {
+        background-image: none;
+        background-color: white;
+    }
+    &__top-section {
+        padding: 0 1em;
+        height: 60px;
+        &-back-btn {
+            visibility: hidden;
+            width: 30px;
+            margin-left: 10px;
+            .has-submenu-opened & {
+                visibility: visible;
+            }
+        }
+    }
+    &__main-sections-thumbnails {
+        height: 83px;
+    }
+    &__main-content-container {
+        flex: 1;
+        padding: 2em;
+        padding-top: 0.5em;
+        .has-submenu-opened & {
+            display: none;
+        }
+    }
+    &__list {
+        flex: 1;
+    }
+    &__list-item {
+        padding: 4vh 1em;
+        flex: 1;
+        & + #{&} {
+            border-top: solid 1px map_get($colors, gray-normal);
+        }
+    }
+    &__link {
+        color: white;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &__btn {
+        margin-top: 20px;
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &__sub-content-container {
+        display: none;
+    }
+    &__thumbnail {
+        $thumbnail: &;
+        padding: 20px;
+        background-image: linear-gradient(white 0%, #efefef 100%);
+        &-left-section {
+            width: 80px;
+            padding: 0;
+            margin-right: 20px
+        }
+        &-icon {
+            display: block;
+            max-width: 100%;
+            max-height: 50px;
+        }
+        &-preheader {
+            width: 100%;
+            color: map_get($colors, gray-normal);
+            font-size: 20px;
+            font-weight: 300;
+        }
+        &-header {
+            width: 100%;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        &-text {
+            flex: 1;
+        }
+    }
+    &__hamburger {
+        width: 35px;
+    }
+    &__hamburger-line {
+        background-color: white;
+        opacity: 0.7;
+        .has-submenu-opened & {
+            background-color: black;
+        }
+    }
+    &__sub-content-section {
+        margin-top: 40px;
+        &--has-smaller-margin-top {
+            margin-top: 20px;
+        }
+        &-container {
+            margin-top: 40px;
+            &--has-padding {
+                padding: 10px 20px;
+            }
+            &--has-more-padding {
+                padding: 10px 30px;
+            }
+        }
+    }
+    &__section-with-background {
+        display: block;
+        height: 238px;
+        background-image: url('../img/responsive/background-food-gradient-to-white-header_sm@2x.jpg');
+        background-size: 120%;
+        background-position: bottom right;
+    }
+    &__section-content-header-small {
+        padding-top: 15px;
+        font-size: 16px;
+        font-weight: normal;
+        &--is-light {
+            padding-top: 8px;
+            color: map_get($colors, gray-normal);
+        }
+    }
+    &__section-content-link-container {
+        font-weight: 500;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    &__main-sections-thumbnails-text {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,113 @@
+.footer {
+    position: relative;
+    padding-top: 100px;
+    background-color: #1f2723;
+    @media screen and (max-width: map_get($breakpoints-max, xs)) {
+        padding: 20px;
+        padding-top: 70px;
+    }
+    &__item {
+        width: 300px;
+        height: 280px;
+        margin: auto;
+        &--small {
+            width: 250px;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            width: 100%;
+            height: auto;
+            &--is-bottom-on-mobile {
+                margin-top: 50px;
+            }
+        }
+    }
+    &__img {
+        max-width: 273px;
+        flex-shrink: 0;
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            margin: 30px 0;
+        }
+    }
+    &__paragraph {
+        color: #b7babc;
+        font-size: 14px;
+        font-weight: 200;
+        text-align: center;
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            margin: 30px 0;
+        }
+    }
+    &__horizontal-section {
+        &--has-padding-bottom {
+            padding-bottom: 88px;
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                padding-bottom: 30px;
+            }
+        }
+        & + #{&} {
+            border-top: solid 1px map_get($colors, gray-darker);
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            flex-direction: column;
+        }
+    }
+    &__content-row {
+        padding: 30px 0;
+        & + #{&} {
+            padding-top: 0;
+        }
+    }
+    &__word {
+        color: #b7babc;
+        font-weight: 300;
+        font-size: 14px;
+        & + #{&} {
+            margin-left: 25px;
+            .btn-group & {
+                margin-left: 0;
+            }
+        }
+        &--small {
+            font-size: 13px;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            text-align: center;
+        }
+    }
+    a.footer__word {
+        transition: color map_get($transitions-times, normal);
+        &:hover {
+            color: map_get($colors, gray-normal);
+        }
+    }
+    &__icon {
+        font-size: 25px;
+        color: white;
+    }
+    &__img-icon {
+        max-width: 20px;
+        margin-right: 10px;
+    }
+    &__bottom-section {
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            justify-content: center;
+            & + #{&} {
+                margin-top: 50px;
+            }
+            &--is-col-on-mobile {
+                flex-direction: column;
+                & > * + * {
+                    margin-top: 10px;
+                }
+            }
+        }
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            &--is-col-on-mobile {
+                & > .footer__word + .footer__word {
+                    margin-left: 5px;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,142 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        Dogs Likely Evolved to Eat Cooked Meat and Carbohydrates
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+          <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog7.jpg" alt="">
+                  <a href="img/blogs/blog7-o.jpg" class="popup-img overlay-link">
+                    <i class="icon-plus-1"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p>
+            According to <strong>Brian Hare, PhD, associate professor of evolutionary anthropology at Duke
+              University</strong> and founder of Dognition, dog foods marketed as replicating wolves’ raw meat
+            diets actually may satisfy human fantasies more than dogs’ dietary needs.
+          </p>
+          <p>
+            “When you look at the facts it is absolutely the case that dogs evolved to eat cooked and
+            increasingly starchy foods. We can see that in their genes… The idea that dogs are wolves runs
+            counter to the idea that there are wolves.”
+          </p>
+          <p>
+            That’s not to say that dogs can’t safely digest raw meat. Humans can handle raw meat too, such as
+            steak tartare or sashimi. However, raw meat may not be ideal or necessary for dogs or people.
+          </p>
+          <p>
+            “It's true dogs can eat raw meat, but do they need raw meat?” Hare said. “Must they have raw meat?
+            The answer is no. They've evolved tens of thousands of years to eat a cooked and increasingly
+            fibrous, starchy diet as humans became agricultural.
+          </p>
+          <p>
+            Evidence that dogs and humans evolved similar digestive systems may come from a study published in
+            April by Microbiome. Scientists observed that the variety of microorganisms living in dogs’ digestive
+            systems more closely resembled humans’ gut microbiomes than did the species in pigs or rats.
+          </p>
+          <p>
+            What’s more, dogs’ digestive systems reacted similarly to humans in response to dietary changes.
+            Specifically, a high-protein/low-carbohydrate diet caused large and reproducible changes in dogs’
+            microbiomes, compared to a low-protein/high-carbohydrate diet. Those changes were analogous to
+            alteration seen in human guts in other studies.
+          </p>
+          <p>
+            Although this research wasn’t looking at raw versus cooked food, it does suggest that humans' and
+            dogs' digestive systems share similarities.
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">Carbohydrates, Cooked meat</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}

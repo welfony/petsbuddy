@@ -1,0 +1,16 @@
+.masonry {
+    opacity: 0;
+    transition: opacity map_get($transitions-times, normal);
+    @media screen and (min-width: map_get($breakpoints-min, md)) {
+        margin-top: 40px;
+    }
+    &.is-completed {
+        opacity: 1;
+    }
+    &__item {
+        margin-bottom: 60px;
+        @media screen and (min-width: map_get($breakpoints-min, sm)) {
+            padding-right: 30px!important;
+        }
+    }
+}

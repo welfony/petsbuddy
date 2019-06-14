@@ -1,0 +1,146 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        Cats and Dogs Respond Differently to Similar Raw Pet Food
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+          <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog16.jpg" alt="">
+                  <a href="img/blogs/blog16-o.jpg" class="popup-img overlay-link">
+                    <i class="icon-plus-1"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p style="font-size: 18px">
+            The differences in cats and dogs digestive systems was exemplified in the way that their systems responded to similar raw, high-protein diets.
+          </p>
+          <p>
+            Pet food formulators should remember that cats are not small dogs, said David Thomas, PhD of Massey University in New Zealand, during his presentation at Petfood Forum 2018. The differences in feline and canine digestive systems, and the bacteria their guts harbor, were exemplified in the way that cats’ and dogs’ systems responded to nearly identical raw, high-protein diets, sometimes call biologically appropriate raw foods (BARF).
+          </p>
+          <p>
+            “These are high-meat content diets with little or no carbohydrates,” he said. “They’re increasingly popular worldwide, but there’s very little scientific data or nutritional health outcome data.”
+          </p>
+          <p>
+            Thomas and his colleagues have been focusing on these BARF diets over the last five or six years. One aspect of studying raw pet foods is that it takes out any effects of cooking or further processing these diets, he said.
+          </p>
+          <h4>How dogs and cats digest raw pet foods</h4>
+          <p>
+            In two separate studies, researchers fed similar raw pet food diet to dogs and cats. The studies were originally intended to look at differences related to kibble versus raw pet foods, but the scientists were able to use the data they collected to compare cats to dogs as well.
+          </p>
+          <p>
+            In both experiments, the raw pet food consisted of 73 percent beef muscle, 10 percent beef liver, 5 percent bone chip, 5 percent beef tripe, 3.5 percent beef heart, 3.5 percent beef kidney, 0.2 percent mineral premix specific to either dogs or cats. The only part of the formulation that differed was the mineral pre-mix.
+          </p>
+          <p>
+            The scientists examined the animals’ feces after eating the BARF diets for three weeks and rated them on a five-point score in which one is dry and five is liquid. Between 1.5 and 2.5 is considered ideal. The cats’ fecal score was 1.8 and the dogs’ was 3.5.
+          </p>
+          <p>
+            “The cats are the low end of that ideal range and the dog is slightly above it,” Thomas said.
+          </p>
+          <h4>Differences in intestinal microbes in dogs and cats fed raw diets</h4>
+          <p>
+            The organic acids in the dogs’ and cats’ feces differed in the ratio of acetate, propionate and butyrate.
+          </p>
+          <p>
+            In cats, the top genera of bacteria were Clostridium at 25 percent, Fusobacterium at 13 percent and then Prevotellaceae, Fusobacteriaceae and Eubacterium.
+          </p>
+          <p>
+            In dogs, Peptostreptococcus were the most prevalent genera at 28 percent, followed by Fusobacterium with 15 percent, Blautia at nine percent, then Collinsella and Clostridium.
+          </p>
+          <p>
+            “So, you get some similarities but a lot of differences in the two species response to basically a similar diet,” Thomas said.
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">Pet Food Product Innovation</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}

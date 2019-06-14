@@ -1,0 +1,147 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        The Important Role of Taurine in Cats Food
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+          <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog1.jpg" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p>
+            Amino acids are the "building blocks" of proteins. All animals require amino acids to maintain a
+            healthy physiological function.
+            Proteins are made up of groups of amino acids, around 10 of which cannot be produced by a cat's body
+            and
+            need to be supplied within the diet.
+          </p>
+          <p>
+            Taurine is an amino acid which can only be found in animal protein. It is not present in vegetarian
+            protein sources like
+            grains. It is important to maintain of a healthy heart, healthy skin and hair and good eyesight.
+          </p>
+          <p>
+            Previous studies have reported that taurine deficiency may arise from grain and rice-based diets
+            where the primary protein
+            is vegetable meals. It is hypothesized that consumption of such diets with inadequate methionine and
+            cysteine
+            can result in taurine deficiency in pet's body.
+          </p>
+          <p>
+            It is sensible for cats to consume diets with sulphur amino acid precursors of taurine, cysteine and
+            methionine are consistent
+            with latest animal nutritional research.
+          </p>
+          <p>
+            Based on laboratory studies, our unique goats milk for cat formula contains an appropriate amount of
+            taurine, multi-vitamins
+            and minerals. In addition, we follow scientific animal feeding tests procedures strictly, which have
+            substantiated
+            that PetsBuddy™ Taurine Enriched Formula provides complete and balanced nutrition, with no indication
+            of
+            taurine-deficient dilated cardiomyopathy in cats.
+          </p>
+          <p>
+            It is found that the method of processing has a significant effect on taurine loss. Generally, high
+            temperature could destroy
+            taurine and its precursors. To avoid this, we use the leading wet-dried technology to keep taurine
+            active
+            and retain the specific amino acids in order to provide sufficient levels of naturally occurring,
+            highly
+            bioavailable methionine, cysteine and taurine.
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">Obesity in Pets</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}

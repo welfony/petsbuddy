@@ -1,0 +1,141 @@
+.home-top-section {
+    position: relative;
+    padding: 0 20px 20px 20px;
+    &__container {
+        height: calc(100vh - #{map_get($others, navbar-height)} - 20px);
+        background-image: url('../img/background_home_top_section.jpg');
+        background-size: cover;
+        background-position: center;
+        @media screen and (max-width: 1599px) {
+            background-position: 70% center;
+        }
+        @media screen and (max-width: 1199px) {
+            background-position: 70% center;
+            height: 665px;
+        }
+        @media screen and (max-width: 991px) {
+            height: 500px;
+        }
+        @media screen and (max-width: 767px) {
+            height: 400px;
+            background-image: url('../img/background_home_top_section_sm.jpg');
+            background-position: 30% center;
+            @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                background-image: url('../img/background_home_top_section_sm@2x.jpg');
+            }
+        }
+    }
+    &__logo-wrapper {
+        position: absolute;
+        left: 13%;
+        bottom: 12%;
+        max-width: 234px;
+        @media screen and (max-width: 767px) {
+            width: 50%;
+        }
+    }
+    &__title-wrapper {
+        position: absolute;
+        top: 210px;
+        left: 13%;
+        max-width: 600px;
+        @media screen and (max-width: 1599px) {
+            top: 150px;
+            left: 150px;
+        }
+        @media screen and (max-width: 1199px) {
+            top: 50px;
+            left: 50px;
+        }
+        @media screen and (max-width: 991px) {
+            max-width: 400px;
+        }
+    }
+    &__title {
+        font-size: 74px;
+        font-weight: 900;
+        color: white;
+        text-transform: uppercase;
+        text-shadow: -1px 0px 92px #999;
+        @media screen and (min-width: 2000px) {
+            font-size: 82px;
+        }
+        @media screen and (max-width: 1599px) {
+            font-size: 64px;
+        }
+        @media screen and (max-width: 1199px) {
+            font-size: 54px;
+            text-shadow: 1px 1px 1px rgb(151, 159, 167);
+        }
+        @media screen and (max-width: 991px) {
+            font-size: 40px;
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 30px;
+        }
+    }
+    &__footer {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding-bottom: 25px;
+        @media screen and(max-width: 767px) {
+            display: none;
+        }
+        &-text {
+            font-size: 13px;
+            color: white;
+            font-weight: 900;
+            line-height: 1.5;
+        }
+        &-icon {
+            position: relative;
+            z-index: 1;
+            display: block;
+            max-width: 50px;
+            margin: auto;
+            margin-top: 12px;
+            padding: 14px;
+            &-wrapper {
+                position: relative;
+                display: block;
+                margin: auto;
+                width: 50px;
+                text-align: center;
+                opacity: 0;
+                transition: transform 500ms, opacity 500ms;
+                animation: levitate-initial 1000ms linear 1000ms forwards, levitate 1000ms infinite 2000ms;
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border: solid 3px white;
+                    border-radius: 50%;
+                    width: 50px;
+                    box-sizing: border-box;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes levitate-initial {
+    0%   {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+}
+
+@keyframes levitate {
+    0%   { transform: translateY(5px); }
+    50% { transform: translateY(3px); }
+    100% { transform: translateY(5px); }
+}

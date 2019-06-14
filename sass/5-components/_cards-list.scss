@@ -1,0 +1,21 @@
+.cards-list {
+    margin-top: -40px;
+    margin-left: -20px;
+    margin-right: -20px;
+    @media screen and (max-width: map_get($breakpoints-max, xs)) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    &__card-wrapper {
+        padding: 40px 20px 0 20px;
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    &__row {
+        & + #{&} {
+            margin-top: 20px;
+        }
+    }
+}

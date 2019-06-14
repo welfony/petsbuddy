@@ -1,0 +1,159 @@
+// An accordion allows users to toggle the display of sections of content
+
+/*
+
+    <div class="accordion js-accordion" data-scroll-speed="500" data-scroll-offset="0" data-can-have-multiple-items-opened="false" data-open-item-animation="slide" data-slide-duration="300" data-scroll-to-item-when-opened="true">
+        <ul class="accordion__list">
+            <li class="accordion__item js-accordion-item">
+                <div class="accordion__item-button grid grid--justify-space-between js-accordion-item-button">
+                    Button 1
+                    <i class="accordion__item-button-right-icon fa fa-minus"></i>
+                    <i class="accordion__item-button-right-icon accordion__item-button-right-icon--plus fa fa-plus"></i>
+                </div>
+                <div class="accordion__item-content js-accordion-item-content">
+                    Content 1
+                </div>
+            </li>
+            <li class="accordion__item js-accordion-item">
+                <div class="accordion__item-button grid grid--justify-space-between js-accordion-item-button">
+                    Button 2
+                    <i class="accordion__item-button-right-icon fa fa-minus"></i>
+                    <i class="accordion__item-button-right-icon accordion__item-button-right-icon--plus fa fa-plus"></i>
+                </div>
+                <div class="accordion__item-content js-accordion-item-content">
+                    Content 2
+                </div>
+            </li>
+        </ul>
+    </div>
+
+*/
+
+.accordion {
+    $block: &;
+    @media screen and (max-width: map_get($breakpoints-max, xs)) {
+        padding: 0 20px;
+    }
+    &__item {
+        $accordion-item: &;
+        & + #{&} {
+            border-top: solid 1px #c3bdb6;
+            .accordion--is-rounded & {
+                border-top: none;
+                margin-top: 10px;
+            }
+        }
+        &-button {
+            position: relative;
+            padding: 20px 50px 20px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color map_get($transitions-times, normal), color map_get($transitions-times, fast);
+            .accordion--is-rounded & {
+                border-radius: 10px;
+                background-color: map_get($colors, gray-lighter-3);
+                &:hover {
+                    background-color: map_get($colors, gray-light-2);
+                }
+            }
+            #{$accordion-item}.is-opened & {
+                color: #485159;
+                .accordion--is-rounded & {
+                    color: white;
+                    background-color: map_get($colors, green-dark);
+                }
+            }
+            &-right-icon {
+                position: absolute;
+                top: 50%;
+                right: 30px;
+                transform: translateY(-50%);
+                transition: transform map_get($transitions-times, normal);
+                @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                    right: 25px;
+                }
+                &:before, &:after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    font-family: FontAwesome;
+                    color: white;
+                    font-weight: 300;
+                    font-size: 10px;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    border: solid 1px red;
+                    transition: opacity map_get($transitions-times, normal);
+                }
+                &:before {
+                    content: '\f067';
+                    .accordion--has-color-green & {
+                        border: none;
+                        background-color: map_get($colors, green-dark);
+                    }
+                }
+                &:after {
+                    content: '\f068';
+                    color: map_get($colors, blue-normal);
+                    #{$block}--has-color-red & {
+                        color: map_get($colors, red-normal);
+                    }
+                    .accordion--has-color-green & {
+                        border: none;
+                        background-color: white;
+                    }
+                    opacity: 0;
+                }
+                #{$accordion-item}.is-opened & {
+                    &:before {
+                        opacity: 0;
+                    }
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+                &-container {
+                    position: relative;
+                }
+            }
+        }
+        &:nth-child(even){
+            .accordion--is-rounded & {
+                .accordion__item-button {
+                    background-color: map_get($colors, white-normal);
+                    &:hover{
+                        background-color: map_get($colors, gray-light-2);
+                    }
+                }
+            }
+            &.is-opened {
+                .accordion--is-rounded & {
+                    .accordion__item-button {
+                        background-color: map_get($colors, green-dark);
+                    }
+                }
+            }
+        }
+        &-content {
+            display: none;
+            padding: 25px;
+            color: map_get($colors, gray-normal);
+            line-height: 26px;
+            font-size: 16px;
+            font-weight: 300;
+            &--has-no-vertical-padding-xs-down {
+                @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                    padding: 30px 0;
+                }
+            }
+        }
+    }
+}

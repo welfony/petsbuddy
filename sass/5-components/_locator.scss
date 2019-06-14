@@ -1,0 +1,15 @@
+.locator {
+    &__form {
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    &__filters-trigger {
+        margin-bottom: 20px;
+    }
+    &__sub-input {
+        margin-top: 10px;
+        @media screen and (min-width: map_get($breakpoints-min, sm)) {
+            position: absolute;
+        }
+    }
+}

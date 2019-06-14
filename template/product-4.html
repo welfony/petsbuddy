@@ -1,0 +1,348 @@
+{% extends "layouts/default.html" %}
+{% set title = "Goatsmilk - PetsBuddy" %}
+{% set page = {
+  back_url: "products-1.html"
+} %}
+
+{% block content %}
+
+<div class="banner banner--has-fixed-height banner--has-dynamic-background-image banner--has-darker-bg"
+  style="background-image: url(../img/banner/banner_four.jpg);">
+  <div class="banner__back-btn-wrapper">
+    <a onclick="javascript:history.go(-1);">
+      <div class="banner__back-btn back-btn">
+        <img class="back-btn__img" src="img/icon-back-white.png" alt="Back Button">
+        <span class="back-btn__text">back</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="banner__container container container--is-smaller grid">
+    <div class="banner__left-section grid__col-12 grid__col-sm-6 grid--justify-center grid--align-start">
+      <h1
+        class="banner__left-section-header header header--is-color-white header--is-biggest text-left text-center-xs-down text-uppercase">
+        INFINITI &gt;&gt; BERRIES+
+      </h1>
+
+      <div class="banner__sub-main-title grid grid--align-center">
+        <h3
+          class="header header--is-color-white header--is-sub-section-header header--is-small-xs-down text-uppercase font-weight-extra-light">
+          All Life Stages
+        </h3>
+        <div class="banner__sub-main-title-separator"></div>
+        <h3 class="header header--is-color-white header--is-small-size header--is-small-xs-down font-weight-normal">
+          All Breeds
+        </h3>
+      </div>
+      <div class="banner__small-text">with deboned salmon</div>
+    </div>
+
+    <div class="grid__col-12 grid__col-sm-6 grid--justify-center grid--direction-row">
+      <div class="banner__img-wrapper">
+        <picture>
+          <source media="(min-width: 992px)"
+            srcset="../img/detailsbanner/445/kitten-replacement.png 2x"
+            type="image/png">
+
+          <source media="(min-width: 767px)"
+            srcset="../img/detailsbanner/350/kitten-replacement.png 2x"
+            type="image/png">
+
+          <source media="(min-width: 0px)"
+            srcset="../img/detailsbanner/250/kitten-replacement.png 2x"
+            type="image/png">
+
+          <img class="banner__img"
+            src="../img/detailsbanner/445/kitten-replacement.png"
+            alt="Product Image"
+            width="445"
+            >
+        </picture>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="section section--has-smaller-padding-bottom section--has-smaller-padding-top-below-desktop">
+    <div class="container container--has-padding-mobile">
+      <div class="grid">
+        <div class="grid_row">
+          <div class="main col-md-12">
+              <h1 class="page-title">Formulated Kitten Replacement 210g</h1>
+              <div class="separator-2"></div>
+              <div class="grid_row col-md-12">
+                  <h2>Description</h2>
+                  <p>This professional formula, with bovine colostrum that enriched with immunoglobulins, is able to protect immune and gut system. Meanwhile, this unique replacement can help kittens prevent from nutrional deficiency via high level of taurine content, and also supply essential nutrition with vitamins, minerals and essential fatty acids added. </p>
+                  <hr class="mb-10">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="pv-30 light-gray-bg">
+    <div class="container">
+      <div class="grid_row">
+        <div class="col-md-8">
+          <h4 class="space-top">Specifications</h4>
+          <hr>
+          <dl class="dl-horizontal">
+              <dt>Weight</dt>
+              <dd>210g</dd>
+              <dt>Ingredients</dt>
+              <dd>Whole goat milk solids, vegetable oils, casein, whey protein isolate, lecithin, L-arginine, omega-3 & 6 fatty acids,
+                taurine.</dd>
+              <dt>Vitamins</dt>
+              <dd>vitamins A, B1, B2, B3, B5, B6, B12, C, D3, E, K, folic acid, biotin.</dd>
+              <dt>Minerals</dt>
+              <dd>calcium, phosphorus, potassium, sodium, magnesium, zinc, iron, manganese, copper, iodine, selenium</dd>
+              <dt>Storage</dt>
+              <dd>Mixed Formulated Kitten Replacement can be stored in the fridge for a day or frozen for up to 5 days. Once opened, the rest powder must be refrigerated for up to 3 months, or can be frozen for up to 6 months to preserve freshness.</dd>
+              <dt>Directions for use</dt>
+              <dd>Success in rearing kittens greatly improves if they receive mother’s milk at birth. Commence feeding milk replacer formula after the initial feeds of mother’s milk. Make up Petsbuddy® FORMULATED KITTEN REPLACEMENT at a concentration of 5g per 15ml of warm water. </dd>
+              <dt>Feeding Guide</dt>
+              <dd>
+                <table class="row table">
+                    <tr>
+                        <td>Weight（g）</td>
+                        <td>Feed（ml/day）</td>
+                      </tr>
+                      <tr>
+                        <td>80</td>
+                        <td>20</td>
+                      </tr>
+                      <tr>
+                        <td>90</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>100</td>
+                        <td>23</td>
+                      </tr>
+                      <tr>
+                        <td>110</td>
+                        <td>25</td>
+                      </tr>
+                      <tr>
+                        <td>120</td>
+                        <td>27</td>
+                      </tr>
+                      <tr>
+                        <td>130</td>
+                        <td>27</td>
+                      </tr>
+                      <tr>
+                        <td>140</td>
+                        <td>30</td>
+                      </tr>
+                      <tr>
+                        <td>150</td>
+                        <td>31</td>
+                      </tr>
+                      <tr>
+                        <td>180</td>
+                        <td>36</td>
+                      </tr>
+                      <tr>
+                        <td>200</td>
+                        <td>39</td>
+                      </tr>
+                      <tr>
+                        <td>250</td>
+                        <td>47</td>
+                      </tr>
+                      <tr>
+                        <td>300</td>
+                        <td>55</td>
+                      </tr>
+                      <tr>
+                        <td>340</td>
+                        <td>60</td>
+                      </tr>
+                      <tr>
+                        <td>360</td>
+                        <td>62</td>
+                      </tr>
+                      <tr>
+                        <td>380</td>
+                        <td>65</td>
+                      </tr>
+                      <tr>
+                        <td>400</td>
+                        <td>67</td>
+                      </tr>
+                      <tr>
+                        <td>420</td>
+                        <td>70</td>
+                      </tr>
+                      <tr>
+                        <td>440</td>
+                        <td>73</td>
+                      </tr>
+                      <tr>
+                        <td>460</td>
+                        <td>75</td>
+                      </tr>
+                      <tr>
+                        <td>480</td>
+                        <td>77</td>
+                      </tr>
+                      <tr>
+                        <td>500</td>
+                        <td>80</td>
+                      </tr>
+                      <tr>
+                        <td>520</td>
+                        <td>82</td>
+                      </tr>
+                      <tr>
+                        <td>540</td>
+                        <td>85</td>
+                      </tr>
+                      <tr>
+                        <td>560</td>
+                        <td>87</td>
+                      </tr>
+                  <tr>
+                    <td colspan="2">
+                      <br/> Note:
+                      <br/> 1 scoop ≈ 5g of powder
+                      <br/>
+                      <br/>*Refer to the guidelines for feed rates.
+                      <br/>**Do not overfeed as this can lead to diarrhoea. 
+                      <br/>***Weigh kittens regularly to verify consistent weight gains to make sure feed properly. 
+                      <br/>****If necessary, please consult your veterinarian for additional advice. 
+                    </td>
+                  </tr>
+                </table>
+              </dd>
+            </dl>
+            <hr>
+        </div>
+        <div class="col-md-4 col-lg-3 col-lg-offset-1">
+          <div class="sidebars">
+            <div class="block clearfix">
+                <h3 class="title">Categories</h3>
+                <div class="separator-2"></div>
+                <nav>
+                    <ul class="nav nav-pills nav-stacked list-style-icons">
+                      <li>
+                        <a href="products-goatsMilk.html">
+                          <i class="fa fa-caret-right pr-10"></i>GoatsMilk</a>
+                      </li>
+                      <li>
+                        <a href="products-treats.html">
+                          <i class="fa fa-caret-right pr-10"></i>Roo Treats</a>
+                      </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="block clearfix">
+                <h3 class="title">Related Products</h3>
+                <div class="separator-2"></div>
+                <div class="media margin-clear">
+                    <div class="media-left">
+                      <div class="overlay-container">
+                        <img class="media-object" src="../img/details-list/Cat-Goatsmilk.png" alt="blog-thumb">
+                        <a href="product-3.html" class="overlay-link small">
+                          <i class="fa fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="media-heading">
+                        <a href="product-3.html">GoatsMilk for Cat</a>
+                      </h6>
+                      <p class="margin-clear">
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                      </p>
+                      <p class="price">GoatsMilk</p>
+                    </div>
+                    <hr>
+                  </div>
+                  <div class="media margin-clear">
+                    <div class="media-left">
+                      <div class="overlay-container">
+                        <img class="media-object" src="../img/details-list/Dog-Goatsmilk.png" alt="blog-thumb">
+                        <a href="product-1.html" class="overlay-link small">
+                          <i class="fa fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="media-heading">
+                        <a href="product-1.html">GoatsMilk for Dog</a>
+                      </h6>
+                      <p class="margin-clear">
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                      </p>
+                      <p class="price">GoatsMilk</p>
+                    </div>
+                    <hr>
+                  </div>
+                  <div class="media margin-clear">
+                    <div class="media-left">
+                      <div class="overlay-container">
+                        <img class="media-object" src="../img/details-list/Puppy-Replacement.png" alt="blog-thumb">
+                        <a href="product-2.html" class="overlay-link small">
+                          <i class="fa fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="media-heading">
+                        <a href="product-2.html">Puppy Replacement</a>
+                      </h6>
+                      <p class="margin-clear">
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                      </p>
+                      <p class="price">Replacement</p>
+                    </div>
+                    <hr>
+                  </div>
+                  <div class="media margin-clear">
+                    <div class="media-left">
+                      <div class="overlay-container">
+                        <img class="media-object" src="../img/details-list/Kitten-Replacement.png" alt="blog-thumb">
+                        <a href="product-4.html" class="overlay-link small">
+                          <i class="fa fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="media-heading">
+                        <a href="product-4.html">Kitten Replacement</a>
+                      </h6>
+                      <p class="margin-clear">
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                        <i class="fa fa-star text-default"></i>
+                      </p>
+                      <p class="price">Replacement</p>
+                    </div>
+                    <hr>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

@@ -1,0 +1,140 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        Trump’s Metal Tariffs May Raise Costs for Canned Pet Food
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+          <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog10.jpg" alt="">
+                  <a href="img/blogs/blog10-o.jpg" class="popup-img overlay-link">
+                    <i class="icon-plus-1"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p>
+            US tariffs on steel and aluminum may raise costs for pet food companies and US consumers.
+          </p>
+          <p>
+            On July 6, China announced retaliatory tariffs on US goods, including canned dog and cat foods, in
+            response to tariffs imposed by United States President Donald Trump. Even before those trade measures
+            targeted <span style="text-decoration: underline">US pet food exports</span> directly, <span style="text-decoration: underline">US
+              tariffs on steel and aluminum</span> were already threatening to raise costs for US pet food
+            companies and consumers.
+          </p>
+          <p>
+            "Think about pet food manufacturers and how many cans are used for cat and dog food,” “Whenever
+            people ask why does the Pet Food Institute care about what's going on with the Chinese tariffs or the
+            steel and aluminum tariffs, I say think about how many cans of pet food come off of a line in
+            manufacturing.”
+
+          </p>
+          <br />
+          <h4>Tariffs effects on foreign markets for US pet food</h4>
+          <p>
+            The tariffs on steel and aluminum could significantly affect pet food businesses as well as
+            consumers, <strong>Dana Brooks, president and chief executive officer of Pet Food Institute</strong>,
+            said. Beyond manufacturing costs, a widening trade war with China and the potential breakdown of free
+            trade among the US, Mexico and Canada could limit the access of US pet food brands to markets abroad.
+          </p>
+          <p>
+            “We’re always making sure that we have market access as well,” she said. “Most of our pet food
+            consumption is domestic, but we're see the emerging markets in the future opening up to US pet foods.
+            We have the highest food safety standards for pet foods in the world and we think that having Canada
+            and Mexico as open markets is critical for transportation and trade. Fifty percent of homes in Canada
+            have dogs, and they are probably purchasing US pet food.”
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">Costs for Canned Pet Food</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}

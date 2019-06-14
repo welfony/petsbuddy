@@ -1,0 +1,276 @@
+// A card displays site content in a manner similar to a playing card
+// Could also be named a 'thumbnail'
+// A header is a section at the top of the card, usually separated from the content by a border on the bottom or bu having a different background color
+// The header-text is the text in the header, usually used in conjunction with a 'header' class
+// The content is the main section of the card. It is the container of the main elements
+// The title is a title at the top of the content, usually used in conjunction with a 'header' class
+// The subtitle is just a subtitle under the title
+// The text is a generic class to apply font styling to the text in the card
+// The link is a class to modify links appearance
+// The img is a class to modify the images properties
+
+.card {
+    $card-title-height: 75px;
+    position: relative;
+    transition: opacity map_get($transitions-times, normal);
+    background-color: white;
+    z-index: map_get($z-indexes, medium);
+    @media screen and (min-width: map_get($breakpoints-min, md)) {
+        &:hover {
+            .card__subheader {
+                &--is-gray-on-hover {
+                    color: map_get($colors, gray-normal);
+                }
+                &--is-darker-on-hover {
+                    color: #718e7f;
+                }
+            }
+            .card__header {
+                &--is-darker-on-hover {
+                    color: #718e7f;
+                }
+            }
+            .card__header {
+                &--is-gray-on-hover {
+                    color: #718e7f;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: map_get($breakpoints-max, xs)) {
+        overflow: hidden;
+    }
+    &--has-padding-bottom {
+        padding-bottom: 20px;
+    }
+    &--has-sm-padding-bottom {
+        padding-bottom: 10px;
+    }
+    &--has-padding-top-mobile {
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            padding-top: 40px;
+        }
+    }
+    &--has-margin-top-mobile {
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            margin-top: 40px;
+        }
+    }
+    &--has-margin-bottom {
+        margin-bottom: 60px;
+    }
+    &--is-big {
+        @media screen and (min-width: map_get($breakpoints-min, lg)) {
+            padding-right: 30px;
+        }
+    }
+    &__row {
+        margin: 0 -15px;
+    }
+    &__wrapper {
+        padding: 0 15px;
+    }
+    &__background-img {
+        background-repeat: no-repeat;
+        flex: 1;
+        background-size: cover;
+        background-position: 50% 50%;
+        &--has-fixed-height {
+            height: 300px;
+            width: 100%;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, md)) {
+            height: 500px;
+            &--has-fixed-height {
+                height: 300px;
+            }
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            height: 300px;
+        }
+    }
+    &__gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: map_get($z-indexes, low);
+        background: linear-gradient(135deg, #ebecee 0%, rgba(255,255,255,0.001) 30%);
+        transition: opacity map_get($transitions-times, slow);
+        &--is-left-to-right {
+            background: linear-gradient(110deg, #ebecee 0%, rgba(255,255,255,0.001) 30%);
+        }
+        &--is-bottom-left {
+            background: linear-gradient(30deg, #ebecee 0%, rgba(255,255,255,0.001) 30%);
+        }
+    }
+    &__title {
+        position: relative;
+        //height: $card-title-height;
+        padding: 0 1em;
+        margin: 20px auto;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.2;
+        color: inherit;
+        z-index: map_get($z-indexes, medium);
+        transition: color map_get($transitions-times, normal);
+        @media screen and (max-width: map_get($breakpoints-max, md)) {
+            font-size: 16px;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            height: 80px;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            height: auto;
+            margin-bottom: 40px;
+        }
+        .card--is-big & {
+            padding: 0 2em;
+        }
+        &--is-taller {
+            height: calc(#{$card-title-height} + 10px);
+            margin-top: 35px;
+            margin-bottom: 20px;
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                margin-bottom: 5px;
+            }
+        }
+        &--has-height-auto {
+            height: auto;
+        }
+        &--has-extra-margin {
+            margin: 50px 0;
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                margin-top: 20px;
+            }
+        }
+        &--has-extra-margin-top {
+            margin-top: 45px;
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                margin-top: 20px;
+            }
+        }
+        &--has-spaced-headers {
+            & > * + * {
+                margin-top: 3px;
+            }
+        }
+        &--has-no-margin-bottom {
+            margin-bottom: 0;
+        }
+    }
+    &__title-spacer {
+        width: 35px;
+        height: 1px;
+        margin: 20px auto;
+        margin-bottom: 25px;
+        background-color: map_get($colors, gray-light);
+        transition: width map_get($transitions-times, normal);
+        @media screen and (min-width: map_get($breakpoints-max, md)) {
+            .card__link-wrapper:hover & {
+                width: 70px;
+            }
+        }
+    }
+    &__img {
+        width: 100%;
+        &--is-small {
+            width: 225px;
+        }
+        &--is-nudged-to-left {
+            transform: translateX(-20px);
+        }
+        &--is-smaller-xs-down {
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                width: 185px;
+            }
+        }
+    }
+    &__img-container {
+        transition: transform map_get($transitions-times, normal);
+        &--is-higher-on-hover {
+            @media screen and (min-width: map_get($breakpoints-min, md)) {
+                .card:hover & {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+    &__sub-title {
+        position: relative;
+        z-index: map_get($z-indexes, higher);
+        color: map_get($colors, gray-light-2);
+        font-size: 13px;
+        font-weight: bold;
+        transition: color map_get($transitions-times, normal);
+        &:hover {
+            color: map_get($colors, red-normal);
+        }
+        &:after {
+            content: ',';
+            display: inline-block;
+        }
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    &__top-item {
+        position: relative;
+        z-index: map_get($z-indexes, high);
+        svg {
+            width: 45px;
+            height: 45px;
+            fill: #caccce;
+            transition: fill map_get($transitions-times, normal), transform map_get($transitions-times, normal);
+            &:hover {
+                fill: map_get($colors, blue-normal);
+                transform: scale(1.05);
+            }
+        }
+    }
+    &__dynamic-text-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        z-index: map_get($z-indexes, low);
+        min-height: 14px;
+        margin-top: 5px;
+        color: black;
+    }
+    &__dynamic-text {
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0s;
+        &.is-visible {
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+    }
+    &__header {
+        transition: color map_get($transitions-times, normal);
+    }
+    &__subheader {
+        color: #485159;
+        transition: color map_get($transitions-times, normal);
+    }
+    &__sub-sub-header {
+        color: #485159;
+        line-height: 26px;
+    }
+    &__separator {
+        width: 35px;
+        height: 1px;
+        margin: 15px auto;
+        background-color: #c3bdb6;
+    }
+    &__title-footer {
+        margin-top: 5px;
+        color: #718e7f;
+    }
+}

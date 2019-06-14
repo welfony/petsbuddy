@@ -1,0 +1,13 @@
+.skim {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #242425;
+    opacity: 0.4;
+    @media screen and (max-width: map_get($breakpoints-max, sm)) {
+        display: block;
+    }
+}

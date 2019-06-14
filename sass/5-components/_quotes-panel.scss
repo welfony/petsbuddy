@@ -1,0 +1,54 @@
+.quotes-panel {
+    padding: 50px;
+    height: 500px;
+    background-color: #f5f8fa;
+    //transform: translateY(100%);
+    transition: opacity map_get($transitions-times, really-slow), transform map_get($transitions-times, normal);
+    &.animated {
+        transform: translateY(0%);
+    }
+    @media screen and(max-width: map_get($breakpoints-max, sm)) {
+        height: auto;
+        padding: 40px 20px;
+        justify-content: center;
+    }
+    &__content {
+        //max-width: 600px;
+        @media screen and(max-width: map_get($breakpoints-max, md)) {
+            max-width: 100%;
+        }
+    }
+    &__quote {
+        text-align: left;
+        color: #485159;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 200;
+        &:after {
+            content: '';
+            display: block;
+            width: 35px;
+            height: 1px;
+            background-color: #485159;
+            margin-top: 20px;
+            @media screen and(max-width: map_get($breakpoints-max, xs)) {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            text-align: center;
+        }
+    }
+    &__signature {
+        text-align: left;
+        margin-top: 20px;
+        line-height: 1.2;
+        font-weight: 600;
+        font-size: 16px;
+        color: #485159;
+        @include media-breakpoint-down(xs) {
+            text-align: center;
+        }
+    }
+}

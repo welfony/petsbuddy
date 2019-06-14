@@ -1,0 +1,36 @@
+.promo {
+    text-align: center;
+    @media screen and(max-width: map_get($breakpoints-max, xs)) {
+        position: relative;
+        padding: 0 20px;
+        z-index: map_get($z-indexes, low);
+    }
+    &__header {
+        margin-bottom: 50px;
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            margin-bottom: 30px;
+        }
+    }
+    &__header-small {
+        color: white;
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.5;
+        strong {
+            font-weight: 500;
+        }
+        & + #{&} {
+            margin-top: 25px;
+            @media screen and(max-width: map_get($breakpoints-max, xs)) {
+                margin-top: 15px;
+            }
+        }
+    }
+    &__btn {
+        margin-top: 55px;
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            margin-top: 30px;
+            margin-bottom: 80px;
+        }
+    }
+}

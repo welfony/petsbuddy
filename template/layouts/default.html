@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+  <title>{{ title }}</title>
+  <meta name="description" content="" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <!-- build:css -->
+  <link rel="stylesheet" href="css/app.css" />
+  <!-- endbuild -->
+  <link rel="stylesheet" href="css/slick.min.css" />
+
+  <link rel="stylesheet" href="fonts/font-awesome/font.css" />
+
+  <link rel="stylesheet" href="fonts/font-awesome/font.css" />
+
+  <link rel="stylesheet" href="fonts/fontello/css/fontello.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css" />
+
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
+  <script src="./plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+</head>
+
+<body class="preload page_home">
+
+  {% include '../partials/nav.html' %}
+  {% include '../partials/subnavbar.html' %}
+
+  {% block content %}{% endblock %}
+
+  {% include '../partials/footer.html' %}
+
+  {% include '../partials/sidebar.html' %}
+  {% include '../partials/language.html' %}
+  {% include '../partials/newsletter.html' %}
+
+  <div class="dimmer js-dimmer"></div>
+
+  <script src="./js/common.min.js"></script>
+  <script src="./js/home.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

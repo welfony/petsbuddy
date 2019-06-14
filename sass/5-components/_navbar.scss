@@ -1,0 +1,206 @@
+// A navigation bar is a navigation header that is placed at the top of the page.
+
+/*
+
+    <div class="navbar js-navbar" data-slide-speed="500">
+			<div class="navbar__mobile-container grid grid--justify-space-between grid--align-center hidden-md-up">
+				<h3 class="navbar__mobile-container-header">Template</h3>
+				<div class="navbar__hamburger js-hamburger">
+					<div class="navbar__hamburger-line"></div>
+					<div class="navbar__hamburger-line"></div>
+					<div class="navbar__hamburger-line"></div>
+					<div class="navbar__hamburger-line"></div>
+				</div>
+			</div>
+			<div class="navbar__container grid grid--justify-space-between grid--align-center hidden-sm-down js-navbar-container">
+				<div class="navbar__section">
+					<ul class="navbar__list grid grid--justify-start">
+						<li class="navbar__item">
+							<a class="navbar__item-link" href="#">Link 1</a>
+						</li>
+					</ul>
+				</div>
+				<div class="navbar__section">
+					<ul class="navbar__list grid grid--justify-end">
+						<li class="navbar__item">
+							<a class="navbar__item-link" href="#">Link 4</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__item-link" href="#">Link 5</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__item-link" href="#">Link 6</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+*/
+
+.navbar {
+    position: relative;
+    font-size: 1rem;
+    background-color: white;
+    z-index: map_get($z-indexes, highest);
+    @media screen and (max-width: map_get($breakpoints-max, xs)) {
+        padding-bottom: 0;
+    }
+    &.is-sticky {
+        position: fixed;
+        width: 100%;
+        padding-bottom: 0;
+        background-color: white;
+        z-index: map_get($z-indexes, highest);
+        transform: translateY(-150%);
+        transition: transform map_get($transitions-times, normal);
+        box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+        &.is-sticky-visible {
+            transform: translateY(0);
+        }
+    }
+    padding-left: 20px;
+    padding-right: 20px;
+    &__container {
+        padding: 5px 0;
+        height: map_get($others, navbar-height);
+    }
+    &__mobile-container {
+        padding: 1em;
+        background-color: white;
+        &-header {
+            font-size: 1.5em;
+            color: black;
+        }
+    }
+    &__main-sections-thumbnails {
+        width: 354px;
+        height: 100%;
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            width: map_get($others, navbar-main-sections-thumbnails-width-tablet);
+        }
+    }
+    &__hamburger {
+        @media screen and (min-width: map_get($breakpoints-min, sm)) {
+            width: map_get($others, navbar-hamburger-btn-width-tablet);
+        }
+        @media screen and (min-width: map_get($breakpoints-min, md)) {
+            width: map_get($others, navbar-hamburger-btn-width-desktop);
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            margin-left: 20px;
+        }
+    }
+    &__list {
+        height: 100%;
+    }
+    &__middle-section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 280px;
+    }
+    &__section {
+        height: 100%;
+        &--small {
+            max-width: 37%;
+        }
+    }
+    &__item {
+        position: relative;
+        height: 100%;
+        &--has-padding {
+            padding: 0 10px;
+        }
+        &--has-separator-after {
+            display: flex;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                background-color: #718e7f;
+                width: 1px;
+                height: 30px;
+            }
+        }
+        // Trick to hide separator when items are stacked
+        &--has-separator-hider {
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                transform: translateY(-100%);
+                right: 0;
+                background-color: white;
+                width: 1px;
+                height: 50px;
+            }
+        }
+    }
+    &__item-link {
+        width: 100%;
+        color: black;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        &--has-padding {
+            padding: 20px 0;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            &--has-padding-top-below-desktop {
+                justify-content: space-between;
+                padding-top: 20px;
+            }
+        }
+    }
+    &__item-link-logo {
+        position: relative;
+        z-index: map_get($z-indexes, higher);
+        &--is-big {
+            display: none;
+            top: 30px;
+            max-width: 180px;
+            .is-original-navbar.is-homepage & {
+                @media screen and (min-width: map_get($breakpoints-min, md)) {
+                    display: block;
+                }
+            }
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                display: block;
+                top: 0;
+                max-width: 110px;
+            }
+        }
+        &--is-small {
+            max-width: 160px;
+            .is-sticky &  {
+                display: block;
+            }
+            .is-original-navbar.is-homepage & {
+                display: none;
+                @media screen and (max-width: map_get($breakpoints-max, sm)) {
+                    display: block;
+                }
+            }
+        }
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            max-width: 160px;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            max-width: 100px;
+        }
+    }
+    &__item-link-logo-full-height {
+        position: relative;
+        z-index: map_get($z-indexes, low);
+        display: block;
+        height: 92px;
+        margin-left: 20px;
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            margin-left: 0;
+        }
+    }
+}

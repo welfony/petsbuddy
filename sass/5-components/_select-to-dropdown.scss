@@ -1,0 +1,17 @@
+.select-to-dropdown {
+    position: relative;
+    &__select[data-keep-select-behavior-mobile="true"] {
+        font-size: 16px;
+        display: none;
+        @media screen and (max-width: 480px) {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.0001;
+            z-index: map_get($z-indexes, lower);
+        }
+    }
+}

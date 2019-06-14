@@ -1,0 +1,13 @@
+// Other variables
+
+$others: (
+    // Must use a variable for this as it is used both by _sidebar AND _slideable-content
+    sidebar-width: 30%,
+    navbar-height: 110px,
+    navbar-hamburger-btn-width-desktop: 80px,
+    navbar-hamburger-btn-width-tablet: 75px,
+    navbar-main-sections-thumbnails-width-desktop: 236px,
+    navbar-main-sections-thumbnails-width-tablet: 200px,
+    default-font-size: 14,
+    banner-nudged-height: 30px
+)

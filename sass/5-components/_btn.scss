@@ -1,0 +1,60 @@
+// A button is a button
+
+.btn {
+    display: inline-block;
+    padding: 20px 30px;
+    color: #718e7f;
+    background-color: transparent;
+    border: solid 1px #718e7f;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color map_get($transitions-times, normal), color map_get($transitions-times, normal);
+    &:hover {
+        background-color: #718e7f;
+        color: white;
+    }
+    &--has-small-padding {
+        padding: 15px 0;
+    }
+    &--is-full-width {
+        width: 100%;
+        padding: 20px 10px;
+    }
+    &--is-thinner {
+        height: 50px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    &--is-large {
+        width: 170px;
+    }
+    &--has-sides-padding {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &--has-bg-highlighted {
+        background-color: #718e7f;
+        color: white;
+        &:hover {
+            background-color: darken(#718e7f, 10%);
+        }
+    }
+    @media screen and (max-width: map_get($breakpoints-max, sm)) {
+        padding: 20px;
+        font-weight: bold;
+        &--is-thinner {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+    @media screen and (max-width: map_get($breakpoints-max, xs)) {
+        font-size: 16px;
+        &--is-same-padding-mobile {
+            padding: 20px 40px;
+        }
+        &--has-small-vertical-padding-below-desktop {
+            padding: 15px 10px;
+        }
+    }
+}

@@ -1,0 +1,271 @@
+.banner {
+    $padding_container: 20px;
+    position: relative;
+    background-color: #4b3d2a;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #4C3D2A;
+    }
+    &.original:before {
+        background-color: #72BF44;
+    }
+    &.life:before {
+        background-color: #04A6A2;
+    }
+    &.holistic:before {
+        background-color: #4C3D2A;
+    }
+    &--has-darker-bg:before {
+        opacity: 0.3;
+    }
+    @media screen and (min-width: map_get($breakpoints-min, sm)) {
+        height: 360px;
+    }
+    @media screen and (max-width: map_get($breakpoints-max, sm)) {
+        padding: 40px;
+    }
+    @media screen and (max-width: map_get($breakpoints-max, xs)) {
+        padding: 20px;
+    }
+    &--no-fixed-height {
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 110px;
+    }
+    &--has-background-image {
+        background-color: transparent;
+        background-image: url('../img/background-footer-gradient.jpg');
+        background-size: auto 100%;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            height: 134px;
+            text-shadow: 1px 1px 1px black;
+        }
+    }
+    &--has-dynamic-background-image {
+        background-color: transparent;
+        background-size: cover;
+        background-position-y: center;
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            background-position: center;
+        }
+    }
+    &--has-fixed-height {
+        padding: 0;
+        height: 540px;
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            height: 340px;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            padding-bottom: 0;
+            padding-top: 100px;
+            height: auto;
+        }
+    }
+    &--is-taller-xs-down {
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            height: 200px;
+        }
+    }
+    &--has-background-image-blog:before {
+        background-image: url('../img/background_blog.jpg');
+        background-position: right center;
+        @media screen and (max-width: 1600px) {
+            background-position: center center;
+        }
+        @media screen and (max-width: 1199px) {
+            background-position: 70% center;
+        }
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            background-position: 70%;
+        }
+
+    }
+    &--has-background-image-faq:before {
+        @include responsive-background-image('background-faq', 'jpg');
+        @media screen and (max-width: 1600px) {
+            background-position: 10%;
+        }
+        @media screen and (max-width: 1500px) {
+            background-position: 15%;
+        }
+        @media screen and (max-width: 1400px) {
+            background-position: 20%;
+        }
+        @media screen and (max-width: 1300px) {
+            background-position: 10%;
+        }
+        @media screen and(max-width: map_get($breakpoints-max, sm)) {
+            background-position: 10%;
+        }
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            background-position: 5%;
+        }
+    }
+    &--has-background-image-champ:before {
+        background-image: url('../img/background_champ.jpg');
+        background-position: center;
+        @media screen and (max-width: map_get($breakpoints-max, md)) {
+            background-position: 75%;
+        }
+    }
+    &--has-background-image-sunset:before {
+        background-image: url('../img/background_sunset.jpg');
+        background-position: center;
+        @media screen and (max-width: map_get($breakpoints-max, md)) {
+            background-position: 75%;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            background-image: url('../img/background_sunset_sm.jpg');
+        }
+    }
+    &__header {
+        &--is-nudged-higher {
+            @media screen and (min-width: map_get($breakpoints-max, sm)) {
+                transform: translateY(-38px);
+            }
+        }
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            max-width: 250px;
+            margin: auto;
+        }
+    }
+    &__subheader {
+        margin-top: 20px;
+        @media screen and(max-width: map_get($breakpoints-max, xs)) {
+            margin-top: 5px;
+        }
+    }
+    &__container {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+    }
+    &__back-btn {
+        display: inline-block;
+        width: 40px;
+        opacity: 0.85;
+        margin-top: 5px;
+        margin-left: 15px;
+        transition: opacity map_get($transitions-times, normal);
+        &:hover {
+            opacity: 1;
+            span {
+                color: white;
+            }
+        }
+        span {
+            transition: color map_get($transitions-times, normal);
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            width: 35px;
+        }
+    }
+    &__small-text {
+        margin-top: 25px;
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+        text-shadow: 1px 0 100px #dedede;
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            margin: 5px 0;
+        }
+    }
+    &__left-section {
+        &-header {
+            @media screen and (max-width: map_get($breakpoints-max, md)) {
+                font-size: 60px!important;
+            }
+            @media screen and (max-width: map_get($breakpoints-max, sm)) {
+                font-size: 50px!important;
+            }
+            @media screen and (max-width: map_get($breakpoints-max, sm)) {
+                font-size: 36px!important;
+            }
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 5px;
+            padding: 0 20px;
+        }
+    }
+    &__main-title {
+        margin-top: 10px;
+        text-shadow: 1px 0 100px #dedede;
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            margin-top: 0;
+        }
+    }
+    &__sub-main-title {
+        margin-top: 10px;
+        text-shadow: 1px 0 100px #dedede;
+        &-separator {
+            width: 1px;
+            height: 35px;
+            margin: 0 15px;
+            background-color: white;
+        }
+    }
+    &__back-btn-wrapper {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    &__img {
+        &-wrapper {
+            max-width: 500px;
+            padding-top: 90px;
+            @media screen and (max-width: map_get($breakpoints-max, sm)) {
+                max-width: 250px;
+            }
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                padding-top: 0;
+                transform: translateY(55px);
+            }
+        }
+    }
+    &__logo-wrapper {
+        position: relative;
+        @media screen and (min-width: map_get($breakpoints-min, md)) {
+            padding-right: 60px;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: calc(#{$padding_container} * -1);
+            right: 0;
+            width: 1px;
+            height: calc(100% + (#{$padding_container} * 2));
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            margin-bottom: 20px;
+            &:after {
+                display: none;
+            }
+        }
+    }
+    &__logo {
+        max-width: 258px;
+    }
+    &__title-wrapper {
+        @media screen and (min-width: map_get($breakpoints-min, md)) {
+            padding-left: 60px;
+        }
+    }
+}
+

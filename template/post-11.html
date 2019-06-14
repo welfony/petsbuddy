@@ -1,0 +1,148 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        Why a Pet Owner Chooses Your Pet Shop?
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+          <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog11.jpg" alt="">
+                  <a href="img/blogs/blog11-o.jpg" class="popup-img overlay-link">
+                    <i class="icon-plus-1"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p style="font-weight: bold;">
+            Pet owners in the Australian Market stated that convenience, price and brand selection dominated
+            their reasons for choosing one pet product retailer over another.
+          </p>
+          <p>
+            In a recent survey, pet owners in the United States stated that convenience, price and brand
+            selection dominated their reasons for choosing one pet product retailer over another. Staff at the
+            retail location and in-store services also influenced the decisions. The ability to order online
+            carried less weight with survey respondents, however.
+          </p>
+          <p>
+            Let us see what kind of factors influence customers’ behaviours.
+          </p>
+          <p>
+            <ol>
+              <li>Convenient location</li>
+              <li>Lower prices on pet products here than I could buy somewhere else</li>
+              <li>Prices are more competitive</li>
+              <li>Better selection/variety</li>
+              <li>Carries more of the pet brands I like</li>
+              <li>Better sales and promotions</li>
+              <li>Good price matching</li>
+              <li>More items are available when I want to buy them</li>
+              <li>Faster checkout</li>
+              <li>Better one-stop shopping for food and household products</li>
+            </ol>
+          </p>
+          <h4>Convenience, price and selection of pet products</h4>
+          <p>
+            Three factors in the top ten related to convenience: the number one choice, convenient location,
+            along with faster checkout and one-stop shopping.
+          </p>
+          <p>
+            Four responses corresponded to pricing: lower prices, competitive prices, sales/promotions and price
+            matching.
+          </p>
+          <p>
+            In the top 10, three factors related to brands: better selection, more liked brands and availability
+            of items.
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">Selection of pet products</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}

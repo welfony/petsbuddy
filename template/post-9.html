@@ -1,0 +1,128 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        Research Shows That Long-term Raw Dog Food Diet Will Increase Gut Bacteria Levels
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+          <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog9.jpg" alt="">
+                  <a href="img/blogs/blog9-o.jpg" class="popup-img overlay-link">
+                    <i class="icon-plus-1"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p>
+            Dogs eating a homemade raw diet harbored a wider range of microorganisms, and larger populations of them.
+          </p>
+          <p>
+            <strong>Scientists at Seoul National University in South Korea</strong> found eating homemade raw dog food for more than a year correlated to different microbes thriving in dogs’ intestines compared to the guts of dogs fed store-bought dry kibble. The dogs eating a raw diet harbored a wider range of microorganisms, and larger populations of them, including bacteria that can cause health problems.
+          </p>
+          <p>
+            The potential risk of opportunistic infection could be higher in companion canines fed raw dog food, than in dogs fed commercially available dry kibble, wrote <strong>the scientists in the journal Gut Pathogens.</strong>
+          </p>
+          <br/>
+          <h4>Bacteria in dogs fed raw dog food diet</h4>
+          <p>
+            The microbiota, or community of microbes in the gut, of dogs that ate the raw pet food diet differed from that of dogs fed conventional dry dog food. The microbiota differed in phylum, family and species of microorganism present.
+          </p>
+          <p>
+            Along with this, the raw diet dogs’ intestines also had larger populations of microorganisms, including the potentially harmful bacteria Clostridium perfringens and Fusobacterium varium.
+          </p>
+          <p>
+            The researchers concluded that the type of dog food may play a key role in animal health, since it may significantly affect gut microbiota. However, scientists called for more research with larger numbers of animals to determine the details of how raw dog food and conventional diets differ in their effects on pets’ health.
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">Long-term Raw Dog Food Diet</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}

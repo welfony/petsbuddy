@@ -1,0 +1,148 @@
+.main-sections-thumbnails {
+    text-transform: uppercase;
+    &__label {
+        height: 100%;
+        z-index: map_get($z-indexes, medium);
+        cursor: pointer;
+    }
+    &__thumbnail {
+        $block: &;
+        position: relative;
+        height: map_get($others, navbar-height);
+        flex: 1;
+        background-image: linear-gradient(to right, white, #f2f5f8);
+        overflow: hidden;
+        transition: background map_get($transitions-times, normal);
+        cursor: pointer;
+        border-radius: 10px;
+        &--has-bg-black {
+            background-image: none;
+            background-color: #718e7f;
+            &.is-selected {
+                background-color: darken(#718e7f, 10%);
+            }
+        }
+        &--has-no-border-radius {
+            border-radius: 0;
+        }
+        &--has-bg-image {
+            width: 114px;
+            height: 97px;
+            background-image: url('../img/btn_carousel.png');
+            background-size: cover;
+            &:after, &:before {
+                display: none;
+            }
+            &:active,
+            &:focus {
+                background-image: url('../img/btn_carousel.png')!important;
+            }
+            & > a {
+                transform: translateX(-10px);
+                &:hover span {
+                    color: #485159;
+                }
+            }
+        }
+        &--is-gray {
+            background-image: linear-gradient(#f5f5f5, #e7e7e7);
+        }
+        &--is-taller {
+            height: 100%;
+        }
+        &:active,
+        &:focus {
+            //background-image: linear-gradient(#424344, black);
+            &--is-gray {
+                background-image: linear-gradient(#f5f5f5, #e7e7e7);
+            }
+        }
+        &:after {
+            content: '';
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 500ms;
+        }
+        &.cat:after {
+            background-image: url('../img/btn_nav_cat_hover.jpg');
+        }
+        &.dog:after {
+            background-image: url('../img/btn_nav_dog_hover.jpg');
+        }
+        &--is-gray:after {
+            background-image: linear-gradient(#d5d6d7, #ededed 20%, #d4d4d4 100%);
+        }
+        &.is-selected {
+            &:after {
+                opacity: 1!important;
+            }
+        }
+        @media screen and (min-width: map_get($breakpoints-min, lg)) {
+            &:hover{
+                span {
+                    color: #485159;
+                }
+                &:after, &:before {
+                    opacity: 1!important;
+                }
+            }
+            &--no-hover:hover {
+                &:after {
+                    opacity: 0;
+                }
+                &.is-selected {
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &-icon {
+            position: relative;
+            max-height: 38px;
+            max-width: 54px;
+            margin-bottom: 18px;
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                margin-bottom: 9px;
+            }
+            &.dog {
+                max-width: 45px;
+            }
+        }
+        &-text {
+            position: relative;
+            color: #718e7f;
+            font-weight: bold;
+            z-index: map_get($z-indexes, medium);
+            text-align: center;
+            transition: color 300ms;
+            #{$block}--has-bg-black & {
+                color: white;
+                font-weight: bold;
+            }
+        }
+        a {
+            height: 100%;
+            position: relative;
+            z-index: map_get($z-indexes, medium);
+            transition: top map_get($transitions-times, normal);
+            @media screen and (min-width: map_get($breakpoints-max, lg)) {
+                &:hover{
+                    top: 0;
+                }
+            }
+        }
+        & + #{&} {
+            border-left: solid white 1px;
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                border-left: solid black 1px;
+            }
+        }
+    }
+}

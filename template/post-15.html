@@ -1,0 +1,123 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        Functional Pet Food Ingredient is More Popular
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+          <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog15.jpg" alt="">
+                  <a href="img/blogs/blog15-o.jpg" class="popup-img overlay-link">
+                    <i class="icon-plus-1"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p>
+            Functional ingredients are now being used in all kinds of pet food formulations, as larger industry trends find answers in functional options.
+          </p>
+          <p>
+            Functional pet food ingredients have been a significant staple in veterinary and health-focused premium pet foods from the outset. But with nearly every pet parent now wanting to feed their pets the best, whether they gravitate towards premium pet foods or economy brands, functional ingredients are finding a home in nearly every formulation.
+          </p>
+          <p>
+            “There are basically two types of functional ingredients: nutritional functional and physical functional ingredients,” says<strong> Ben Arnold, manager, sales development, pet and animal nutrition for Ingredion Incorporated</strong>. “Nutritional functional ingredients, such as prebiotic fibers, are very popular and top of mind for consumers and for the manufacturers who service them,” he said. “this helps support digestive well-being by both stimulating the growth/activity of beneficial bacteria and by inhibiting pathogenic bacteria in cats and dogs. Physical functional ingredients can help provide binding, texture, improved handling and processing, and appearance benefits.”
+          </p>
+          <p>
+            “Pet owners like having transparency and knowing exactly what their pets are consuming,” says Arnold. “Clean label is a growing trend in the human food and beverage space and can include shorter ingredient statements with recognizable ingredients or marketing claims such as non-GMO, traceable, organic, etc. The same follows into the pet space and also includes ‘grain-free.’”
+          </p>
+          <p>
+            “Nutrient-packed superfoods such as pumpkin, kale, broccoli, carrots and apples are seen as a nutrient-rich and clean label way to add additional value to pet food and treats,” says Arnold.
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">Functional Pet Food Ingredient</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}

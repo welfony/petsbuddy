@@ -1,0 +1,54 @@
+.carousel {
+    position: relative;
+    @media screen and (max-width: map_get($breakpoints-max, sm)) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    &__header {
+        margin-bottom: 75px;
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            margin-bottom: 50px;
+        }
+    }
+    &__img-container {
+        padding: 0 40px;
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            padding: 20px;
+            text-align: center;
+        }
+    }
+    &__img {
+        max-width: 100px;
+        opacity: 0.9;
+        transition: opacity map_get($transitions-times, normal);
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__slick-container {
+        padding: 0 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+    &__small-slide {
+        padding: 0 20px;
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            padding: 0;
+        }
+    }
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        font-size: 41px;
+        color: map_get($colors, gray-light-2);
+        cursor: pointer;
+    }
+    .slick-arrow-prev {
+        left: 10px;
+        transform: translate(-100%, -50%);
+    }
+    .slick-arrow-next {
+        right: 10px;
+        transform: translate(100%, -50%);
+    }
+}

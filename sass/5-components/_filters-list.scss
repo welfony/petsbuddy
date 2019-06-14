@@ -1,0 +1,166 @@
+.filters-list {
+    padding-right: 60px;
+    &--has-padding-left {
+        padding-left: 15px;
+    }
+    &--has-no-margin-bottom {
+        margin-bottom: 0;
+    }
+    @media screen and (max-width: map_get($breakpoints-max, sm)) {
+        margin: 50px 0;
+        padding-right: 0;
+        &--has-no-margin-bottom {
+            margin-bottom: 0;
+        }
+    }
+    &__header {
+        margin-bottom: 30px;
+        &--has-small-mg-b {
+            margin-bottom: 20px;
+        }
+        &--has-big-mg-b {
+            margin-bottom: 50px;
+        }
+    }
+    &__subheader {
+        margin-bottom: 35px;
+    }
+    &__nudged-content {
+        padding-left: 20px;
+    }
+    &__section-container {
+        @media screen and (min-width: map_get($breakpoints-min, sm)) and (max-width: map_get($breakpoints-max, sm)) {
+            display: flex;
+        }
+    }
+    &__section {
+        overflow: visible;
+        padding-bottom: 50px;
+        & + #{&} {
+            position: relative;
+            padding-top: 50px;
+            overflow: hidden;
+            &:before {
+                content: '';
+                width: 120%;
+                max-width: 300px;
+                height: 80px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 46%;
+                box-shadow: 0 30px 20px -20px #e8e8e8;
+                transform: translate(-10%, -105%);
+                @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                    box-shadow: 0 30px 20px -20px #d5d5d5;
+                }
+            }
+            &--has-no-separator {
+                padding-top: 0;
+                overflow: visible;
+                &:before {
+                    display: none;
+                }
+            }
+            &--is-inline-sm {
+                @media screen and (min-width: map_get($breakpoints-min, sm)) and (max-width: map_get($breakpoints-max, sm)) {
+                    margin-left: 40px;
+                    padding-top: 0;
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &--has-sm-padding {
+            padding-bottom: 30px;
+        }
+        &--has-md-padding {
+            padding-bottom: 40px;
+        }
+        &--radio {
+            label:before {
+                background-image: url('../img/icon-radio-unchecked.png');
+            }
+            label:after {
+                opacity: 0;
+                background-image: url('../img/icon-radio-checked.png');
+            }
+        }
+        &--checkbox {
+            label:before {
+                background-image: url('../img/icon-checkbox-unchecked.png');
+            }
+            label:after {
+                opacity: 0;
+                background-image: url('../img/icon-checkbox-checked.png');
+            }
+        }
+        // This is for when we can't add classes to the html elements
+        &--has-no-classes {
+            li + li{
+                margin-top: 25px;
+            }
+            li {
+                &.is-selected {
+                    label {
+                        &:before {
+                            opacity: 0;
+                        }
+                        &:after {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            input {
+                display: none;
+            }
+            label {
+                position: relative;
+                display: flex;
+                align-items: center;
+                padding-left: 35px;
+                &:before, &:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    background-size: cover;
+                    transform: translateY(-50%);
+                    transition: opacity map_get($transitions-times, normal);
+                }
+            }
+        }
+        &--has-half-width-li-tablet {
+            @media screen and (min-width: map_get($breakpoints-min, sm)) and (max-width: map_get($breakpoints-max, sm)) {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    margin-top: -25px;
+                }
+                li {
+                    display: block;
+                    width: 50%;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    &__highlight-text {
+        color: map_get($colors, gray-light-2);
+        font-size: 13px;
+        font-weight: bold;
+    }
+    &__btn {
+        margin-top: 5px;
+    }
+    &__back-btn {
+        display: block;
+        margin-left: 10px;
+        margin-bottom: 35px;
+    }
+}

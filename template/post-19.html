@@ -1,0 +1,127 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        New Product Opportunities Posed for Pet Treats
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+          <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog19.jpg" alt="">
+                  <a href="img/blogs/blog19.jpg" class="popup-img overlay-link">
+                    <i class="icon-plus-1"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p style="font-size: 18px">
+            Pet treat opportunities based on ingredients, functional benefits
+          </p>
+          <p>
+            Limited ingredients are another area of interest, with room for growth – and it’s much easier to achieve a very short ingredient list for a pet treat or topper than with a complete pet diet, Dornblaser pointed out. Currently, 27 percent of U.S. consumers surveyed by Mintel look for limited ingredient lists in pet foods, indicating an opportunity to appeal to such consumers with new products or by prominently promoting the short ingredient lists of the treats or toppers you currently offer.
+          </p>
+          <p>
+            Other ingredients to consider in developing new pet treats or toppers include superfoods, sought by 26 percent of U.S. consumers, and plant proteins, sought by 20 percent. While many pet owners prefer products with meat or animal proteins for their pets, Dornblaser said plant proteins might present a real opportunity for new product launches, given their popularity in human food.
+          </p>
+          <p>
+            In addition, 37 percent of the pet owners surveyed said they’re looking for natural products, 18 percent are seeking organic ones, while 52 percent look for pet treats providing added or functional nutrition – with the most common being joint health and mobility. Interestingly, while 35 percent of consumers surveyed seek treats that help maintain cognitive function, there are few products on the market bearing this claim, Dornblaser said, representing another significant opportunity.
+          </p>
+          <h4>Focusing on cats may pose a real opportunity</h4>
+          <p>
+            Dornblaser commented that treats and toppers are offered mainly for dogs – at least half of the nearly 500 new pet food and treat products introduced in the U.S. to date this year have been dog treats and snacks, her data showed – yet cats present a real opportunity. For instance, older cats often develop joint and mobility problems and likely would benefit from treats or toppers offering functional ingredients targeting that.
+          </p>
+          <p>
+            Another example may lie with especially finicky cats or older ones needing an appetite boost, medication or a prescription food. Dornblaser highlighted a topper from the UK, Thrive ProTaste 100% Chicken Food Topper for Cats, designed for that purpose; she also shared a personal anecdote about the difficulty of getting her 16-year-old cat to eat enough until she offered it a wet topper product that the cat devoured.
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">Pet Treats</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}

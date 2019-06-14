@@ -1,0 +1,15 @@
+// Custom styling for links
+// Removing text-decoration by default
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    transition: color map_get($transitions-times, normal);
+    &.darker-on-hover, &.darker-on-hover i {
+        transition: color map_get($transitions-times, normal);
+        &:hover {
+            color: #718e7f;
+        }
+    }
+}

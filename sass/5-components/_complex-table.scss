@@ -1,0 +1,192 @@
+.complex-table {
+    $block: &;
+    table-layout: fixed;
+    width: 100%;
+    &__icon {
+        position: relative;
+        z-index: map_get($z-indexes, lower);
+        width: 80px;
+        &--is-smaller {
+            width: 50px;
+        }
+    }
+    &__cell{
+        padding: 15px;
+        padding-left: 60px;
+        padding-right: 10px;
+        font-size: 14px;
+        vertical-align: middle;
+        line-height: 1;
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            padding-left: 20px;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            padding-left: 0;
+            text-align: center;
+            width: 50%;
+        }
+        &--has-no-l-padding {
+            padding-left: 0;
+        }
+        &--has-no-t-padding {
+            padding-top: 0;
+        }
+        &--has-no-b-padding {
+            padding-bottom: 0;
+        }
+        &--is-colored {
+            color: map_get($colors, blue-normal);
+        }
+        &--is-colored-pale {
+            color: white
+        }
+        &--has-smaller-padding {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        &--is-v-align-top {
+            vertical-align: top;
+        }
+        &--has-big-t-padding {
+            padding-top: 35px;
+        }
+        &--has-big-b-padding {
+            padding-bottom: 35px;
+        }
+        &--has-no-r-padding-xs-down {
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                padding-right: 0;
+            }
+        }
+        &--has-bigger-padding-left {
+            padding-left: 80px;
+            @media screen and (max-width: map_get($breakpoints-max, sm)) {
+                padding-left: 20px;
+            }
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                padding-left: 0;
+            }
+        }
+        &--has-l-padding-border {
+            padding-left: 1px;
+        }
+        &--is-bordered-right, &.has-right-border {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 1px;
+                height: 100%;
+                background-color: #c9c9c9;
+            }
+        }
+        &--has-bigger-font-size {
+            font-size: 16px;
+        }
+        &--is-padded-both-sides {
+            padding-left: 60px;
+            padding-right: 60px;
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                padding-left: 10px;
+                padding-right: 10px;
+                &-large {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+    &__row {
+        &--is-even td {
+            background-color: #f8f8f8;
+        }
+    }
+    &__header-top {
+        td {
+            position: relative;
+            z-index: map_get($z-indexes, low);
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 123px;
+                z-index: map_get($z-indexes, lower);;
+                background-image: linear-gradient(#f8f8f8 0%, #e1e4e6 40%, #e1e4e6 60%, white 100%);
+            }
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            td + td {
+                border-left: solid #c9c9c9 1px;
+            }
+        }
+    }
+    &__header-bottom {
+        td {
+            position: relative;
+            z-index: map_get($z-indexes, low);
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                & + td {
+                    border-left: solid #c9c9c9 1px;
+                }
+            }
+        }
+    }
+    &__section-separator {
+        background-color: map_get($colors, purple-normal);
+        text-align: center;
+    }
+    &__footer-infos-item {
+        display: inline-block;
+        text-align: left;
+        line-height: 1.2;
+        & + #{&} {
+            margin-left: 25px;
+            &--has-sm-margin-left {
+                margin-left: 5px;
+            }
+            &--has-big-margin-left {
+                margin-left: 45px;
+            }
+            @media screen and (max-width: map_get($breakpoints-max, xs)) {
+                margin-left: 0;
+                &--has-xs-margin-left {
+                    margin-left: 20px;
+                }
+            }
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            &--is-full-width-xs {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            &--is-small-xs {
+                font-size: 12px;
+            }
+
+        }
+    }
+    &__footer-infos-big-text {
+        font-size: 36px;
+        font-weight: 500;
+    }
+    &__footer-infos-icon {
+        position: relative;
+        opacity: 0.5;
+        .fa {
+            font-size: 48px;
+            line-height: 0.7;
+        }
+    }
+    &__footer-row {
+        padding: 20px 0;
+        & + #{&} {
+            border-top: solid 1px rgba(255, 255, 255, 0.4);
+        }
+    }
+}

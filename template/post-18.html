@@ -1,0 +1,131 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        Will More Pet Food Consumers Continue to Find Out The Meaning of 'Fresh'?
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+          <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog18.jpg" alt="">
+                  <a href="img/blogs/blog18-o.jpg" class="popup-img overlay-link">
+                    <i class="icon-plus-1"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p style="font-size: 18px">
+            One definition for “fresh” that best applies to pet food is: “Not preserved, as by canning, smoking or freezing.” Yet as a market category, fresh pet food is still not well-defined, established or tracked.
+          </p>
+          <p>
+            David Lummis, lead pet market analyst for Packaged Facts, wrote recently on PetProductNews.com that “superpremium pet food’s future is fresh.” Citing results of a survey conducted by his company earlier this year, showing that 74 percent of U.S. food shoppers chose “fresh” as the top appealing human food characteristic by far, he posited that’s one key reason we’re seeing a growing number of pet food brands offer fresh products.
+          </p>
+          <p>
+            Specific to pet food, some consumer behavior data indicated that 32 percent of U.S. dog owners and 18 percent of cat owners mix human foods or food products into their pets’ primary pet food diets. That compared very favorably with pet owners mixing commercial products, like gravies, mixers and toppers, into their pets’ food.
+          </p>
+          <h4>What exactly is fresh pet food?</h4>
+          <p>
+            Yet here’s a possible sticking point: does everyone know or agree on what fresh pet food is, or how it should be defined and categorized? Does it encompass any products not processed via traditional methods like extrusion for kibble or retort for wet pet foods? That would include small but fastgrowing categories such as raw frozen. With sales increasing in the U.S. pet specialty channel by about 17 percent a year, according to GfK — and freeze dried — growing at a healthy clip of 34 percent. Notwithstanding the Packaged Facts data for commercial mixers and toppers, GfK’s research showed sales of those products in the freeze-dried category rising 40 percent a year. Further, Nielsen said its data indicated that in the overall U.S. market (all channels), freeze-dried pet food sales have soared 188 percent over the past two years.
+          </p>
+          <p>
+            Or is the definition for fresh pet food narrower, applying only to processing methods such as chilled, dehydrated and the like?
+          </p>
+          <h4>It’s all about real food — for humans and pets</h4>
+          <p>
+            I believe the fresh category should include all products not processed by traditional methods, including raw frozen, freeze-dried, baked, gently cooked, dehydrated and refrigerated. The companies offering products in those categories, and the pet owners flocking to them, believe and tout the same benefits, namely preservation of key nutrients; thus, all these so-called alternative formats would seem to fit the fresh label.
+          </p>
+          <p>
+            Yet, if fresh is truly going to take off as a significant pet food category, much more is needed than a commonly understood and accepted definition for it. As with so many areas of pet food, scientific research on the perceived or promoted benefits is sorely lacking or non-existent. We also need a much clearer idea of sales and growth prospects for the products comprising it.
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">The Meaning of 'Fresh'</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}

@@ -1,0 +1,143 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        Human Food Trends Driving Pet Food Product Innovation
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+          <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog13.jpg" alt="">
+                  <a href="img/blogs/blog13-o.jpg" class="popup-img overlay-link">
+                    <i class="icon-plus-1"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <h4>Natural pet food continuing to evolve</h4>
+          <p>
+            Natural pet food continues to be a significantly growing market category, consistently producing double-digit annual growth rates in the US market, according to Packaged Facts data. But that growth is not as simple as having a “natural” claim on the bag.
+          </p>
+          <p>
+            "Humanization trends are driving the natural category in new directions, and leading us across a landscape that reflects people’s contemporary eating habits and their beliefs that their pets’ eating habits should mirror their own,” said Eric Huston, marketing director for Mars Petcare US.
+          </p>
+          <p>
+            According to Nielsen, “natural” claims in the human space have risen across categories and across departments over the last few years. Not surprisingly, the two biggest departments for natural are baby care and personal care.
+          </p>
+          <p>
+            “These are things we’re putting on our body and giving to our small children,” said Restivo. Looking at market growth, pet is moving in lockstep with baby care. Pet has had one of the largest growths in terms of share of the category of natural.” Nielsen isn’t the only one seeing parallels between the pet segment and the baby segment. “We see similarities between the two spaces,” said Corby Reese, managing director of Swander Pace Capital. “Pets are being treated like members of the family. People will spend more and insist on higher quality for their babies and pets than they will for themselves.
+          </p>
+          <p>
+            Consumers seek greater transparency when looking at labels and want wholesome, simple recipes made with real and recognizable ingredients that each serve a distinct and healthy purpose — for both themselves and their pets. Specifically, the rise of non-GMO products speaks volumes to the relevance of this trend.
+          </p>
+          <h4>Keeping up with the human-pet food connection</h4>
+          <p>
+            It can be a complicated balance, gaining inspiration from the human food space while ensuring formulations that are nutritionally complete for dogs and cats, but it is necessary.
+          </p>
+          <p>
+            “Pet food trends used to follow human trends by three to five years,” said Reese. “Now that cycle has compressed due to several factors such as a more demanding consumer with more access to information, increased capital investment, and more robust marketing sophistication. In some cases, like digestive health, such as prebiotic and probiotic supplementation, the pet industry has actually led the human industry. Grain-free or gluten-free pet food caught on even faster than for human food.
+          </p>
+          <p>
+            With things moving so quickly, being able to stay on top of trends and critically analyze data from influencing industries such as human food will be vital to success.
+          </p>
+          <p>
+            “This is a very competitive industry right now, and you really need to use data science and analytics to make decisions,” said Restivo. “It’s no longer about going with your gut.”
+          </p>
+          <p>
+            All of this means that it is essential to take advantage of every avenue when it comes to gathering information on human food trends and their possible extrapolation into the pet food arena.
+          </p>
+          <p>
+            “Pet food companies have a unique opportunity today to speak more directly to the consumer now that more pet food is being researched and bought online,” said Reese. “The best manufacturers will understand this and take advantage and of today's tools to identify emerging trends and create better and more genuine relationships with pet parents.”
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">Pet Food Product Innovation</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}

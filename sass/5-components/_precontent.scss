@@ -1,0 +1,26 @@
+.precontent {
+    padding: 40px 0 30px 0;
+    &__row {
+        margin-top: 20px;
+    }
+    @media screen and (min-width: map_get($breakpoints-min, sm)) {
+        &__row--has-no-margin-sm-up {
+            margin: 0;
+        }
+
+    }
+    @media screen and (max-width: map_get($breakpoints-max, sm)) {
+        &__row--has-no-v-mg-sm-down {
+            margin-top: 0;
+        }
+    }
+    @media screen and (max-width: map_get($breakpoints-max, xs)) {
+        padding-top: 10px;
+        &__row {
+            margin-bottom: 20px;
+            &--has-no-v-mg-sm-down {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

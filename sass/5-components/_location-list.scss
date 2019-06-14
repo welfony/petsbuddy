@@ -1,0 +1,126 @@
+.location-list {
+    &__item {
+        position: relative;
+        padding-bottom: 30px;
+    }
+    &__item-bottom-border{
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        overflow: hidden;
+        &:before {
+            content: '';
+            width: 120%;
+            height: 80px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+            box-shadow: 0 30px 20px -20px #e8e8e8;
+            transform: translate(-10%, -105%);
+        }
+    }
+    &__item-wrapper {
+        padding: 0 60px;
+        margin-bottom: 50px;
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            padding: 0 15px;
+        }
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            &--is-last {
+                margin-bottom: 0;
+            }
+        }
+        @media screen and (max-width: map_get($breakpoints-max, xs)) {
+            padding-right: 0;
+        }
+    }
+    &__item-title {
+        color: #122b1f;
+        margin-bottom: 10px;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+    &__item-gray-text {
+        color: #485159;
+        line-height: 24px;
+        font-weight: 200;
+    }
+    &__item-line-of-text {
+        margin-top: 8px;
+        color: #485159;
+        font-weight: 600;
+        a {
+            color: #485159;
+            font-weight: 600;
+        }
+    }
+    &__item-footer {
+        margin-top: 25px;
+        a {
+            flex: 1;
+            font-weight: 600;
+            color: #28724f;
+            text-transform: uppercase;
+        }
+        &-icon {
+            width: 22px;
+            margin-right: 5px;
+        }
+    }
+    &__facebook-icon {
+        color: map_get($colors, blue-facebook);
+        font-size: 18px;
+    }
+    &__website-icon {
+        width: 16px;
+    }
+    &__icons-row {
+        min-height: 20px;
+        margin-top: 15px;
+        & > * + * {
+            margin-left: 10px;
+        }
+    }
+    &__paginator {
+        padding-top: 75px;
+    }
+    &__distance {
+        margin-top: 5px;
+        text-transform: lowercase;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+    }
+    &__distance-icon {
+        width: 15px;
+        margin-right: 5px;
+    }
+    &__item-brands-header{
+        margin-top: 20px;
+    }
+    &__item-brands-list {
+        li {
+            margin-top: 5px;
+            span {
+                color: white;
+                display: inline-block;
+                min-width: 60px;
+                text-align: center;
+                padding: 5px;
+                font-size: 12px;
+                &.original {
+                    background-color: #72BF44;
+                }
+                &.life {
+                    background-color: #04A6A2;
+                }
+                &.holistic {
+                    background-color: #4C3D2A;
+                }
+            }
+        }
+    }
+}

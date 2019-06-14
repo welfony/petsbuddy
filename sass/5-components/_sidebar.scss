@@ -1,0 +1,143 @@
+// A sidebar hides additional content beside a page.
+
+/*
+
+    <div class="sidebar sidebar--is-right-of-screen js-sidebar" data-dimmer="true" data-slide-content="false">
+		<ul class="sidebar__list">
+			<li class="sidebar__list-item">
+				<a class="sidebar__list-item-link" href="#">Link 1</a>
+			</li>
+			<li class="sidebar__list-item">
+				<a class="sidebar__list-item-link" href="#">Link 2</a>
+			</li>
+			<li class="sidebar__list-item">
+				<a class="sidebar__list-item-link" href="#">Link 3</a>
+			</li>
+		</ul>
+	</div>
+	<button class="btn js-sidebar-toggle">Open Sidebar</button>
+
+*/
+.sidebar {
+    position: fixed;
+    top: map_get($others, navbar-height);
+    height: calc(100% - #{map_get($others, navbar-height)});
+    font-size: 1rem;
+    z-index: map_get($z-indexes, highest);
+    transition: transform map_get($transitions-times, normal);
+    @media screen and (max-width: map_get($breakpoints-max, xs)) {
+        display: none;
+    }
+    &.is-visible {
+        transform: translateX(0);
+    }
+    &--is-left-of-screen {
+        left: 0;
+        transform: translateX(-100%);
+    }
+    &--is-right-of-screen {
+        right: 0;
+        transform: translateX(100%);
+    }
+    &.is-homepage:before {
+        left: calc(#{map_get($others, navbar-hamburger-btn-width-desktop)} + 9px);
+    }
+    &__container {
+        position: relative;
+        width: calc(#{map_get($others, navbar-hamburger-btn-width-desktop)} + (#{map_get($others, navbar-main-sections-thumbnails-width-desktop)}));
+        height: 100%;
+        padding: 60px 40px;
+        background-image: linear-gradient(map_get($colors, gray-darker), black);
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            width: calc(#{map_get($others, navbar-hamburger-btn-width-tablet)} + #{map_get($others, navbar-main-sections-thumbnails-width-tablet)});
+        }
+        @media screen and (max-height: 600px) {
+            padding: 30px 50px;
+            padding-bottom: 10px;
+            justify-content: flex-start;
+        }
+    }
+    &__btn-close-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: map_get($others, navbar-hamburger-btn-width-desktop);
+        height: map_get($others, navbar-height);
+        background-color: map_get($colors, gray-darker);
+        transform: translateY(-100%);
+        z-index: map_get($z-indexes, high);
+        .is-homepage & {
+            width: calc(#{map_get($others, navbar-hamburger-btn-width-desktop)} + 10px);
+        }
+        @media screen and (max-width: map_get($breakpoints-max, sm)) {
+            width: map_get($others, navbar-hamburger-btn-width-tablet);
+        }
+    }
+    &__btn-container {
+        margin-top: 65px;
+        @media screen and (max-height: 700px) {
+            margin-top: 20px;
+        }
+    }
+    &__btn {
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__btn-close {
+        opacity: 0.7;
+        transition: opacity map_get($transitions-times, normal);
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__btn-close-img {
+        max-width: 25px;
+    }
+    &__btn-group {
+        @media screen and (max-height: 700px) {
+            margin-top: 20px;
+        }
+    }
+    &__btn-group-btn {
+        &:hover {
+            color: map_get($colors, gray-normal);
+        }
+    }
+    &__list-item {
+        & + #{&} {
+            margin-top: 45px;
+            @media screen and (max-height: 700px) {
+                margin-top: 35px;
+            }
+            @media screen and (max-height: 600px) {
+                margin-top: 20px;
+            }
+        }
+        &-link {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            @media screen and (min-width: map_get($breakpoints-min, md)) {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: calc(100% + 10px);
+                    left: 0;
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background-color: map_get($colors, gray-light);
+                    transition: width map_get($transitions-times, normal);
+                }
+                &:hover {
+                    &:before {
+                        width: 100%
+                    }
+                }
+            }
+        }
+    }
+}

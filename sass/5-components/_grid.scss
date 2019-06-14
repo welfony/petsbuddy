@@ -1,0 +1,67 @@
+.grid-space-20 {
+  margin-right: -10.5px;
+  margin-left: -10.5px;
+}
+
+.grid-space-20 .col-lg-6,
+.grid-space-20 .col-lg-4,
+.grid-space-20 .col-lg-3,
+.grid-space-20 .col-md-6,
+.grid-space-20 .col-md-4,
+.grid-space-20 .col-md-3,
+.grid-space-20 .col-sm-6,
+.grid-space-20 .col-sm-4,
+.grid-space-20 .col-sm-3,
+.grid-space-20 .col-xs-6,
+.grid-space-20 .col-xs-4,
+.grid-space-20 .col-xs-3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.grid-space-10 {
+  margin-right: -6px;
+  margin-left: -6px;
+}
+
+.grid-space-10 .col-lg-6,
+.grid-space-10 .col-lg-4,
+.grid-space-10 .col-lg-3,
+.grid-space-10 .col-md-6,
+.grid-space-10 .col-md-4,
+.grid-space-10 .col-md-3,
+.grid-space-10 .col-sm-6,
+.grid-space-10 .col-sm-4,
+.grid-space-10 .col-sm-3,
+.grid-space-10 .col-xs-6,
+.grid-space-10 .col-xs-4,
+.grid-space-10 .col-xs-3 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.grid-space-0 {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.grid-space-0 .col-lg-6,
+.grid-space-0 .col-lg-4,
+.grid-space-0 .col-lg-3,
+.grid-space-0 .col-md-6,
+.grid-space-0 .col-md-4,
+.grid-space-0 .col-md-3,
+.grid-space-0 .col-sm-6,
+.grid-space-0 .col-sm-4,
+.grid-space-0 .col-sm-3,
+.grid-space-0 .col-xs-6,
+.grid-space-0 .col-xs-4,
+.grid-space-0 .col-xs-3 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.grid-space-0>div {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

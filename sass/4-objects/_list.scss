@@ -1,0 +1,13 @@
+.list {
+    $block: &;
+    &__item {
+        & + #{&} {
+            #{$block}--has-small-spacing & {
+                margin-left: 15px;
+            }
+            #{$block}--has-md-vertical-spacing & {
+                margin-top: 15px;
+            }
+        }
+    }
+}

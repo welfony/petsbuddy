@@ -1,0 +1,28 @@
+.fill-width-sections {
+    &__section {
+        &--is-left {
+            width: 100%;
+            @media screen and (min-width: 1000px) {
+                width: 40%;
+            }
+            @media screen and (min-width: 1200px) {
+                width: 40%;
+            }
+            @media screen and (min-width: 1600px) {
+                width: 50%;
+            }
+        }
+        &--is-right {
+            width: 100%;
+            @media screen and (min-width: 1000px) {
+                width: 60%;
+            }
+            @media screen and (min-width: 1200px) {
+                width: 60%;
+            }
+            @media screen and (min-width: 1600px) {
+                width: 50%;
+            }
+        }
+    }
+}

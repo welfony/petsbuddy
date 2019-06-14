@@ -1,0 +1,46 @@
+.home-middle-section {
+    height: 1050px;
+    padding-top: 180px;
+    background-image: url('../img/home_bg_boat.jpg');
+    background-size: cover;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    @media screen and(max-width: 991px) {
+        padding: 60px 20px 20px 20px;
+    }
+    @media screen and(max-width: 767px) {
+        background-position: 80% 0;
+    }
+    &__content {
+        max-width: 750px;
+        margin: auto;
+        text-align: center;
+    }
+    &__title {
+        font-size: 50px;
+        font-weight: bold;
+        color: #122b1f;
+        @media screen and(max-width: 767px) {
+            font-size: 30px;
+            max-width: 80%;
+            margin: auto;
+        }
+    }
+    &__paragraph {
+        font-weight: 300;
+        font-size: 16px;
+        color: #485159;
+        line-height: 2;
+        @media screen and(max-width: 767px) {
+            line-height: 1.5;
+        }
+        &-wrapper {
+            margin-top: 50px;
+        }
+    }
+    &__btn {
+        &-wrapper {
+            margin-top: 40px;
+        }
+    }
+}

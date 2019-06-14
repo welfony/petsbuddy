@@ -1,0 +1,140 @@
+{% extends "layouts/default.html" %}
+{% set title = "About Us - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container blogs">
+  <div class="row">
+    <!-- main start -->
+    <!-- ================ -->
+    <div class="main col-md-8">
+
+      <!-- page-title start -->
+      <!-- ================ -->
+      <h3 class="page-title">
+        Pet Food Brands Conquer Competitors in Search Engines
+      </h3>
+      <!-- page-title end -->
+
+      <!-- blogpost start -->
+      <!-- ================ -->
+      <article class="blogpost full">
+        <header>
+          <div class="post-info">
+            <span class="post-date">
+              <i class="icon-calendar"></i>
+              <span class="day">22</span>
+              <span class="month">Dec 2018</span>
+            </span>
+            <span class="comments">
+              <i class="icon-chat"></i>
+              <a href="#">0 comments</a>
+            </span>
+          </div>
+        </header>
+        <div class="blogpost-content">
+        <div id="carousel-post-1" class="carousel slide mb-20" data-ride="carousel">
+
+            <ol class="carousel-indicators bottom margin-clear">
+              <li data-target="#carousel-post-1" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-post-1" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog14-1.jpg" alt="">
+                  <a href="img/blogs/blog14-1-o.jpg" class="popup-img overlay-link">
+                    <i class="icon-plus-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="overlay-container overlay-visible">
+                  <img src="img/blogs/blog14-2.jpg" alt="">
+                  <a href="img/blogs/blog14-2-o.jpg" class="popup-img overlay-link">
+                    <i class="icon-plus-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style="font-size: 18px">
+            By bidding against competitors’ branded terms, pet food companies using conquesting aim to encourage customers to switch brands.
+          </p>
+          <p>
+            Dog and cat food brands increased their usage of a search engine technique that makes links to their products appear when individuals search for a competitors’ brand. The technique, known as conquesting, became more prevalent between April 2017 and June 2018.
+          </p>
+          <p>
+            For example, a Google search for branded terms associated with Petcurean dog food may also return results for Blue Buffalo products. By bidding against competitors’ branded terms, pet food companies use conquesting to encourage customers to switch brands.
+          </p>
+          <h4>Usage of conquesting by pet food companies</h4>
+          <p>
+            In last years’ Gartner report, only three pet food companies made use of conquesting. This year, analysts observed that 38 percent of the 58 pet food brands in their index attempted to bid against competitors’ branded terms.
+          </p>
+          <p>
+            Despite the increased attempts at conquest, many pet food brands failed to optimize their strategy for sniping pet food buyers from competitors. Gartner’s analysts pointed to IAMS, which bid on branded terms for 21 percent of competitors observed by the report. However, the hyperlink that appeared for IAMS took potential consumers to a generic product category page. A superior strategy is to link to a more dynamic online experience. For example, Brand A links to a product comparison tool. The tool encourages customers to look at the qualities of Brand A’s products side-by-side with competitors using such metrics as “features real meat as first ingredient.”
+          </p>
+          <p>
+            Ideally, a search engine conquesting strategy involves online content experiences that clearly articulate the value proposition of one dog or cat food, wrote Gartner analysts. The content should support product awareness, consideration and encourage conversion.
+          </p>
+        </div>
+        <footer class="clearfix">
+          <div class="tags pull-left">
+            <i class="icon-tags"></i>
+            <a href="#">Pet food brands conquer competitors</a>
+          </div>
+          <div class="link pull-right">
+            <ul class="social-links circle small colored clearfix margin-clear text-right animated-effect-1">
+              <li class="twitter">
+                <a target="_blank" href="https://twitter.com/AUpetindustry">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="facebook">
+                <a target="_blank" href="https://www.facebook.com/AustraliaPetIndustryGroup/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+      <!-- blogpost end -->
+
+    </div>
+    <!-- main end -->
+
+    {% include './partials/latestblog.html' %}
+  </div>
+</div>
+
+<script>
+  // Magnific popup
+		//-----------------------------------------------
+		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+			$(".popup-img").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: true,
+				}
+			});
+			$(".popup-img-single").magnificPopup({
+				type:"image",
+				gallery: {
+					enabled: false,
+				}
+			});
+			$('.popup-iframe').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				preloader: false,
+				fixedContentPos: false
+			});
+		};
+</script>
+
+{% endblock %}
