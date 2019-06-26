@@ -112,13 +112,13 @@
             background-position: 100px center;
         }
         &.is-original {
-            background-image: url('../img/tab-bg2.jpg');
+            background-image: url('img/tab-bg2.jpg');
         }
         &.is-life {
-            background-image: url('../img/home_carousel_life_bg.jpg');
+            background-image: url('img/home_carousel_life_bg.jpg');
         }
         &.is-holistic {
-            background-image: url('../img/tab-bg1.jpg');
+            background-image: url('img/tab-bg1.jpg');
         }
         @media screen and(max-width: 1199px) {
             width: 758px;

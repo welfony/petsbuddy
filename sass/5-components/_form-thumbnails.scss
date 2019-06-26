@@ -41,19 +41,19 @@
         }
         &:first-child {
             label:after {
-                background-image: url('../img/icon-dog-header.png')
+                background-image: url('img/icon-dog-header.png')
             }
         }
         &:nth-child(2) {
             label:after {
-                background-image: url('../img/icon-cat-header.png')
+                background-image: url('img/icon-cat-header.png')
             }
         }
         &:nth-child(3) {
             label:after {
                 background-position: bottom;
                 width: 74px;
-                background-image: url('../img/icon-dog-and-cat-header.png')
+                background-image: url('img/icon-dog-and-cat-header.png')
             }
         }
     }

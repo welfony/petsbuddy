@@ -80,20 +80,20 @@
         }
         &--radio {
             label:before {
-                background-image: url('../img/icon-radio-unchecked.png');
+                background-image: url('img/icon-radio-unchecked.png');
             }
             label:after {
                 opacity: 0;
-                background-image: url('../img/icon-radio-checked.png');
+                background-image: url('img/icon-radio-checked.png');
             }
         }
         &--checkbox {
             label:before {
-                background-image: url('../img/icon-checkbox-unchecked.png');
+                background-image: url('img/icon-checkbox-unchecked.png');
             }
             label:after {
                 opacity: 0;
-                background-image: url('../img/icon-checkbox-checked.png');
+                background-image: url('img/icon-checkbox-checked.png');
             }
         }
         // This is for when we can't add classes to the html elements

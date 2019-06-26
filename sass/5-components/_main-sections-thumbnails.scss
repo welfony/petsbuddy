@@ -28,14 +28,14 @@
         &--has-bg-image {
             width: 114px;
             height: 97px;
-            background-image: url('../img/btn_carousel.png');
+            background-image: url('img/btn_carousel.png');
             background-size: cover;
             &:after, &:before {
                 display: none;
             }
             &:active,
             &:focus {
-                background-image: url('../img/btn_carousel.png')!important;
+                background-image: url('img/btn_carousel.png')!important;
             }
             & > a {
                 transform: translateX(-10px);
@@ -70,10 +70,10 @@
             transition: opacity 500ms;
         }
         &.cat:after {
-            background-image: url('../img/btn_nav_cat_hover.jpg');
+            background-image: url('img/btn_nav_cat_hover.jpg');
         }
         &.dog:after {
-            background-image: url('../img/btn_nav_dog_hover.jpg');
+            background-image: url('img/btn_nav_dog_hover.jpg');
         }
         &--is-gray:after {
             background-image: linear-gradient(#d5d6d7, #ededed 20%, #d4d4d4 100%);

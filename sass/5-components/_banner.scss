@@ -39,7 +39,7 @@
     }
     &--has-background-image {
         background-color: transparent;
-        background-image: url('../img/background-footer-gradient.jpg');
+        background-image: url('img/background-footer-gradient.jpg');
         background-size: auto 100%;
         &:before {
             content: '';
@@ -81,7 +81,7 @@
         }
     }
     &--has-background-image-blog:before {
-        background-image: url('../img/background_blog.jpg');
+        background-image: url('img/background_blog.jpg');
         background-position: right center;
         @media screen and (max-width: 1600px) {
             background-position: center center;
@@ -116,20 +116,20 @@
         }
     }
     &--has-background-image-champ:before {
-        background-image: url('../img/background_champ.jpg');
+        background-image: url('img/background_champ.jpg');
         background-position: center;
         @media screen and (max-width: map_get($breakpoints-max, md)) {
             background-position: 75%;
         }
     }
     &--has-background-image-sunset:before {
-        background-image: url('../img/background_sunset.jpg');
+        background-image: url('img/background_sunset.jpg');
         background-position: center;
         @media screen and (max-width: map_get($breakpoints-max, md)) {
             background-position: 75%;
         }
         @media screen and (max-width: map_get($breakpoints-max, sm)) {
-            background-image: url('../img/background_sunset_sm.jpg');
+            background-image: url('img/background_sunset_sm.jpg');
         }
     }
     &__header {

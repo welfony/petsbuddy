@@ -3,7 +3,7 @@
     padding: 0 20px 20px 20px;
     &__container {
         height: calc(100vh - #{map_get($others, navbar-height)} - 20px);
-        background-image: url('../img/background_home_top_section.jpg');
+        background-image: url('img/background_home_top_section.jpg');
         background-size: cover;
         background-position: center;
         @media screen and (max-width: 1599px) {
@@ -18,10 +18,10 @@
         }
         @media screen and (max-width: 767px) {
             height: 400px;
-            background-image: url('../img/background_home_top_section_sm.jpg');
+            background-image: url('img/background_home_top_section_sm.jpg');
             background-position: 30% center;
             @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-                background-image: url('../img/background_home_top_section_sm@2x.jpg');
+                background-image: url('img/background_home_top_section_sm@2x.jpg');
             }
         }
     }

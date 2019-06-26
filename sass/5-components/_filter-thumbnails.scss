@@ -98,12 +98,12 @@
             }
             &:first-child {
                 label:after {
-                    background-image: url('../img/icon-dog-header.png')
+                    background-image: url('img/icon-dog-header.png')
                 }
             }
             &:nth-child(2) {
                 label:after {
-                    background-image: url('../img/icon-cat-header.png')
+                    background-image: url('img/icon-cat-header.png')
                 }
             }
         }

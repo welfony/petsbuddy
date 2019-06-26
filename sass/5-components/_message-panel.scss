@@ -36,12 +36,12 @@
     &--has-bg-dog:before {
         z-index: 0;
         background-position: left top;
-        background-image: url('../img/background_testimonial_dog.jpg');
+        background-image: url('img/background_testimonial_dog.jpg');
     }
     &--has-bg-cat:before {
         z-index: 0;
         background-position: left top;
-        background-image: url('../img/background_testimonial_cat.jpg');
+        background-image: url('img/background_testimonial_cat.jpg');
         @media screen and(max-width: map_get($breakpoints-max, md)) {
             background-position: 10% 0;
         }

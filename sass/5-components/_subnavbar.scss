@@ -45,7 +45,7 @@
         }
         &--has-background {
             //@include responsive-background-image('background-dog-cat-food-gradient-to-white-header', 'png', ('xs'));
-            background-image: url('../img/responsive/background-dog-cat-food-gradient-to-white-header_lg@2x.png');
+            background-image: url('img/responsive/background-dog-cat-food-gradient-to-white-header_lg@2x.png');
             background-size: 70%;
             background-repeat: no-repeat;
             background-position: bottom right;

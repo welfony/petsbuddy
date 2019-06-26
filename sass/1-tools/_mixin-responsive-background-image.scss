@@ -4,10 +4,10 @@
     @each $breakpoint-name, $breakpoint-value in $breakpoints-min {
         @if index($breakpointsToIgnore, $breakpoint-name) == null {
             @media screen and (min-width: $breakpoint-value) {
-                background-image: url('../img/responsive/#{$filename}_#{$breakpoint-name}.#{$filetype}');
+                background-image: url('img/responsive/#{$filename}_#{$breakpoint-name}.#{$filetype}');
             }
             @media screen and (min-width: $breakpoint-value) and (-webkit-min-device-pixel-ratio: 2) {
-                background-image: url('../img/responsive/#{$filename}_#{$breakpoint-name}@2x.#{$filetype}');
+                background-image: url('img/responsive/#{$filename}_#{$breakpoint-name}@2x.#{$filetype}');
             }
         }
     }
