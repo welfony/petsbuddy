@@ -65,7 +65,7 @@
     }
     &--has-fixed-height {
         padding: 0;
-        height: 540px;
+        height: 570px;
         @media screen and (max-width: map_get($breakpoints-max, sm)) {
             height: 340px;
         }
@@ -180,6 +180,7 @@
         font-weight: bold;
         font-size: 22px;
         text-shadow: 1px 0 100px #dedede;
+        margin-bottom: 150px;
         @media screen and (max-width: map_get($breakpoints-max, xs)) {
             margin: 5px 0;
         }
@@ -228,7 +229,7 @@
     &__img {
         &-wrapper {
             max-width: 500px;
-            padding-top: 90px;
+            padding-top: 120px;
             @media screen and (max-width: map_get($breakpoints-max, sm)) {
                 max-width: 250px;
             }
