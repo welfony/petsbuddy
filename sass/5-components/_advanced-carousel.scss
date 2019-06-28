@@ -105,20 +105,20 @@
         right: 0;
         width: 958px;
         height: 345px;
-        background-size: 100% auto;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
         @media screen and(min-width: 1200px) and(max-width: 1599px) {
             background-position: 100px center;
         }
         &.is-original {
-            background-image: url('img/tab-bg2.jpg');
+            background-image: url('../img/tab-bg2.jpg');
         }
         &.is-life {
-            background-image: url('img/home_carousel_life_bg.jpg');
+            background-image: url('../img/home_carousel_life_bg.jpg');
         }
         &.is-holistic {
-            background-image: url('img/tab-bg1.jpg');
+            background-image: url('../img/tab-bg1.jpg');
         }
         @media screen and(max-width: 1199px) {
             width: 758px;
@@ -146,7 +146,7 @@
     &__slide-left-content {
         position: relative;
         z-index: 1;
-        max-width: 250px;
+        max-width: 290px;
         @media screen and(max-width: 767px) {
             margin: auto;
         }
@@ -160,7 +160,7 @@
         }
     }
     &__slide-paragraph {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 300;
         line-height: 1.5;
         color: #485159;
