@@ -3393,7 +3393,7 @@ textarea {
 .advanced-carousel__btns-wrapper {
   position: absolute;
   left: 25%;
-  bottom: -75px;
+  bottom: -126px;
   z-index: 2; }
   @media screen and (max-width: 1599px) {
     .advanced-carousel__btns-wrapper {
@@ -14612,11 +14612,9 @@ button.close {
     .horizontal-infos {
       padding: 80px 0;
       padding-bottom: 0; } }
-  .horizontal-infos__item {
-    padding-bottom: 15px; }
-    .horizontal-infos__item + .horizontal-infos__item {
-      padding-top: 15px;
-      border-top: solid 1px #c3bdb6; }
+  .horizontal-infos__item + .horizontal-infos__item {
+    padding-top: 15px;
+    border-top: solid 1px #c3bdb6; }
   .horizontal-infos__img-wrapper {
     flex-grow: 0;
     flex-basis: 45px;
@@ -14627,7 +14625,7 @@ button.close {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
-    color: #28724f; }
+    color: #776C5E !important; }
   .horizontal-infos__description {
     margin-top: 10px;
     font-weight: 300;
