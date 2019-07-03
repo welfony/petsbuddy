@@ -61,7 +61,7 @@
             #{$accordion-item}.is-opened & {
                 color: #485159;
                 .accordion--is-rounded & {
-                    color: white;
+                    color: white!important;
                     background-color: map_get($colors, green-dark);
                 }
             }

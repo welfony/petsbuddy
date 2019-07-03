@@ -8734,6 +8734,7 @@ button.close {
 }
 .grid .accordion__item-button-right-icon:before {
   border: solid 1px #776C5E;
+  background-color: #fff;
 }
 .grid .accordion__item-button-right-icon:after {
   border: solid 1px #776C5E;
@@ -8744,5 +8745,25 @@ button.close {
 }
 .advanced-carousel__background-image{
   width: 100%;
-  height: 430px;
+  height: 560px;
+}
+.index_container{
+  max-width: 100%;
+}
+@media screen and (max-width: 767px){
+  .banner__left-section {
+    align-items: center!important;
+  }
+  .grid_row {
+    margin: 0 auto;
+  }
+  .advanced-carousel__main-img-wrapper {
+    max-width: 100%;
+  }
+  .advanced-carousel__carousel-wrapper {
+    padding: 0;
+  }
+}
+.text-left {
+  margin-bottom: 0!important;
 }

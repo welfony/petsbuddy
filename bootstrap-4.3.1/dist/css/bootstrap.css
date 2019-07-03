@@ -9750,6 +9750,7 @@ button.bg-dark:focus {
 
 .text-left {
   text-align: left !important;
+  margin-bottom: 0;
 }
 
 .text-right {

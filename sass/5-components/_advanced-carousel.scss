@@ -4,9 +4,9 @@
     }
     &__arrow-container {
         position: absolute;
-        top: 35%;
-        width: 213px;
-        height: 213px;
+        top: 40%;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         border: solid 1px #fbfcfc;
         display: flex;
@@ -21,14 +21,14 @@
             display: none;
         }
         &--is-left {
-            box-shadow: 1px 5px 25px #eff0f0;
             left: 0;
-            transform: translate(-30%, -50%);
+            transform: translate(-30%, -27%);
+            z-index: 10;
         }
         &--is-right {
-            box-shadow: 1px 5px 25px #eff0f0;
             right: 0;
-            transform: translate(30%, -50%);
+            transform: translate(30%, -27%);
+            z-index: 10;
         }
     }
     &__arrow {
@@ -76,10 +76,11 @@
     }
     &__pagination-container {
         text-align: center;
+        margin-bottom: 40px;
     }
     &__carousel-wrapper {
         position: relative;
-        padding: 140px 0;
+        padding-bottom: 250px;
         overflow: hidden;
         @media screen and(max-width: 991px) {
             padding: 90px 0
@@ -108,9 +109,6 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
-        @media screen and(min-width: 1200px) and(max-width: 1599px) {
-            background-position: 100px center;
-        }
         &.is-original {
             background-image: url('../img/tab-bg2.jpg');
         }
@@ -125,7 +123,6 @@
         }
         @media screen and(max-width: 992px) {
             width: 658px;
-            background-position: 100px center;
         }
         @media screen and(max-width: 767px) {
             background-image: none!important;
@@ -144,11 +141,14 @@
         }
     }
     &__slide-left-content {
-        position: relative;
+        position: absolute;
+        top: 45%;
+        left: 25%;
         z-index: 1;
-        max-width: 290px;
+        max-width: 350px;
         @media screen and(max-width: 767px) {
             margin: auto;
+            position: initial!important;
         }
     }
     &__slide-title {
@@ -222,18 +222,18 @@
     &__btns-wrapper {
         position: absolute;
         left: 25%;
-        bottom: -126px;
+        bottom: -75%;
         z-index: 2;
         @media screen and(max-width: 1599px) {
             left: 15%;
         }
         @media screen and(max-width: 1199px) {
-            bottom: -40px;
+            bottom: -74%;
             left: 25%;
         }
         @media screen and(max-width: 991px) {
-            bottom: -20px;
-            left: 10%;
+            bottom: -70%;
+            left: 25%;
         }
         @media screen and(max-width: 767px) {
             position: static;

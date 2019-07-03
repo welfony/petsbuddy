@@ -3122,7 +3122,7 @@ textarea {
   .accordion__item.is-opened .accordion__item-button {
     color: #485159; }
     .accordion--is-rounded .accordion__item.is-opened .accordion__item-button {
-      color: white;
+      color: white !important;
       background-color: #468074; }
   .accordion__item-button-right-icon {
     position: absolute;
@@ -3197,9 +3197,9 @@ textarea {
 
 .advanced-carousel__arrow-container {
   position: absolute;
-  top: 35%;
-  width: 213px;
-  height: 213px;
+  top: 40%;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: solid 1px #fbfcfc;
   display: flex;
@@ -3214,13 +3214,13 @@ textarea {
     .advanced-carousel__arrow-container {
       display: none; } }
   .advanced-carousel__arrow-container--is-left {
-    box-shadow: 1px 5px 25px #eff0f0;
     left: 0;
-    transform: translate(-30%, -50%); }
+    transform: translate(-30%, -27%);
+    z-index: 10; }
   .advanced-carousel__arrow-container--is-right {
-    box-shadow: 1px 5px 25px #eff0f0;
     right: 0;
-    transform: translate(30%, -50%); }
+    transform: translate(30%, -27%);
+    z-index: 10; }
 
 .advanced-carousel__arrow {
   max-width: 27px; }
@@ -3260,11 +3260,12 @@ textarea {
           margin-left: 20px; } }
 
 .advanced-carousel__pagination-container {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 40px; }
 
 .advanced-carousel__carousel-wrapper {
   position: relative;
-  padding: 140px 0;
+  padding-bottom: 250px;
   overflow: hidden; }
   @media screen and (max-width: 991px) {
     .advanced-carousel__carousel-wrapper {
@@ -3292,9 +3293,6 @@ textarea {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center; }
-  @media screen and (min-width: 1200px) and (max-width: 1599px) {
-    .advanced-carousel__background-image {
-      background-position: 100px center; } }
   .advanced-carousel__background-image.is-original {
     background-image: url("../img/tab-bg2.jpg"); }
   .advanced-carousel__background-image.is-life {
@@ -3306,8 +3304,7 @@ textarea {
       width: 758px; } }
   @media screen and (max-width: 992px) {
     .advanced-carousel__background-image {
-      width: 658px;
-      background-position: 100px center; } }
+      width: 658px; } }
   @media screen and (max-width: 767px) {
     .advanced-carousel__background-image {
       background-image: none !important; } }
@@ -3323,12 +3320,15 @@ textarea {
     display: block; }
 
 .advanced-carousel__slide-left-content {
-  position: relative;
+  position: absolute;
+  top: 45%;
+  left: 25%;
   z-index: 1;
-  max-width: 290px; }
+  max-width: 350px; }
   @media screen and (max-width: 767px) {
     .advanced-carousel__slide-left-content {
-      margin: auto; } }
+      margin: auto;
+      position: initial !important; } }
 
 .advanced-carousel__slide-title {
   font-size: 19px;
@@ -3393,19 +3393,19 @@ textarea {
 .advanced-carousel__btns-wrapper {
   position: absolute;
   left: 25%;
-  bottom: -126px;
+  bottom: -75%;
   z-index: 2; }
   @media screen and (max-width: 1599px) {
     .advanced-carousel__btns-wrapper {
       left: 15%; } }
   @media screen and (max-width: 1199px) {
     .advanced-carousel__btns-wrapper {
-      bottom: -40px;
+      bottom: -74%;
       left: 25%; } }
   @media screen and (max-width: 991px) {
     .advanced-carousel__btns-wrapper {
-      bottom: -20px;
-      left: 10%; } }
+      bottom: -70%;
+      left: 25%; } }
   @media screen and (max-width: 767px) {
     .advanced-carousel__btns-wrapper {
       position: static;
@@ -13423,7 +13423,8 @@ button.close {
   background-size: 100% 100%; }
 
 .grid .accordion__item-button-right-icon:before {
-  border: solid 1px #776C5E; }
+  border: solid 1px #776C5E;
+  background-color: #fff; }
 
 .grid .accordion__item-button-right-icon:after {
   border: solid 1px #776C5E;
@@ -13434,7 +13435,23 @@ button.close {
 
 .advanced-carousel__background-image {
   width: 100%;
-  height: 430px; }
+  height: 560px; }
+
+.index_container {
+  max-width: 100%; }
+
+@media screen and (max-width: 767px) {
+  .banner__left-section {
+    align-items: center !important; }
+  .grid_row {
+    margin: 0 auto; }
+  .advanced-carousel__main-img-wrapper {
+    max-width: 100%; }
+  .advanced-carousel__carousel-wrapper {
+    padding: 0; } }
+
+.text-left {
+  margin-bottom: 0 !important; }
 
 .contact__description p {
   margin-top: 45px; }
