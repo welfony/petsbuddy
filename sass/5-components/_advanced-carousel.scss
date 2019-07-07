@@ -44,8 +44,8 @@
         }
     }
     &__pagination-link {
-        text-transform: uppercase;
         font-weight: 600;
+        font-size: 15px;
         &.is-active {
             color: #718e7f;
             &:after {

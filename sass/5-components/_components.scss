@@ -1821,6 +1821,8 @@ hr {
 }
 .page-title {
   margin-top: 0;
+  font-size: 22.7px;
+  font-weight: bold;
 }
 dl{
   margin-top: 0;
@@ -8743,9 +8745,16 @@ button.close {
 .navbar__container{
   margin-bottom: 20px;
 }
+.Ingredients{
+  font-weight: bold;
+  color: #776C5E !important;
+}
 .advanced-carousel__background-image{
   width: 100%;
   height: 560px;
+}
+.accordion__item-content span{
+  margin-right: 15px;
 }
 .index_container{
   max-width: 100%;

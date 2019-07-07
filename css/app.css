@@ -2937,7 +2937,8 @@ textarea {
   .section--has-bg-gray {
     background-image: linear-gradient(to bottom, #fefefe, #f0f5fa); }
   .section--has-medium-padding {
-    padding: 90px 0; }
+    padding: 90px 0;
+    padding-top: 80px; }
   .section--has-equal-padding {
     padding: 135px 0; }
   .section--has-small-padding {
@@ -3233,8 +3234,8 @@ textarea {
     transform: translateX(-50%); }
 
 .advanced-carousel__pagination-link {
-  text-transform: uppercase;
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: 15px; }
   .advanced-carousel__pagination-link.is-active {
     color: #718e7f; }
     .advanced-carousel__pagination-link.is-active:after {
@@ -3481,8 +3482,7 @@ textarea {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: #4C3D2A; }
+    height: 100%; }
   .banner.original:before {
     background-color: #72BF44; }
   .banner.life:before {
@@ -3502,8 +3502,10 @@ textarea {
       padding: 20px; } }
   .banner--no-fixed-height {
     height: auto;
-    padding-top: 60px;
-    padding-bottom: 110px; }
+    padding-top: 36px;
+    padding-bottom: 36px;
+    background-image: url(../img/milk.jpg);
+    background-size: cover; }
   .banner--has-background-image {
     background-color: transparent;
     background-image: url("../img/background-footer-gradient.jpg");
@@ -3719,6 +3721,9 @@ textarea {
     .banner__title-wrapper {
       padding-left: 60px; } }
 
+.banner_treats {
+  background-image: url(../img/treat.jpg) !important; }
+
 .blog-cards-list__container {
   margin-top: -30px;
   margin-left: -30px;
@@ -3744,7 +3749,7 @@ textarea {
         padding: 30px 0 0 0; } }
   .blog-cards-list__item-title {
     font-size: 19px;
-    font-weight: bold;
+    font-weight: bolder;
     color: #485159;
     transition: color 300ms; }
     .blog-cards-list__item-title-wrapper {
@@ -6755,7 +6760,9 @@ hr {
   border-bottom: 1px solid #f3f3f3; }
 
 .page-title {
-  margin-top: 0; }
+  margin-top: 0;
+  font-size: 22.7px;
+  font-weight: bold; }
 
 dl {
   margin-top: 0;
@@ -13433,9 +13440,16 @@ button.close {
 .navbar__container {
   margin-bottom: 20px; }
 
+.Ingredients {
+  font-weight: bold;
+  color: #776C5E !important; }
+
 .advanced-carousel__background-image {
   width: 100%;
   height: 560px; }
+
+.accordion__item-content span {
+  margin-right: 15px; }
 
 .index_container {
   max-width: 100%; }
@@ -14866,7 +14880,7 @@ button.close {
         max-width: 45px; }
     .main-sections-thumbnails__thumbnail-text {
       position: relative;
-      color: #718e7f;
+      color: #574A38;
       font-weight: bold;
       z-index: 10;
       text-align: center;

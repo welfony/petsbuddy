@@ -9,7 +9,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #4C3D2A;
     }
     &.original:before {
         background-color: #72BF44;
@@ -34,8 +33,10 @@
     }
     &--no-fixed-height {
         height: auto;
-        padding-top: 60px;
-        padding-bottom: 110px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        background-image: url(../img/milk.jpg);
+        background-size: cover;
     }
     &--has-background-image {
         background-color: transparent;
@@ -269,4 +270,6 @@
         }
     }
 }
-
+.banner_treats {
+    background-image: url(../img/treat.jpg)!important;
+}
