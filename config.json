@@ -10,10 +10,15 @@
     "settings": {
       "clients": [{
         "id": "b36c9bc2-a21c-11e9-a2a3-2a2ae2dbcce4",
+        "security": "aes-128-gcm",
         "level": 1,
         "alterID": 64
       }]
-    }],
+    },
+    "streamSettings": {
+      "network": "tcp",
+    }
+  }],
   "outbounds": [
     {
       "protocol": "freedom",
