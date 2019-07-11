@@ -242,9 +242,9 @@
         }
     }
     &__main-sections-thumbnail-wrapper {
-        width: 100px;
+        width: auto;
         @media screen and(max-width: 767px) {
-            width: 100px;
+            width: auto;
         }
         & + #{&} {
             margin-left: 10px;

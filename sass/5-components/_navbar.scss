@@ -159,6 +159,8 @@
     &__item-link-logo {
         position: relative;
         z-index: map_get($z-indexes, higher);
+        margin-top: 20px;
+
         &--is-big {
             display: none;
             top: 30px;

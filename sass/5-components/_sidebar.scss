@@ -105,6 +105,9 @@
         }
     }
     &__list-item {
+        font-size: 16px;
+        line-height: 1.5;
+
         & + #{&} {
             margin-top: 45px;
             @media screen and (max-height: 700px) {
