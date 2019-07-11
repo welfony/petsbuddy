@@ -6760,7 +6760,7 @@ hr {
   border-bottom: 1px solid #f3f3f3; }
 
 .page-title {
-  margin-top: 0;
+  margin-top: 30px;
   font-size: 22.7px;
   font-weight: bold; }
 
@@ -13440,7 +13440,8 @@ button.close {
 .faq_banner {
   height: 310px;
   background-image: url(../img/faq.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   margin-bottom: 50px;
   color: #3d341b;
   display: flex;
@@ -14845,6 +14846,9 @@ button.close {
       height: 97px;
       background-image: url("../img/btn_carousel.png");
       background-size: cover; }
+      @media screen and (max-width: 768px) {
+        .main-sections-thumbnails__thumbnail--has-bg-image {
+          width: 126px; } }
       .main-sections-thumbnails__thumbnail--has-bg-image:after, .main-sections-thumbnails__thumbnail--has-bg-image:before {
         display: none; }
       .main-sections-thumbnails__thumbnail--has-bg-image:active, .main-sections-thumbnails__thumbnail--has-bg-image:focus {

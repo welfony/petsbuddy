@@ -1820,7 +1820,7 @@ hr {
   border-bottom: 1px solid #f3f3f3;
 }
 .page-title {
-  margin-top: 0;
+  margin-top: 30px;
   font-size: 22.7px;
   font-weight: bold;
 }
@@ -1832,7 +1832,7 @@ dl{
   .dl-horizontal dt {
     max-width: 120px;
   }
-} 
+}
 @media (min-width: 768px){
   .dl-horizontal dt {
     float: left;
@@ -1843,7 +1843,7 @@ dl{
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-} 
+}
 dt {
     font-weight: bold;
 }
@@ -8745,7 +8745,8 @@ button.close {
 .faq_banner{
   height:310px;
   background-image: url(../img/faq.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   margin-bottom: 50px;
   color: #3d341b;
   display: flex;

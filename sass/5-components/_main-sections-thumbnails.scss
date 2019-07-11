@@ -28,6 +28,10 @@
         &--has-bg-image {
             width: 210px;
             height: 97px;
+            @media screen and (max-width: map_get($breakpoints-min, sm)) {
+                width: 126px;
+            }
+
             background-image: url('../img/btn_carousel.png');
             background-size: cover;
             &:after, &:before {
