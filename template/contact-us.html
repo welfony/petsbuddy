@@ -44,7 +44,8 @@
           <div class="cms-content__title cms-content__title--has-small-margin">
             <h2>PetsBuddy - Customer Service</h2>
           </div>
-          <p>We would love to hear from you. If you have any questions, email us or fill out the form below and we'll be in touch!</p>
+          <p>We would love to hear from you. If you have any questions, email us or fill out the form below and we'll be
+            in touch!</p>
         </div>
         <form class="contact__form form form--has-negative-margin form--has-negative-margin" action="/en-ca/contact/"
           method="post" name="contact_form">
@@ -110,51 +111,40 @@
 </div>
 <script src="https://smtpjs.com/v2/smtp.js"></script>
 <script>
-  /* Theme Name: The Project - Responsive Website Template
- * Author:HtmlCoder
- * Author URI:http://www.fangying
- * Author e-mail:fangying@gmail.com
- * Version:1.1.0
- * Created:March 2015
- * License URI:http://support.wrapbootstrap.com/
- * File Description: Place here your custom scripts
- */
 
-$('.btn').click(function(e) {
-  e.preventDefault();
-  var firstname = $('#id_first_name').val();
-  var lastname = $('#id_last_name').val();
-  var email = $('#id_email').val();
-  var phone = $('#id_phone').val();
-  var city = $('#id_city').val();
-  var country = $('#id_country').val();
-  var message = $('#id_message').val();
-  var msg = ""; 
-    msg += "firstname: " + firstname + " "; 
-    msg += "lastname: " + lastname + " "; 
-    msg += "email: " + email + " "; 
-    msg += "phone: " + phone + " "; 
-    msg += "city: " + city + " "; 
-    msg += "country: " + country + " "; 
-    msg += "message: " + message + " "; 
-  console.log(firstname.length> 0);
-  console.log(lastname.length> 0);
-  console.log(email.length> 0);
-  console.log(city.length> 0);
-  console.log(phone.length> 0);
-  console.log(country.length> 0);
-  console.log(message.length> 0);
-  if (firstname.length > 0 && lastname.length > 0 && email.length > 0 && city.length > 0 && phone.length > 0 && country.length > 0 && message.length > 0) {
-    Email.send(
-        'customerservice@australiapetindustry.com', msg,
-        'smtp25.elasticemail.com', 'bijiasuo2006@hotmail.com',
+  $('.btn').click(function (e) {
+    e.preventDefault();
+    var firstname = $('#id_first_name').val();
+    var lastname = $('#id_last_name').val();
+    var email = $('#id_email').val();
+    var phone = $('#id_phone').val();
+    var city = $('#id_city').val();
+    var country = $('#id_country').val();
+    var message = $('#id_message').val();
+    var msg = "";
+    msg += "firstname: " + firstname + "\n\r";
+    msg += "lastname: " + lastname + "\n\r";
+    msg += "email: " + email + "\n\r";
+    msg += "phone: " + phone + "\n\r";
+    msg += "city: " + city + "\n\r";
+    msg += "country: " + country + "\n\r";
+    msg += "message: " + message + "\n\r";
+
+    if (firstname.length > 0 && lastname.length > 0 && email.length > 0 && city.length > 0 && phone.length > 0 && country.length > 0 && message.length > 0) {
+      Email.send(
+        email,
+        'customerservice@australiapetindustry.com',
+        email,
+        msg,
+        'smtp25.elasticemail.com',
+        'bijiasuo2006@hotmail.com',
         '9285894d-e8a1-475d-ab87-0c31f1228597');
 
-    alert('Thanks for your review!');
-    location.reload();
-  }
-  return false;
-});
+      alert('Thanks for your review!');
+      location.reload();
+    }
+    return false;
+  });
 
 
 </script>
