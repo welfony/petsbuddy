@@ -16,6 +16,7 @@ const exec = require('child_process').exec;
 const debug = require('gulp-debug');
 const runSequence = require('run-sequence');
 const twig = require('gulp-twig');
+const blogs = require('./template/data/blogs.json');
 
 var timestamp = new Date();
 
@@ -133,7 +134,11 @@ gulp.task('responsive-images', function () {
 // Compile Twig templates to HTML
 gulp.task('templates', function() {
     return gulp.src('./template/**/*.html')
-        .pipe(twig())
+        .pipe(twig({
+            data: {
+                blogs: blogs
+            }
+        }))
         .pipe(gulp.dest('.'));
 });
 

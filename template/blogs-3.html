@@ -21,7 +21,7 @@
         <!-- page-title end -->
 
         {% for blog in blogs %}
-        {% if loop.index > 10 and loop.index <= 20 %}
+        {% if loop.index > 20 and loop.index <= 30 %}
         <!-- blogpost start -->
         <div class="image-box style-3 mb-20 shadow bordered light-gray-bg">
           <div class="row grid-space-0">
@@ -58,11 +58,11 @@
         <nav>
           <ul class="pagination">
             <li>
-              <a href="blogs-1.html" aria-label="Previous">
+              <a href="blogs-2.html" aria-label="Previous">
                 <i class="fa fa-angle-left"></i>
               </a>
             </li>
-            {% include './partials/blogspages.html' with {'current': 2} %}
+            {% include './partials/blogspages.html' with {'current': 3} %}
             <li>
               <a href="blogs-3.html" aria-label="Next">
                 <i class="fa fa-angle-right"></i>

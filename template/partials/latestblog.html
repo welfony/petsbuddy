@@ -7,199 +7,29 @@
       <h3 class="title">Latest Blog</h3>
       <div class="separator-2"></div>
 
+      {% for blog in blogs %}
+      {% if loop.index > 0 and loop.index <= 10 %}
       <div class="media margin-clear">
         <div class="media-left">
           <div class="overlay-container">
-            <img class="media-object" src="img/blogs/blog22.jpg" alt="blog-thumb">
-            <a href="post-22.html" class="overlay-link small">
+            <img class="media-object" src="{{blog.image}}" alt="blog-thumb">
+            <a href="{{blog.url}}" class="overlay-link small">
               <i class="fa fa-link"></i>
             </a>
           </div>
         </div>
         <div class="media-body">
           <h6 class="media-heading">
-            <a href="post-22.html">Taking a Page from Pet Supplements</a>
+            <a href="{{blog.url}}">{{blog.title}}</a>
           </h6>
           <p class="small margin-clear">
-            <i class="fa fa-calendar pr-10"></i>Jan 28, 2019</p>
+            <i class="fa fa-calendar pr-10"></i>{{blog.date}}</p>
         </div>
         <hr>
       </div>
+      {% endif %}
+      {% endfor %}
 
-      <div class="media margin-clear">
-        <div class="media-left">
-          <div class="overlay-container">
-            <img class="media-object" src="img/blogs/blog21.jpg" alt="blog-thumb">
-            <a href="post-21.html" class="overlay-link small">
-              <i class="fa fa-link"></i>
-            </a>
-          </div>
-        </div>
-        <div class="media-body">
-          <h6 class="media-heading">
-            <a href="post-21.html">Pet Owners Most Want Plant-based Diet Nutrition Info</a>
-          </h6>
-          <p class="small margin-clear">
-            <i class="fa fa-calendar pr-10"></i>Jan 14, 2019</p>
-        </div>
-        <hr>
-      </div>
-
-      <div class="media margin-clear">
-        <div class="media-left">
-          <div class="overlay-container">
-            <img class="media-object" src="img/blogs/blog20.jpg" alt="blog-thumb">
-            <a href="post-20.html" class="overlay-link small">
-              <i class="fa fa-link"></i>
-            </a>
-          </div>
-        </div>
-        <div class="media-body">
-          <h6 class="media-heading">
-            <a href="post-20.html">
-              3 Superfoods Growing Fast as Cat Food Trends
-            </a>
-          </h6>
-          <p class="small margin-clear">
-            <i class="fa fa-calendar pr-10"></i>Dec 22, 2018</p>
-        </div>
-        <hr>
-      </div>
-
-      <div class="media margin-clear">
-        <div class="media-left">
-          <div class="overlay-container">
-            <img class="media-object" src="img/blogs/blog19.jpg" alt="blog-thumb">
-            <a href="post-19.html" class="overlay-link small">
-              <i class="fa fa-link"></i>
-            </a>
-          </div>
-        </div>
-        <div class="media-body">
-          <h6 class="media-heading">
-            <a href="post-19.html">
-              New Product Opportunities Posed for Pet Treats
-            </a>
-          </h6>
-          <p class="small margin-clear">
-            <i class="fa fa-calendar pr-10"></i>Dec 12, 2018</p>
-        </div>
-        <hr>
-      </div>
-
-      <div class="media margin-clear">
-        <div class="media-left">
-          <div class="overlay-container">
-            <img class="media-object" src="img/blogs/blog18.jpg" alt="blog-thumb">
-            <a href="post-18.html" class="overlay-link small">
-              <i class="fa fa-link"></i>
-            </a>
-          </div>
-        </div>
-        <div class="media-body">
-          <h6 class="media-heading">
-            <a href="post-18.html">Will More Pet Food Consumers Continue to Find Out The Meaning of 'Fresh'?</a>
-          </h6>
-          <p class="small margin-clear">
-            <i class="fa fa-calendar pr-10"></i>Nov 07, 2018</p>
-        </div>
-        <hr>
-      </div>
-
-      <div class="media margin-clear">
-        <div class="media-left">
-          <div class="overlay-container">
-            <img class="media-object" src="img/blogs/blog17-1.jpg" alt="blog-thumb">
-            <a href="post-17.html" class="overlay-link small">
-              <i class="fa fa-link"></i>
-            </a>
-          </div>
-        </div>
-        <div class="media-body">
-          <h6 class="media-heading">
-            <a href="post-17.html">PetsBuddy Pet Food in AusPet 2018 of Gold Coast</a>
-          </h6>
-          <p class="small margin-clear">
-            <i class="fa fa-calendar pr-10"></i>Nov 03, 2018</p>
-        </div>
-        <hr>
-      </div>
-
-      <div class="media margin-clear">
-        <div class="media-left">
-          <div class="overlay-container">
-            <img class="media-object" src="img/blogs/blog16.jpg" alt="blog-thumb">
-            <a href="post-16.html" class="overlay-link small">
-              <i class="fa fa-link"></i>
-            </a>
-          </div>
-        </div>
-        <div class="media-body">
-          <h6 class="media-heading">
-            <a href="post-16.html">Cats and Dogs Respond Differently to Similar Raw Pet Food</a>
-          </h6>
-          <p class="small margin-clear">
-            <i class="fa fa-calendar pr-10"></i>Oct 12, 2018</p>
-        </div>
-        <hr>
-      </div>
-
-      <div class="media margin-clear">
-        <div class="media-left">
-          <div class="overlay-container">
-            <img class="media-object" src="img/blogs/blog15.jpg" alt="blog-thumb">
-            <a href="post-15.html" class="overlay-link small">
-              <i class="fa fa-link"></i>
-            </a>
-          </div>
-        </div>
-        <div class="media-body">
-          <h6 class="media-heading">
-            <a href="post-15.html">Functional Pet Food Ingredient is More Popular</a>
-          </h6>
-          <p class="small margin-clear">
-            <i class="fa fa-calendar pr-10"></i>Oct 05, 2018</p>
-        </div>
-        <hr>
-      </div>
-
-      <div class="media margin-clear">
-        <div class="media-left">
-          <div class="overlay-container">
-            <img class="media-object" src="img/blogs/blog14-1.jpg" alt="blog-thumb">
-            <a href="post-14.html" class="overlay-link small">
-              <i class="fa fa-link"></i>
-            </a>
-          </div>
-        </div>
-        <div class="media-body">
-          <h6 class="media-heading">
-            <a href="post-14.html">Pet Food Brands Conquer Competitors in Search Engines</a>
-          </h6>
-          <p class="small margin-clear">
-            <i class="fa fa-calendar pr-10"></i>Sep 20, 2018</p>
-        </div>
-        <hr>
-      </div>
-
-      <div class="media margin-clear">
-        <div class="media-left">
-          <div class="overlay-container">
-            <img class="media-object" src="img/blogs/blog13.jpg" alt="blog-thumb">
-            <a href="post-13.html" class="overlay-link small">
-              <i class="fa fa-link"></i>
-            </a>
-          </div>
-        </div>
-        <div class="media-body">
-          <h6 class="media-heading">
-            <a href="post-13.html">Human Food Trends Driving Pet Food Product Innovation</a>
-          </h6>
-          <p class="small margin-clear">
-            <i class="fa fa-calendar pr-10"></i>Sep 14, 2018</p>
-        </div>
-        <hr>
-      </div>
 
     </div>
 </aside>
