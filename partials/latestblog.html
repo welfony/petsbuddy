@@ -10,6 +10,44 @@
       <div class="media margin-clear">
         <div class="media-left">
           <div class="overlay-container">
+            <img class="media-object" src="img/blogs/blog22.jpg" alt="blog-thumb">
+            <a href="post-22.html" class="overlay-link small">
+              <i class="fa fa-link"></i>
+            </a>
+          </div>
+        </div>
+        <div class="media-body">
+          <h6 class="media-heading">
+            <a href="post-22.html">Taking a Page from Pet Supplements</a>
+          </h6>
+          <p class="small margin-clear">
+            <i class="fa fa-calendar pr-10"></i>Jan 28, 2019</p>
+        </div>
+        <hr>
+      </div>
+
+      <div class="media margin-clear">
+        <div class="media-left">
+          <div class="overlay-container">
+            <img class="media-object" src="img/blogs/blog21.jpg" alt="blog-thumb">
+            <a href="post-21.html" class="overlay-link small">
+              <i class="fa fa-link"></i>
+            </a>
+          </div>
+        </div>
+        <div class="media-body">
+          <h6 class="media-heading">
+            <a href="post-21.html">Pet Owners Most Want Plant-based Diet Nutrition Info</a>
+          </h6>
+          <p class="small margin-clear">
+            <i class="fa fa-calendar pr-10"></i>Jan 14, 2019</p>
+        </div>
+        <hr>
+      </div>
+
+      <div class="media margin-clear">
+        <div class="media-left">
+          <div class="overlay-container">
             <img class="media-object" src="img/blogs/blog20.jpg" alt="blog-thumb">
             <a href="post-20.html" class="overlay-link small">
               <i class="fa fa-link"></i>
@@ -163,44 +201,29 @@
         <hr>
       </div>
 
-      <div class="media margin-clear">
-        <div class="media-left">
-          <div class="overlay-container">
-            <img class="media-object" src="img/blogs/blog12-1.jpg" alt="blog-thumb">
-            <a href="post-12.html" class="overlay-link small">
-              <i class="fa fa-link"></i>
-            </a>
-          </div>
-        </div>
-        <div class="media-body">
-          <h6 class="media-heading">
-            <a href="post-12.html">PetsBuddy in Pet Fair Asia 2018 in Shanghai</a>
-          </h6>
-          <p class="small margin-clear">
-            <i class="fa fa-calendar pr-10"></i>Aug 26, 2018</p>
-        </div>
-        <hr>
-      </div>
-
-      <div class="media margin-clear">
-        <div class="media-left">
-          <div class="overlay-container">
-            <img class="media-object" src="img/blogs/blog11.jpg" alt="blog-thumb">
-            <a href="post-11.html" class="overlay-link small">
-              <i class="fa fa-link"></i>
-            </a>
-          </div>
-        </div>
-        <div class="media-body">
-          <h6 class="media-heading">
-            <a href="post-11.html">Why a Pet Owner Chooses Your Pet Shop?</a>
-          </h6>
-          <p class="small margin-clear">
-            <i class="fa fa-calendar pr-10"></i>Aug 07, 2018</p>
-        </div>
-        <hr>
-      </div>
-
     </div>
 </aside>
 <!-- sidebar end -->
+
+<script>
+  if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+    $(".popup-img").magnificPopup({
+      type: "image",
+      gallery: {
+        enabled: true,
+      }
+    });
+    $(".popup-img-single").magnificPopup({
+      type: "image",
+      gallery: {
+        enabled: false,
+      }
+    });
+    $('.popup-iframe').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      preloader: false,
+      fixedContentPos: false
+    });
+  };
+</script>

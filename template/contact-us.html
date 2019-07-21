@@ -122,13 +122,13 @@
     var country = $('#id_country').val();
     var message = $('#id_message').val();
     var msg = "";
-    msg += "firstname: " + firstname + "\n\r";
-    msg += "lastname: " + lastname + "\n\r";
-    msg += "email: " + email + "\n\r";
-    msg += "phone: " + phone + "\n\r";
-    msg += "city: " + city + "\n\r";
-    msg += "country: " + country + "\n\r";
-    msg += "message: " + message + "\n\r";
+    msg += "Firstname: " + firstname + "\n\r";
+    msg += "Lastname: " + lastname + "\n\r";
+    msg += "Email: " + email + "\n\r";
+    msg += "Phone: " + phone + "\n\r";
+    msg += "City: " + city + "\n\r";
+    msg += "Country: " + country + "\n\r";
+    msg += "Message: " + message + "\n\r";
 
     if (firstname.length > 0 && lastname.length > 0 && email.length > 0 && city.length > 0 && phone.length > 0 && country.length > 0 && message.length > 0) {
       Email.send(

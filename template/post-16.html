@@ -1,5 +1,5 @@
 {% extends "layouts/default.html" %}
-{% set title = "About Us - PetsBuddy" %}
+{% set title = "Cats and Dogs Respond Differently to Similar Raw Pet Food - PetsBuddy" %}
 
 {% block content %}
 
@@ -40,7 +40,7 @@
 
               <div class="item active">
                 <div class="overlay-container overlay-visible">
-                  <img src="img/blogs/blog16.jpg" alt="">
+                  <img src="img/blogs/blog16.jpg" width="100%" alt="">
                   <a href="img/blogs/blog16-o.jpg" class="popup-img overlay-link">
                     <i class="icon-plus-1"></i>
                   </a>
@@ -50,26 +50,40 @@
             </div>
           </div>
           <p style="font-size: 18px">
-            The differences in cats and dogs digestive systems was exemplified in the way that their systems responded to similar raw, high-protein diets.
+            The differences in cats and dogs digestive systems was exemplified in the way that their systems responded
+            to similar raw, high-protein diets.
           </p>
           <p>
-            Pet food formulators should remember that cats are not small dogs, said David Thomas, PhD of Massey University in New Zealand, during his presentation at Petfood Forum 2018. The differences in feline and canine digestive systems, and the bacteria their guts harbor, were exemplified in the way that cats’ and dogs’ systems responded to nearly identical raw, high-protein diets, sometimes call biologically appropriate raw foods (BARF).
+            Pet food formulators should remember that cats are not small dogs, said David Thomas, PhD of Massey
+            University in New Zealand, during his presentation at Petfood Forum 2018. The differences in feline and
+            canine digestive systems, and the bacteria their guts harbor, were exemplified in the way that cats’ and
+            dogs’ systems responded to nearly identical raw, high-protein diets, sometimes call biologically appropriate
+            raw foods (BARF).
           </p>
           <p>
-            “These are high-meat content diets with little or no carbohydrates,” he said. “They’re increasingly popular worldwide, but there’s very little scientific data or nutritional health outcome data.”
+            “These are high-meat content diets with little or no carbohydrates,” he said. “They’re increasingly popular
+            worldwide, but there’s very little scientific data or nutritional health outcome data.”
           </p>
           <p>
-            Thomas and his colleagues have been focusing on these BARF diets over the last five or six years. One aspect of studying raw pet foods is that it takes out any effects of cooking or further processing these diets, he said.
+            Thomas and his colleagues have been focusing on these BARF diets over the last five or six years. One aspect
+            of studying raw pet foods is that it takes out any effects of cooking or further processing these diets, he
+            said.
           </p>
           <h4>How dogs and cats digest raw pet foods</h4>
           <p>
-            In two separate studies, researchers fed similar raw pet food diet to dogs and cats. The studies were originally intended to look at differences related to kibble versus raw pet foods, but the scientists were able to use the data they collected to compare cats to dogs as well.
+            In two separate studies, researchers fed similar raw pet food diet to dogs and cats. The studies were
+            originally intended to look at differences related to kibble versus raw pet foods, but the scientists were
+            able to use the data they collected to compare cats to dogs as well.
           </p>
           <p>
-            In both experiments, the raw pet food consisted of 73 percent beef muscle, 10 percent beef liver, 5 percent bone chip, 5 percent beef tripe, 3.5 percent beef heart, 3.5 percent beef kidney, 0.2 percent mineral premix specific to either dogs or cats. The only part of the formulation that differed was the mineral pre-mix.
+            In both experiments, the raw pet food consisted of 73 percent beef muscle, 10 percent beef liver, 5 percent
+            bone chip, 5 percent beef tripe, 3.5 percent beef heart, 3.5 percent beef kidney, 0.2 percent mineral premix
+            specific to either dogs or cats. The only part of the formulation that differed was the mineral pre-mix.
           </p>
           <p>
-            The scientists examined the animals’ feces after eating the BARF diets for three weeks and rated them on a five-point score in which one is dry and five is liquid. Between 1.5 and 2.5 is considered ideal. The cats’ fecal score was 1.8 and the dogs’ was 3.5.
+            The scientists examined the animals’ feces after eating the BARF diets for three weeks and rated them on a
+            five-point score in which one is dry and five is liquid. Between 1.5 and 2.5 is considered ideal. The cats’
+            fecal score was 1.8 and the dogs’ was 3.5.
           </p>
           <p>
             “The cats are the low end of that ideal range and the dog is slightly above it,” Thomas said.
@@ -79,13 +93,16 @@
             The organic acids in the dogs’ and cats’ feces differed in the ratio of acetate, propionate and butyrate.
           </p>
           <p>
-            In cats, the top genera of bacteria were Clostridium at 25 percent, Fusobacterium at 13 percent and then Prevotellaceae, Fusobacteriaceae and Eubacterium.
+            In cats, the top genera of bacteria were Clostridium at 25 percent, Fusobacterium at 13 percent and then
+            Prevotellaceae, Fusobacteriaceae and Eubacterium.
           </p>
           <p>
-            In dogs, Peptostreptococcus were the most prevalent genera at 28 percent, followed by Fusobacterium with 15 percent, Blautia at nine percent, then Collinsella and Clostridium.
+            In dogs, Peptostreptococcus were the most prevalent genera at 28 percent, followed by Fusobacterium with 15
+            percent, Blautia at nine percent, then Collinsella and Clostridium.
           </p>
           <p>
-            “So, you get some similarities but a lot of differences in the two species response to basically a similar diet,” Thomas said.
+            “So, you get some similarities but a lot of differences in the two species response to basically a similar
+            diet,” Thomas said.
           </p>
         </div>
         <footer class="clearfix">
@@ -117,30 +134,5 @@
     {% include './partials/latestblog.html' %}
   </div>
 </div>
-
-<script>
-  // Magnific popup
-		//-----------------------------------------------
-		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
-			$(".popup-img").magnificPopup({
-				type:"image",
-				gallery: {
-					enabled: true,
-				}
-			});
-			$(".popup-img-single").magnificPopup({
-				type:"image",
-				gallery: {
-					enabled: false,
-				}
-			});
-			$('.popup-iframe').magnificPopup({
-				disableOn: 700,
-				type: 'iframe',
-				preloader: false,
-				fixedContentPos: false
-			});
-		};
-</script>
 
 {% endblock %}

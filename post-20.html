@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-  <title>About Us - PetsBuddy</title>
+  <title>3 Superfoods Growing Fast as Cat Food Trends - PetsBuddy</title>
   <meta name="description" content="" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -457,7 +457,7 @@
           <img class="subnavbar__thumbnail-img" src="img/nav/Roo-Dental-Bone.png" />
           <h3 class="subnavbar__thumbnail-header">Roo Dental Bone</h3>
         </a>
-        
+
 
       </ul>
       <h4 class="subnavbar__thumbnail-preheader" style="text-align: left">FREEZE DRIED</h4>
@@ -470,9 +470,9 @@
 
           <a class="subnavbar__thumbnail grid__col-sm-3" href="product-9.html">
             <img class="subnavbar__thumbnail-img" src="img/nav/Freeze-Dried-Lung&Liver.png" />
-            <h3 class="subnavbar__thumbnail-header">Roo Lung&Liver Cube</h3>
+            <h3 class="subnavbar__thumbnail-header">Roo Lung & Liver Cube</h3>
           </a>
-  
+
         </ul>
     </div>
 
@@ -531,7 +531,7 @@
 
               <div class="item active">
                 <div class="overlay-container overlay-visible">
-                  <img src="img/blogs/blog20.jpg" alt="">
+                  <img src="img/blogs/blog20.jpg" width="100%" alt="">
                   <a href="img/blogs/blog20-o.jpg" class="popup-img overlay-link">
                     <i class="icon-plus-1"></i>
                   </a>
@@ -612,6 +612,44 @@
     <div class="block clearfix">
       <h3 class="title">Latest Blog</h3>
       <div class="separator-2"></div>
+
+      <div class="media margin-clear">
+        <div class="media-left">
+          <div class="overlay-container">
+            <img class="media-object" src="img/blogs/blog22.jpg" alt="blog-thumb">
+            <a href="post-22.html" class="overlay-link small">
+              <i class="fa fa-link"></i>
+            </a>
+          </div>
+        </div>
+        <div class="media-body">
+          <h6 class="media-heading">
+            <a href="post-22.html">Taking a Page from Pet Supplements</a>
+          </h6>
+          <p class="small margin-clear">
+            <i class="fa fa-calendar pr-10"></i>Jan 28, 2019</p>
+        </div>
+        <hr>
+      </div>
+
+      <div class="media margin-clear">
+        <div class="media-left">
+          <div class="overlay-container">
+            <img class="media-object" src="img/blogs/blog21.jpg" alt="blog-thumb">
+            <a href="post-21.html" class="overlay-link small">
+              <i class="fa fa-link"></i>
+            </a>
+          </div>
+        </div>
+        <div class="media-body">
+          <h6 class="media-heading">
+            <a href="post-21.html">Pet Owners Most Want Plant-based Diet Nutrition Info</a>
+          </h6>
+          <p class="small margin-clear">
+            <i class="fa fa-calendar pr-10"></i>Jan 14, 2019</p>
+        </div>
+        <hr>
+      </div>
 
       <div class="media margin-clear">
         <div class="media-left">
@@ -769,82 +807,45 @@
         <hr>
       </div>
 
-      <div class="media margin-clear">
-        <div class="media-left">
-          <div class="overlay-container">
-            <img class="media-object" src="img/blogs/blog12-1.jpg" alt="blog-thumb">
-            <a href="post-12.html" class="overlay-link small">
-              <i class="fa fa-link"></i>
-            </a>
-          </div>
-        </div>
-        <div class="media-body">
-          <h6 class="media-heading">
-            <a href="post-12.html">PetsBuddy in Pet Fair Asia 2018 in Shanghai</a>
-          </h6>
-          <p class="small margin-clear">
-            <i class="fa fa-calendar pr-10"></i>Aug 26, 2018</p>
-        </div>
-        <hr>
-      </div>
-
-      <div class="media margin-clear">
-        <div class="media-left">
-          <div class="overlay-container">
-            <img class="media-object" src="img/blogs/blog11.jpg" alt="blog-thumb">
-            <a href="post-11.html" class="overlay-link small">
-              <i class="fa fa-link"></i>
-            </a>
-          </div>
-        </div>
-        <div class="media-body">
-          <h6 class="media-heading">
-            <a href="post-11.html">Why a Pet Owner Chooses Your Pet Shop?</a>
-          </h6>
-          <p class="small margin-clear">
-            <i class="fa fa-calendar pr-10"></i>Aug 07, 2018</p>
-        </div>
-        <hr>
-      </div>
-
     </div>
 </aside>
-<!-- sidebar end -->  </div>
+<!-- sidebar end -->
+
+<script>
+  if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
+    $(".popup-img").magnificPopup({
+      type: "image",
+      gallery: {
+        enabled: true,
+      }
+    });
+    $(".popup-img-single").magnificPopup({
+      type: "image",
+      gallery: {
+        enabled: false,
+      }
+    });
+    $('.popup-iframe').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      preloader: false,
+      fixedContentPos: false
+    });
+  };
+</script>  </div>
 </div>
 <style>
-.icon-plus-1:before {
-  content: '\e943';
-}
-*:before, *:after {
+  .icon-plus-1:before {
+    content: '\e943';
+  }
+
+  *:before,
+  *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
+  }
 </style>
-<script>
-  // Magnific popup
-		//-----------------------------------------------
-		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
-			$(".popup-img").magnificPopup({
-				type:"image",
-				gallery: {
-					enabled: true,
-				}
-			});
-			$(".popup-img-single").magnificPopup({
-				type:"image",
-				gallery: {
-					enabled: false,
-				}
-			});
-			$('.popup-iframe').magnificPopup({
-				disableOn: 700,
-				type: 'iframe',
-				preloader: false,
-				fixedContentPos: false
-			});
-		};
-</script>
 
 
   <footer class="footer">

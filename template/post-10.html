@@ -1,5 +1,5 @@
 {% extends "layouts/default.html" %}
-{% set title = "About Us - PetsBuddy" %}
+{% set title = "Trump’s Metal Tariffs May Raise Costs for Canned Pet Food - PetsBuddy" %}
 
 {% block content %}
 
@@ -40,7 +40,7 @@
 
               <div class="item active">
                 <div class="overlay-container overlay-visible">
-                  <img src="img/blogs/blog10.jpg" alt="">
+                  <img src="img/blogs/blog10.jpg" width="100%" alt="">
                   <a href="img/blogs/blog10-o.jpg" class="popup-img overlay-link">
                     <i class="icon-plus-1"></i>
                   </a>
@@ -55,7 +55,8 @@
           <p>
             On July 6, China announced retaliatory tariffs on US goods, including canned dog and cat foods, in
             response to tariffs imposed by United States President Donald Trump. Even before those trade measures
-            targeted <span style="text-decoration: underline">US pet food exports</span> directly, <span style="text-decoration: underline">US
+            targeted <span style="text-decoration: underline">US pet food exports</span> directly, <span
+              style="text-decoration: underline">US
               tariffs on steel and aluminum</span> were already threatening to raise costs for US pet food
             companies and consumers.
           </p>
@@ -111,30 +112,5 @@
     {% include './partials/latestblog.html' %}
   </div>
 </div>
-
-<script>
-  // Magnific popup
-		//-----------------------------------------------
-		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
-			$(".popup-img").magnificPopup({
-				type:"image",
-				gallery: {
-					enabled: true,
-				}
-			});
-			$(".popup-img-single").magnificPopup({
-				type:"image",
-				gallery: {
-					enabled: false,
-				}
-			});
-			$('.popup-iframe').magnificPopup({
-				disableOn: 700,
-				type: 'iframe',
-				preloader: false,
-				fixedContentPos: false
-			});
-		};
-</script>
 
 {% endblock %}

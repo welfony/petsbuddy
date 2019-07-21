@@ -1,5 +1,5 @@
 {% extends "layouts/default.html" %}
-{% set title = "About Us - PetsBuddy" %}
+{% set title = "The Important Role of Taurine in Cats Food - PetsBuddy" %}
 
 {% block content %}
 
@@ -40,7 +40,7 @@
 
               <div class="item active">
                 <div class="overlay-container overlay-visible">
-                  <img src="img/blogs/blog1.jpg" alt="">
+                  <img src="img/blogs/blog1.jpg" width="100%" alt="">
                 </div>
               </div>
 
@@ -118,30 +118,5 @@
     {% include './partials/latestblog.html' %}
   </div>
 </div>
-
-<script>
-  // Magnific popup
-		//-----------------------------------------------
-		if (($(".popup-img").length > 0) || ($(".popup-iframe").length > 0) || ($(".popup-img-single").length > 0)) {
-			$(".popup-img").magnificPopup({
-				type:"image",
-				gallery: {
-					enabled: true,
-				}
-			});
-			$(".popup-img-single").magnificPopup({
-				type:"image",
-				gallery: {
-					enabled: false,
-				}
-			});
-			$('.popup-iframe').magnificPopup({
-				disableOn: 700,
-				type: 'iframe',
-				preloader: false,
-				fixedContentPos: false
-			});
-		};
-</script>
 
 {% endblock %}
