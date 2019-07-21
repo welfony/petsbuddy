@@ -109,11 +109,11 @@
     </div>
   </div>
 </div>
-<script src="https://smtpjs.com/v2/smtp.js"></script>
 <script>
 
   $('.btn').click(function (e) {
     e.preventDefault();
+
     var firstname = $('#id_first_name').val();
     var lastname = $('#id_last_name').val();
     var email = $('#id_email').val();
@@ -121,6 +121,7 @@
     var city = $('#id_city').val();
     var country = $('#id_country').val();
     var message = $('#id_message').val();
+
     var msg = "";
     msg += "Firstname: " + firstname + "\n\r";
     msg += "Lastname: " + lastname + "\n\r";
@@ -131,17 +132,20 @@
     msg += "Message: " + message + "\n\r";
 
     if (firstname.length > 0 && lastname.length > 0 && email.length > 0 && city.length > 0 && phone.length > 0 && country.length > 0 && message.length > 0) {
-      Email.send(
-        email,
-        'customerservice@australiapetindustry.com',
-        email,
-        msg,
-        'smtp25.elasticemail.com',
-        'bijiasuo2006@hotmail.com',
-        '9285894d-e8a1-475d-ab87-0c31f1228597');
-
-      alert('Thanks for your review!');
-      location.reload();
+      $.ajax({
+        type: "POST",
+        url: 'http://123.56.196.11:4242/send-email',
+        data: {
+          to: 'dothing@fangyingmobile.com',
+          from: email,
+          body: msg
+        },
+        success: function () {
+          alert('Thanks for your review!');
+          location.reload();
+        },
+        dataType: 'json'
+      });
     }
     return false;
   });
