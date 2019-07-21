@@ -14528,7 +14528,7 @@ button.close {
 
 .home-top-section {
   position: relative;
-  padding: 0 20px 20px 20px; }
+  padding: 0 0 20px 0; }
   .home-top-section__container {
     height: calc(100vh - 110px - 20px);
     background-image: url("../img/background_home_top_section.jpg");
