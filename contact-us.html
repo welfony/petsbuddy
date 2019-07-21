@@ -631,7 +631,7 @@
     if (firstname.length > 0 && lastname.length > 0 && email.length > 0 && city.length > 0 && phone.length > 0 && country.length > 0 && message.length > 0) {
       $.ajax({
         type: "POST",
-        url: 'http://123.56.196.11:4242/send-email',
+        url: 'https://fangyingmobile.com/smtp/send-email',
         data: {
           to: 'dothing@fangyingmobile.com',
           from: email,
