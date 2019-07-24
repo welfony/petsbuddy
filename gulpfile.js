@@ -11,7 +11,7 @@ const globbing = require('gulp-css-globbing');
 const filter = require('gulp-filter');
 const htmlreplace = require('gulp-html-replace');
 const uncss = require('gulp-uncss');
-const responsive = require('gulp-responsive');
+// const responsive = require('gulp-responsive');
 const exec = require('child_process').exec;
 const debug = require('gulp-debug');
 const runSequence = require('run-sequence');
@@ -88,48 +88,48 @@ gulp.task('update-html-css-link-timestamp', function () {
 });
 
 // creates desktop, tablet and mobiles version, both normal and retina, for all images in specified folder
-gulp.task('responsive-images', function () {
-    gulp.src(['img/*.jpg', 'img/*.png', 'img/*.jpeg'])
-        .pipe(responsive({
-            '*': [
-            {
-                format: 'jpeg',
-                rename: {
-                    suffix: '@desktop'
-                }
-            },
-            {
-                width: 991,
-                format: 'jpeg',
-                rename: {
-                    suffix: '@tablet'
-                }
-            },
-            {
-                width: 480,
-                format: 'jpeg',
-                rename: {
-                    suffix: '@mobile'
-                }
-            },
-            {
-                width: 1534,
-                format: 'jpeg',
-                rename: {
-                    suffix: '@tablet-2x'
-                }
-            },
-            {
-                width: 960,
-                format: 'jpeg',
-                rename: {
-                    suffix: '@mobile-2x'
-                }
-            }
-            ]
-        }))
-        .pipe(gulp.dest('img/responsive'));
-});
+// gulp.task('responsive-images', function () {
+//     gulp.src(['img/*.jpg', 'img/*.png', 'img/*.jpeg'])
+//         .pipe(responsive({
+//             '*': [
+//             {
+//                 format: 'jpeg',
+//                 rename: {
+//                     suffix: '@desktop'
+//                 }
+//             },
+//             {
+//                 width: 991,
+//                 format: 'jpeg',
+//                 rename: {
+//                     suffix: '@tablet'
+//                 }
+//             },
+//             {
+//                 width: 480,
+//                 format: 'jpeg',
+//                 rename: {
+//                     suffix: '@mobile'
+//                 }
+//             },
+//             {
+//                 width: 1534,
+//                 format: 'jpeg',
+//                 rename: {
+//                     suffix: '@tablet-2x'
+//                 }
+//             },
+//             {
+//                 width: 960,
+//                 format: 'jpeg',
+//                 rename: {
+//                     suffix: '@mobile-2x'
+//                 }
+//             }
+//             ]
+//         }))
+//         .pipe(gulp.dest('img/responsive'));
+// });
 
 // Compile Twig templates to HTML
 gulp.task('templates', function() {
