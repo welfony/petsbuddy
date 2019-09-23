@@ -1,15 +1,16 @@
-{% extends "layouts/default.html" %}
-{% set title = "Explore Us - PetsBuddy" %}
-
+{% extends "layouts/default.html" %} {% set title = "Explore Us - PetsBuddy" %}
 {% block content %}
 
 <!-- section start -->
 <!-- ================ -->
-<section class="section section section--has-medium-padding section--has-smaller-padding-top-below-desktop">
+<section
+  class="section section section--has-medium-padding section--has-smaller-padding-top-below-desktop"
+>
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <h2 class="text-center">Pet
+        <h2 class="text-center">
+          Pet
           <strong>Blog</strong>
         </h2>
         <div class="separator"></div>
@@ -20,24 +21,23 @@
     </div>
   </div>
   <div class="container">
-
     <div class="row">
-
-      {% for blog in blogs %}
-      {% if loop.index > 0 and loop.index <= 3 %}
+      {% for blog in blogs %} {% if loop.index > 0 and loop.index <= 3 %}
       <div class="col-sm-4">
         <div class="image-box shadow text-center mb-20">
           <div class="overlay-container">
-            <img src="{{blog.image}}" alt="">
+            <img src="{{ blog.image }}" alt="" />
             <div class="overlay-top">
               <div class="text">
-
-                <p class="small">{{blog.title}}</p>
+                <p class="small">{{ blog.title }}</p>
               </div>
             </div>
             <div class="overlay-bottom">
               <div class="links">
-                <a href="{{blog.url}}" class="btn btn-gray-transparent btn-animated btn-sm">View Details
+                <a
+                  href="{{ blog.url }}"
+                  class="btn btn-gray-transparent btn-animated btn-sm"
+                  >View Details
                   <i class="pl-10 fa fa-arrow-right"></i>
                 </a>
               </div>
@@ -45,28 +45,26 @@
           </div>
         </div>
       </div>
-      {% endif %}
-      {% endfor %}
-
+      {% endif %} {% endfor %}
     </div>
 
     <div class="row">
-
-      {% for blog in blogs %}
-      {% if loop.index > 3 and loop.index <= 6 %}
+      {% for blog in blogs %} {% if loop.index > 3 and loop.index <= 6 %}
       <div class="col-sm-4">
         <div class="image-box shadow text-center mb-20">
           <div class="overlay-container">
-            <img src="{{blog.image}}" alt="">
+            <img src="{{ blog.image }}" alt="" />
             <div class="overlay-top">
               <div class="text">
-
-                <p class="small">{{blog.title}}</p>
+                <p class="small">{{ blog.title }}</p>
               </div>
             </div>
             <div class="overlay-bottom">
               <div class="links">
-                <a href="{{blog.url}}" class="btn btn-gray-transparent btn-animated btn-sm">View Details
+                <a
+                  href="{{ blog.url }}"
+                  class="btn btn-gray-transparent btn-animated btn-sm"
+                  >View Details
                   <i class="pl-10 fa fa-arrow-right"></i>
                 </a>
               </div>
@@ -74,9 +72,7 @@
           </div>
         </div>
       </div>
-      {% endif %}
-      {% endfor %}
-
+      {% endif %} {% endfor %}
     </div>
   </div>
 </section>
@@ -87,7 +83,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <h2 class="text-center">Our
+        <h2 class="text-center">
+          Our
           <strong>Videoes</strong>
         </h2>
         <div class="separator"></div>
@@ -101,15 +98,25 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <br>
+        <br />
         <div role="tabpanel">
           <!-- Tab panes -->
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane fade in active" id="home">
               <div class="embed-responsive embed-responsive-16by9">
-                <video id="player_1" style="max-width:100%;" poster="img/videos/poster-1.png" preload="none" controls
-                  playsinline webkit-playsinline>
-                  <source src="videos/PetsBuddy-Pet-Treats-540.mp4?raw=true" type="video/mp4">
+                <video
+                  id="player_1"
+                  style="max-width:100%;"
+                  poster="img/videos/poster-3.png"
+                  preload="none"
+                  controls
+                  playsinline
+                  webkit-playsinline
+                >
+                  <source
+                    src="videos/Freeze-Dried-Cubes-Clip.mp4?raw=true"
+                    type="video/mp4"
+                  />
                 </video>
               </div>
             </div>
@@ -117,15 +124,79 @@
         </div>
       </div>
       <div class="col-md-6">
-        <br>
+        <br />
         <div role="tabpanel">
           <!-- Tab panes -->
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane fade in active" id="home">
               <div class="embed-responsive embed-responsive-16by9">
-                <video id="player_1" style="max-width:100%;" poster="img/videos/poster-2.png" preload="none" controls
-                  playsinline webkit-playsinline>
-                  <source src="videos/PetsBuddy-GoatsMilk-540.mp4?raw=true" type="video/mp4">
+                <video
+                  id="player_1"
+                  style="max-width:100%;"
+                  poster="img/videos/poster-4.png"
+                  preload="none"
+                  controls
+                  playsinline
+                  webkit-playsinline
+                >
+                  <source
+                    src="videos/Formulated-Replacers-Clip.mp4?raw=true"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <br />
+        <div role="tabpanel">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="home">
+              <div class="embed-responsive embed-responsive-16by9">
+                <video
+                  id="player_1"
+                  style="max-width:100%;"
+                  poster="img/videos/poster-1.png"
+                  preload="none"
+                  controls
+                  playsinline
+                  webkit-playsinline
+                >
+                  <source
+                    src="videos/PetsBuddy-Pet-Treats-540.mp4?raw=true"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <br />
+        <div role="tabpanel">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="home">
+              <div class="embed-responsive embed-responsive-16by9">
+                <video
+                  id="player_1"
+                  style="max-width:100%;"
+                  poster="img/videos/poster-2.png"
+                  preload="none"
+                  controls
+                  playsinline
+                  webkit-playsinline
+                >
+                  <source
+                    src="videos/PetsBuddy-GoatsMilk-540.mp4?raw=true"
+                    type="video/mp4"
+                  />
                 </video>
               </div>
             </div>
@@ -134,7 +205,7 @@
       </div>
     </div>
   </div>
-  <br>
+  <br />
 </section>
 <!-- video section end -->
 
