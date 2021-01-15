@@ -1,0 +1,81 @@
+{% extends "layouts/default.html" %}
+{% set title = "Blogs - PetsBuddy" %}
+
+{% block content %}
+
+<div class="container section section--has-medium-padding section--has-smaller-padding-top-below-desktop">
+  <div class="container blogs">
+    <div class="row">
+
+      <!-- main start -->
+      <!-- ================ -->
+      <div class="main col-md-12">
+
+        <!-- page-title start -->
+        <!-- ================ -->
+        <h1 class="page-title">Blogs</h1>
+        <div class="separator-2"></div>
+        <p class="lead">
+          Gathering knowledge for your lovely pets wellbeing.
+        </p>
+        <!-- page-title end -->
+
+        {% for blog in blogs %}
+        {% if loop.index > 60 and loop.index <= 70 %}
+        <!-- blogpost start -->
+        <div class="image-box style-3 mb-20 shadow bordered light-gray-bg">
+          <div class="row grid-space-0">
+            <div class="col-md-6">
+              <div class="overlay-container">
+                <img src="{{blog.image}}" alt="">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="body">
+                <div style="margin-top: 20px;"></div>
+                <h3>{{blog.title}}</h3>
+                <p class="small mb-10">
+                  <i class="icon-calendar"></i> {{blog.date}}</p>
+                <div class="separator-2"></div>
+                <p class="margin-clear">
+                  {{blog.description}}
+                </p>
+                <br />
+                <a href="{{blog.url}}"
+                  class="btn btn-default btn-sm btn-hvr hvr-shutter-out-horizontal margin-clear">Read
+                  More
+                  <i class="fa fa-arrow-right pl-10"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- blogpost end -->
+        {% endif %}
+        {% endfor %}
+
+        <!-- pagination start -->
+        <nav>
+          <ul class="pagination">
+            <li>
+              <a href="blogs-6.html" aria-label="Previous">
+                <i class="fa fa-angle-left"></i>
+              </a>
+            </li>
+            {% include './partials/blogspages.html' with {'current': 7} %}
+            <li>
+              <a href="blogs-7.html" aria-label="Next">
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- pagination end -->
+
+      </div>
+      <!-- main end -->
+
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -839,6 +839,10 @@ ul.pagination li.active a,
   overflow: hidden;
 }
 
+.overlay-container img {
+  width: 100%;
+}
+
 .overlay-bottom,
 .overlay-top {
   position: absolute;

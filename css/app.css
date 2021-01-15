@@ -5932,6 +5932,9 @@ ul.pagination li.active a,
   text-align: center;
   overflow: hidden; }
 
+.overlay-container img {
+  width: 100%; }
+
 .overlay-bottom,
 .overlay-top {
   position: absolute;
