@@ -16296,3 +16296,15 @@ button.close {
       max-width: 100%; }
     .slick-slider .slick-slide a {
       display: block; }
+
+.pet-gif {
+  height: 148px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  margin-top: -30px;
+  margin-left: 20px; }
+
+@media (max-width: 1500px) {
+  .pet-gif {
+    margin-top: 20px;
+    margin-left: 0; } }
