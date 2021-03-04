@@ -6,3 +6,18 @@
 @import "5-components/*";
 @import "6-helpers/*";
 @import "7-overrides/*";
+
+.pet-gif {
+  height: 148px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  margin-top: -30px;
+  margin-left: 20px;
+}
+
+@media (max-width: 1500px) {
+  .pet-gif {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
