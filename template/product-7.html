@@ -1,7 +1,7 @@
 {% extends "layouts/default.html" %}
 {% set title = "Roo Tail - PetsBuddy" %}
 {% set page = {
-  back_url: "products-1.html"
+  back_url: "products-treats.html"
 } %}
 
 {% block content %}
@@ -9,7 +9,7 @@
 <div class="banner banner--has-fixed-height banner--has-dynamic-background-image banner--has-darker-bg"
   style="background-image: url(img/banner/banner_eleven.jpg);">
   <div class="banner__back-btn-wrapper">
-    <a onclick="javascript:history.go(-1);">
+    <a href="{{ page.back_url }}">
       <div class="banner__back-btn back-btn">
         <img class="back-btn__img" src="img/icon-back-white.png" alt="Back Button">
         <span class="back-btn__text">back</span>
