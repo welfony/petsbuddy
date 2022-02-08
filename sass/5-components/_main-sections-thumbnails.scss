@@ -9,7 +9,7 @@
         $block: &;
         position: relative;
         height: map_get($others, navbar-height);
-        flex: 1;
+        flex: 0.5;
         background-image: linear-gradient(to right, white, #f2f5f8);
         overflow: hidden;
         transition: background map_get($transitions-times, normal);
