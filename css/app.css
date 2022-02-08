@@ -14831,7 +14831,7 @@ button.close {
   .main-sections-thumbnails__thumbnail {
     position: relative;
     height: 110px;
-    flex: 1;
+    flex: 0.5;
     background-image: linear-gradient(to right, white, #f2f5f8);
     overflow: hidden;
     transition: background 0.5s;
