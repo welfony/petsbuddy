@@ -13890,6 +13890,14 @@ button.close {
     @media screen and (max-width: 767px) {
       .footer__img {
         margin: 30px 0; } }
+  .footer__bundipet {
+    margin: 20px 0 0;
+    position: relative;
+    height: 136px; }
+    @media screen and (max-width: 767px) {
+      .footer__bundipet {
+        margin: 20px 0;
+        height: auto; } }
   .footer__paragraph {
     color: #b7babc;
     font-size: 14px;
