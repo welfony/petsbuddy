@@ -414,7 +414,15 @@
       >
         Our products
       </h3>
-      <iframe src="https://petnow.com.au/petsbuddy_shop/shop.php" style="width: 100%;min-height: 600px;border: none;"></iframe>
+      <iframe src="https://petnow.com.au/petsbuddy_shop/shop.php" id="petnowtempframe" style="width: 100%;border: none;"></iframe>
+      <script type="text/javascript" language="javascript">
+        window.addEventListener('message',function (event) {
+          if (event.origin === 'https://petnow.com.au') {
+            $("#petnowtempframe").height(event.data+50);
+            return;
+          }
+        },false);
+      </script>
     </div>
   </div>
 </div>
