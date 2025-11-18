@@ -1,0 +1,60 @@
+---
+import Footer from "../components/footer.astro";
+import Language from "../components/language.astro";
+import Nav from "../components/nav.astro";
+import Newsletter from "../components/newsletter.astro";
+import Sidebar from "../components/sidebar.astro";
+import Subnavbar from "../components/subnavbar.astro";
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>{title}</title>
+    <meta name="description" content="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- build:css -->
+    <link rel="stylesheet" href="css/app.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="css/slick.min.css" />
+
+    <link rel="stylesheet" href="fonts/font-awesome/font.css" />
+
+    <link rel="stylesheet" href="fonts/fontello/css/fontello.css" rel="stylesheet">
+
+    <link rel="stylesheet" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css" />
+
+    <script is:inline src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script is:inline src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="preload page_home">
+    <Nav />
+    <Subnavbar />
+
+    <slot />
+
+    <Footer />
+    <Sidebar />
+
+    <Language />
+    <Newsletter />
+    
+    <div class="dimmer js-dimmer"></div>
+
+    <script is:inline src="./js/common.min.js"></script>
+    <script is:inline src="./js/home.min.js"></script>
+    <script is:inline src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
