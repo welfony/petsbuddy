@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "pet-staging",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,9 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.15.9"
+    "astro": "^5.16.6"
   },
   "devDependencies": {
-    "sass": "^1.94.1"
+    "sass": "^1.97.1"
   }
 }
